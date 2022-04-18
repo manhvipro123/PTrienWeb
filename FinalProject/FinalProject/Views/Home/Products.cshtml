@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Product>
+<link rel="stylesheet" href="~/css/style.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="~/css/mobile.css">
+
+<div id="body">
+			<div class="header">
+				<div>
+					<h1>Products</h1>
+				</div>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<h1>All Time Classic</h1>
+						<p>This website template has been designed by freewebsitetemplates.com for you, for free.</p>
+					</li>
+					@foreach(Product p in Model){
+						<li>
+							<img src="~/images/@p.Image" alt="">
+							<h2>@p.Name</h2>
+						</li>
+					}
+				</ul>
+			</div>
+		</div>
