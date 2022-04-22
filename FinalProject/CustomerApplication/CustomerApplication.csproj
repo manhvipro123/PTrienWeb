@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\fonts\lato-bold-webfont.svg" />
+    <None Include="wwwroot\fonts\lato-regular-webfont.svg" />
+    <None Include="wwwroot\fonts\magra-bold-webfont.svg" />
+    <None Include="wwwroot\fonts\quicksand-bold-webfont.svg" />
+    <None Include="wwwroot\fonts\roboto-regular-webfont.svg" />
+    <None Include="wwwroot\js\mobile.js" />
+    <None Include="wwwroot\js\site.js" />
+  </ItemGroup>
+
+</Project>
