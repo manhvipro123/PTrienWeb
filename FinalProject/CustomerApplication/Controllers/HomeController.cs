@@ -12,13 +12,7 @@ namespace CustomerApplication.Controllers
         {
             _logger = logger;
         }
-        public IActionResult Products()
-        {
-            ProductRepository rep = new ProductRepository();
-            List<Product> lst = rep.getAllProducts();
-            //passing data to view
-            return View(lst); ;
-        }
+
         public IActionResult Index()
         {
             return View();
