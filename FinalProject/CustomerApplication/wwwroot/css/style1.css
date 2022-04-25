@@ -1,13 +1,11 @@
 body{
-    background-color: rgb(255, 255, 255);
     font-family:One Night SansVN,sans-serif;
     width: 100vw;
     height: 100vw;
     margin: 0;
     padding: 0;
-    justify-content: center; 
-    color: white;
-  
+    justify-content: center;
+    overflow-x: hidden;
 }
 
 /* @media only screen and (max-width: 50%px) {
@@ -16,39 +14,11 @@ body{
         height: 50vw;;
     }
 } */
-#header{
-    background-color: rgba(0,91,170,255);
-    width: 100%;
-    height: 100px;
-    display:flex;
-}
-#logo-bar{
-    width: 60%;
-    height: 100px;
-    display:flex;
-    
-}
-#search-bar{
-    height: 100px;
-    width: 40%;
-    margin: 2.5% 0 0 5%;
-    -webkit-appearance: none;
-    border-radius: 29px;
-}
-#searchInput{
-    background: url(https://cdn.shopify.com/s/files/1/0104/6662/3554/t/13/assets/search.svg) no-repeat center right 18px #fff;
-    background-size: auto 20px;
-    outline: none;
-}
-.font-link{
-    color: white;
-    font-size: small;
-    text-decoration:none;
-}
+
+/*==============================================================================*/
 
 #main{
     width: 100%;
-    height: 100%;
 }
 #banner{
     background-image: url(https://cdn.shopify.com/s/files/1/0104/6662/3554/collections/blue-balls-plp-bg_1920x.jpg?v=1592438182);
@@ -61,16 +31,15 @@ body{
 }
 .container{
     width: 100%;
-    height: 1800px;
+
     display:flex;
 }
 #item-choice{
     width: 20%;
-    height: 100%;
+  
 }
 .items{
     width: 80%;
-    height: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
@@ -95,15 +64,3 @@ body{
     margin-top: 5%;
     vertical-align: middle;
 }
-
-#footer{
-    background-color: rgba(0,91,170,255); 
-    padding-left: 33%;
-    margin-top: 56%; 
-    width: 100%;
-    height: 600px;
-
-}
-ul{ 
-    list-style-type: none;
-  }

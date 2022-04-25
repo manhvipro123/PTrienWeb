@@ -14,7 +14,7 @@ namespace FinalProject.Controllers
             _logger = logger;
         }
 
-      
+
 
         public IActionResult Index()
         {
