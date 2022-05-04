@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JtHu13T7bAvixhA27q0rFv5p7TrWh2L97HR8EeAsiOE=",
+  "Hash": "3LWRCpv0xnJ1wZvh73BOzZw+uv3LcbLRC/2U1fJ8P2A=",
   "Source": "CustomerApplication",
   "BasePath": "_content/CustomerApplication",
   "Mode": "Default",
@@ -340,12 +340,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style1.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style2.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
-      "RelativePath": "css/style1.css",
+      "RelativePath": "css/style2.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -354,7 +354,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\style1.css"
+      "OriginalItemSpec": "wwwroot\\css\\style2.css"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\favicon.ico",

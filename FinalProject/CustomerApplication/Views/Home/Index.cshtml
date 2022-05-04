@@ -1,4 +1,45 @@
 ﻿@{
     Layout = "~/Views/Shared/_CustomerLayout.cshtml";
 }
-<p>abc</p>
+<style>
+        body{
+            margin:0;
+        }
+        #main{
+            width: 100vw;
+        }
+        .hero-image{
+            background-image: url("https://cdn.shopify.com/s/files/1/0104/6662/3554/files/Home-Hero-2mobile_540x.jpg?v=1592438799") ;
+            background-color: #cccccc; /* Used if the image is unavailable */
+            background-position: center;/* Center the image */
+            background-repeat: no-repeat;/* Do not repeat the image */
+            height: 600px;; /* You must set a specified height */
+            position: relative;
+            background-size: cover; /* Resize the background image to cover the entire container*/
+        }
+        .hero-text{
+            align-items: center;
+            background-color: #133e7a;
+          
+            padding: 200px 200px 200px 200px;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-47%, -50%);
+        }
+
+</style>
+
+<body>
+    <div id="main">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 style="font-size:40px;"> KHỞI ĐỘNG CHO ĐÊM NÓNG BỎNG...</h1>
+                <button>Mua ngay</button>
+            </div>
+        </div>
+    </div>
+</body>
