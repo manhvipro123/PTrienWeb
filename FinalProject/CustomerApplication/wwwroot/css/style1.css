@@ -29,14 +29,14 @@ body{
     height: 200px;
     /* text-align: center; */
 }
+
 .container{
     width: 100%;
-
     display:flex;
 }
 #item-choice{
-    width: 20%;
-  
+    margin-left:auto;
+    margin-right:auto;
 }
 .items{
     width: 80%;
@@ -47,7 +47,6 @@ body{
 } 
 .itemDiv{
     width: 30%;
-    height: 25%;
     padding: 2% 0 2% 0;
     color: rgba(0,91,170,255);
     text-align: center;   
@@ -61,6 +60,46 @@ body{
     justify-content: center;
     /* color: rgba(0,91,170,255); */
     color: white;
-    margin-top: 5%;
     vertical-align: middle;
 }
+
+.option label {
+    padding: 5px;
+    font-size: large;
+    font-weight: 700;
+    color: gainsboro;
+    width: 160px;
+    display: inline-block;
+}
+
+.size-option button {
+    background-color: white;
+    border: 2px solid rgba(0,91,170,255);
+    border-radius: 10px;
+    color: rgba(0,91,170,255);
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.size-option button:hover {
+    background-color: ButtonHighlight;
+}
+
+.option label:hover {
+    color: rgba(0,91,170,255);
+    cursor: pointer;
+}
+
+.size-option button:focus {
+    background-color: ButtonHighlight;
+}
+
+.option:focus-within {
+    color: rgba(0,91,170,255);
+}
+
