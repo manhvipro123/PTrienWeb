@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6AD3ty2ExvH0Z2ABE35xTwtbCUKdGc6lDIHQpqRiOzY=",
+  "Hash": "YnUPc04yklM3Zp1xX9D+DBH3sqmVh1486ulwgr8hr4U=",
   "Source": "AdminApplication",
   "BasePath": "_content/AdminApplication",
   "Mode": "Default",
@@ -187,12 +187,12 @@
       "OriginalItemSpec": "wwwroot\\charts.html"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\css\\sb-admin-2.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\css\\sb-admin-3.css",
       "SourceId": "AdminApplication",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\",
       "BasePath": "_content/AdminApplication",
-      "RelativePath": "css/sb-admin-2.css",
+      "RelativePath": "css/sb-admin-3.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,15 +201,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\sb-admin-2.css"
+      "OriginalItemSpec": "wwwroot\\css\\sb-admin-3.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\css\\sb-admin-2.min.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\css\\sb-admin-3.min.css",
       "SourceId": "AdminApplication",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\",
       "BasePath": "_content/AdminApplication",
-      "RelativePath": "css/sb-admin-2.min.css",
+      "RelativePath": "css/sb-admin-3.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,7 +218,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\sb-admin-2.min.css"
+      "OriginalItemSpec": "wwwroot\\css\\sb-admin-3.min.css"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\css\\site.css",

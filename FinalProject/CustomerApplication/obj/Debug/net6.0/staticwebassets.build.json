@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UFUs1TNgEWqnhTDXAf9DuzNbd/uV+KWSD9pyM0UgbRY=",
+  "Hash": "2ZJ1kN+zZZiC979j8xCbFpGbB4DcBWjU9x2aAbh5vfU=",
   "Source": "CustomerApplication",
   "BasePath": "_content/CustomerApplication",
   "Mode": "Default",
@@ -304,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\footer.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\gel-boi-tron-cho-nu.jpg",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "assets/images/gel-boi-tron-cho-nu.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\gel-boi-tron-cho-nu.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\logo1.png",
