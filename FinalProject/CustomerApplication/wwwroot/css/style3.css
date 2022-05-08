@@ -1,6 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100vw;
     height: 100vw;
     margin: 0;
@@ -24,6 +23,7 @@ body {
     #logo-bar img {
         height: 100px;
         width: 100px;
+        padding: 10px;
     }
 
 .dropdown {
@@ -76,7 +76,7 @@ body {
 #search-bar {
     -webkit-appearance: none;
     padding: 30px;
-    margin: 5px 0 10px 0;
+    margin: 15px 0 0 0;
 }
 
 #searchInput {
