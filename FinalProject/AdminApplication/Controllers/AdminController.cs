@@ -39,7 +39,16 @@ namespace AdminApplication.Controllers
             //tim doi tuong co id
             //select * from sanpham where maSP = id 
             SanPham sp = ctx.SanPhams.Where(x => x.MaSp == id).SingleOrDefault();
+            List<DanhGia> lst = new List<DanhGia> { };
             //xoa du lieu
+
+            foreach (DanhGia d in ctx.DanhGias)
+            {
+                if (d.MaKh == id)
+                {
+                    ctx.DanhGias.Remove(d);
+                }
+            }
             ctx.SanPhams.Remove(sp);
             ctx.SaveChanges();
             return RedirectToAction("GetAllProducts");
@@ -156,6 +165,18 @@ namespace AdminApplication.Controllers
             }
             return View(lst);
         }
+        public IActionResult GetAllProductRates(int id)
+        {
+            List<DanhGia> lst = new List<DanhGia> { };
+            foreach (DanhGia d in ctx.DanhGias)
+            {
+                if (d.MaSp == id)
+                {
+                    lst.Add(d);
+                }
+            }
+            return View(lst);
+        }   
         public IActionResult GetUserAccount(int id)
         {
             //select * from khachhang
@@ -172,10 +193,17 @@ namespace AdminApplication.Controllers
             //select * from KhachHang where MaKh = id 
             KhachHang kh = ctx.KhachHangs.Where(x => x.MaKh == cId).SingleOrDefault();
             User u = ctx.Users.Where(x => x.UserId == uId).SingleOrDefault();
-            DanhGia dg = ctx.DanhGias.Where(x => x.MaKh == cId).SingleOrDefault();
-            //xoa du lieu
+            List<DanhGia> lst = new List<DanhGia> { };
 
-            ctx.DanhGias.Remove(dg);
+
+            //xoa du lieu
+            foreach (DanhGia d in ctx.DanhGias)
+            {
+                if (d.MaKh == cId)
+                {
+                    ctx.DanhGias.Remove(d);
+                }
+            }
             ctx.KhachHangs.Remove(kh);
             ctx.Users.Remove(u);
           
@@ -183,16 +211,28 @@ namespace AdminApplication.Controllers
             return RedirectToAction("GetAllCustomers");
         }
 
-        public IActionResult DeleteRating(int id)
+        public IActionResult DeleteRatingByC(int id1, int id2)
         {
             //tim doi tuong co id
             //select * from KhachHang where MaDg = id 
-            DanhGia dg = ctx.DanhGias.Where(x => x.MaDg == id).SingleOrDefault();
+            DanhGia dg = ctx.DanhGias.Where(x => x.MaDg == id1).SingleOrDefault();
             
             //xoa du lieu
             ctx.DanhGias.Remove(dg);
             ctx.SaveChanges();
-            return View("GetAllCustomerRates", new { id = id});
+            return RedirectToAction("GetAllCustomerRates", new {id = id2});
+        }
+
+        public IActionResult DeleteRatingByP(int id1, int id2)
+        {
+            //tim doi tuong co id
+            //select * from KhachHang where MaDg = id 
+            DanhGia dg = ctx.DanhGias.Where(x => x.MaDg == id1).SingleOrDefault();
+
+            //xoa du lieu
+            ctx.DanhGias.Remove(dg);
+            ctx.SaveChanges();
+            return RedirectToAction("GetAllProductRates", new { id = id2 });
         }
 
         //--------------------------EDIT----------------------------------------------------------------------//

@@ -28,6 +28,7 @@
                                             <th style="vertical-align:middle;">Mô Tả</th>
                                             <th style="vertical-align:middle;">Trạng Thái</th>
                                             <th style="vertical-align:middle;">Hình Ảnh</th>
+                                            <th style="vertical-align:middle;">Các Bài Đánh Giá</th>
                                             <th style="vertical-align:middle;">Tùy Chỉnh</th>
 
                                         </tr>
@@ -43,6 +44,7 @@
                                             <th style="vertical-align:middle;">Mô Tả</th>
                                             <th style="vertical-align:middle;">Trạng Thái</th>
                                             <th style="vertical-align:middle;">Hình Ảnh</th>
+                                            <th style="vertical-align:middle;">Các Bài Đánh Giá</th>
                                             <th style="vertical-align:middle;">Tùy Chỉnh</th>
                                         </tr>
                                     </tfoot>
@@ -53,13 +55,16 @@
                                                 <td style="vertical-align:middle;">@item.MaDm</td>
                                                 <td style="vertical-align:middle;">@item.MaSp</td>
                                                 <td style="vertical-align:middle;">@item.TenSp</td>
-                                                <td style="vertical-align:middle;">@item.Gia</td>
+                                                <td style="vertical-align:middle;">@item.Gia đ</td>
                                                 <td style="vertical-align:middle;">@item.SoLuong</td>
                                 
                                                 <td style="vertical-align:middle;">@item.NgayNhap</td>
                                                 <td style="vertical-align:middle;">@item.MoTa</td>
                                                 <td style="vertical-align:middle;">@item.TrangThai</td>
                                                 <td style="vertical-align:middle;">@item.HinhAnh</td>
+                                                <td style="vertical-align:middle;text-align:center;">
+                                                     @Html.ActionLink("Show","GetAllProductRates",new{id = item.MaSp})
+                                                </td>
                                                 <td style="vertical-align:middle;">
                                                      @Html.ActionLink("Edit","EditProduct",new{id = item.MaSp})
                                                      @Html.ActionLink("Delete","DeleteProduct",new{id = item.MaSp})
