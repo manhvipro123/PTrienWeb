@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+@model AdminApplication.Models.DanhMuc
+<div class="container-fluid">
+        <!-- Page Heading -->
+        <h1 class="h3 mb-1 text-gray-800">Thêm Danh Mục</h1>
+        <p class="mb-4">
+        </p>
+        <!-- Content Row -->
+       
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-lg-4">
+                    <!-- Custom Text Color Utilities -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Cập nhật thông tin danh mục </h6>
+                        </div>
+                        <div class="card-body">
+                           
+                            @using (Html.BeginForm("UpdateCategory", "Admin", FormMethod.Post))
+                            {   
+                                <div class="mb-3">
+                                    <label for="MaDm" class="form-label">Mã Danh Mục:</label>
+                                    @Html.TextBoxFor(m => m.MaDm, new { @class = "form-control" , @readonly = "readonly" } ) 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="TenDm" class="form-label">Tên Danh Mục: </label>
+                                    @Html.TextBoxFor(m => m.TenDm,  new { @class = "form-control" }) 
+                                </div>
+                                             
+                                <a href="~/admin/getallcategories" class="btn btn-outline-danger" role="button" aria-pressed="true">Quay lại</a>
+                                <button type="submit" class="btn btn-primary">Xác nhận</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+</div>

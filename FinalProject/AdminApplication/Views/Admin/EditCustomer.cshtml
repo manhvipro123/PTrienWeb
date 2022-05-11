@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+@model AdminApplication.Models.KhachHang
+<div class="container-fluid">
+        <!-- Page Heading -->
+        <h1 class="h3 mb-1 text-gray-800">Thêm Danh Mục</h1>
+        <p class="mb-4">
+        </p>
+        <!-- Content Row -->
+       
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-lg-4">
+                    <!-- Custom Text Color Utilities -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Cập nhật thông tin khách hàng</h6>
+                        </div>
+                        <div class="card-body">
+                            
+                            @using (Html.BeginForm("UpdateCustomer", "Admin", FormMethod.Post))
+                            {   
+                                 <div class="mb-3">
+                                    <label for="UserId" class="form-label">Mã Tài Khoản:</label>
+                                    @Html.TextBoxFor(m => m.UserId, new { @class = "form-control" , @readonly = "readonly" } ) 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="MaKh" class="form-label">Mã Khách Hàng:</label>
+                                    @Html.TextBoxFor(m => m.MaKh, new { @class = "form-control" , @readonly = "readonly" } ) 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="TenKh" class="form-label">Tên Khách Hàng: </label>
+                                    @Html.TextBoxFor(m => m.TenKh,  new { @class = "form-control" }) 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Sdt" class="form-label">Số Điện Thoại: </label>
+                                    @Html.TextBoxFor(m => m.Sdt,  new { @class = "form-control" }) 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="DiaChiKh" class="form-label">Địa chỉ: </label>
+                                    @Html.TextBoxFor(m => m.DiaChiKh,  new { @class = "form-control" }) 
+                                </div>
+                                             
+                                <a href="~/admin/getallcustomers" class="btn btn-outline-danger" role="button" aria-pressed="true">Quay lại</a>
+                                <button type="submit" class="btn btn-primary">Xác nhận</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+</div>

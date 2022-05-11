@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+@model AdminApplication.Models.DanhMuc
+<div class="container-fluid">
+        <!-- Page Heading -->
+        <h1 class="h3 mb-1 text-gray-800">Thêm Danh Mục</h1>
+        <p class="mb-4">
+        </p>
+        <!-- Content Row -->
+       
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-lg-4">
+                    <!-- Custom Text Color Utilities -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Nhập thông tin danh mục cần thêm</h6>
+                        </div>
+                        <div class="card-body">
+                            <p class="form-label" style="color: red">(*)Mã danh mục sẽ được tạo tự động</p>
+                            @using (Html.BeginForm("SaveCategory", "Admin", FormMethod.Post))
+                            {   
+                                <div class="mb-3">
+                                    <label for="TenDm" class="form-label">Tên Danh Mục: </label>
+                                    @Html.TextBoxFor(m => m.TenDm,  new { @class = "form-control" }) 
+                                </div>
+                              
+
+                                <a href="~/admin/addcategory" class="btn btn-outline-danger" role="button" aria-pressed="true">Hủy</a>                
+                                <a href="~/admin/getallcategories" class="btn btn-outline-danger" role="button" aria-pressed="true">Quay lại</a>
+                                <button type="submit" class="btn btn-primary">Xác nhận</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+</div>

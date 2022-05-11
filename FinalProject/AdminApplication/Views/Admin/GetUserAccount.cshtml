@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+@model AdminApplication.Models.User
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Infomation Table</h1>
+                  
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary" style="float:left;">User Id @Model.UserId Account</h6>
+                            <a href="~/admin/getallcustomers" class="btn btn-outline-danger" role="button" aria-pressed="true" style="float:right;">Quay lại</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th style="vertical-align:middle;">Mã Tài Khoản</th>
+                                            <th style="vertical-align:middle;">Email</th>
+                                            <th style="vertical-align:middle;">Password</th>
+                                            <th style="vertical-align:middle;">Tên</th>
+                                            <th style="vertical-align:middle;">Tùy Chỉnh</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th style="vertical-align:middle;">Mã Tài Khoản</th>
+                                            <th style="vertical-align:middle;">Email</th>
+                                            <th style="vertical-align:middle;">Password</th>
+                                            <th style="vertical-align:middle;">Tên</th>
+                                            <th style="vertical-align:middle;">Tùy Chỉnh</th>
+                                      
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                      
+                                            <tr>
+                                                <td style="vertical-align:middle;">@Model.UserId</td>
+                                                <td style="vertical-align:middle;">@Model.Email</td>
+                                                <td style="vertical-align:middle;">@Model.Password</td>
+                                                <td style="vertical-align:middle;">@Model.Name</td>
+                                    
+                                                <td style="vertical-align:middle;">
+                                                     @Html.ActionLink("Edit","EditUser",new{id = Model.UserId})
+                                                  @*   @Html.ActionLink("Delete","DeleteProduct",new{id = item.UserId})*@
+                                                </td>
+                                            </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+ 
+
+
+      

@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+@model List<AdminApplication.Models.DanhGia>
+@{
+    var lst = new List<AdminApplication.Models.DanhGia>();
+    var id = lst[0].MaKh;
+}
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Infomation Table</h1>
+                  
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">All Customer ID: @id 's Rates</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th style="vertical-align:middle;">Mã Đánh Giá</th>
+                                            <th style="vertical-align:middle;">Mã Sản Phẩm</th>
+                                            <th style="vertical-align:middle;">Mức Đánh Giá</th>
+                                            <th style="vertical-align:middle;">Nhận xét</th>
+                                            <th style="vertical-align:middle;">Tùy Chỉnh</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th style="vertical-align:middle;">Mã Đánh Giá</th>
+                                            <th style="vertical-align:middle;">Mã Sản Phẩm</th>
+                                            <th style="vertical-align:middle;">Mức Đánh Giá</th>
+                                            <th style="vertical-align:middle;">Nhận xét</th>
+                                            <th style="vertical-align:middle;">Tùy Chỉnh</th>
+                                      
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        @foreach(var item in Model)
+                                        {
+                                          <tr>
+                                             <td style="vertical-align:middle;">@item.MaDg</td>
+                                             <td style="vertical-align:middle;">@item.MaSp</td>
+                                             <td style="vertical-align:middle;">@item.MucDg</td>
+                                             <td style="vertical-align:middle;">@item.NhanXet</td>
+                                    
+                                             <td style="vertical-align:middle;">
+                                                  @Html.ActionLink("Delete","DeleteRating",new{id = item.MaDg})
+                                             </td>
+                                           </tr>   
+                                        }
+                                 
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+ 
+
+
+      

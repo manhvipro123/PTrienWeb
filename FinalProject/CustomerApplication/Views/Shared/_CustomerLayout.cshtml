@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/css/style3.css">
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">*@
+    <title>Bao Cao Su, Gel Bôi Trơn & Tình Dục An Toàn | Durex Vietnam</title>
+</head>
+
+<body>
+    <div id="header">
+      
+            <div id="logo-bar">
+            <a href="~/home/index"><img  src="~/assets/images/logo1.png"/></a>
+            <ul style="font-size: larger;padding:16px">
+                <li ><a class="font-link" href="~/home/products">Sản Phẩm</a></li>
+                <li ><a class="font-link" href="https://www.durexvietnam.vn/collections/find-your-best-fit">Chọn Bao Vừa Vặn</a></li>
+            </ul>
+            <ul style="font-size: larger;padding:22px;">
+                <li>
+                    <div class="dropdown">
+                        <div class="dropbtn" onclick="myFunction()">
+                            Bao Cao Su
+                          <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="dropdown-content" id="myDropdown">
+                          <a href="#">Tất cả sản phẩm</a>
+                          <a href="#">Tự tin chinh phục</a>
+                          <a href="#">Bức phá sức bền</a>
+                          <a href="#">Thăng hoa cảm xúc</a>
+                          <a href="#">Cuồng nhiệt đam mê</a>
+                        </div>
+                    </div> 
+                </li>
+                <li ><a class="font-link" href="https://www.durexvietnam.vn/blogs/bi-kip-cho-cuoc-yeu-thang-hoa">Bí Kíp Cho Cuộc Yêu Thăng Hoa</a></li>
+            </ul>
+            </div>
+            <div id="search-bar">
+                <input
+                    style="font-size:larger;color:grey;background-color: white;border:none;border-radius:8px;height:30px;"
+                    placeholder="TÌM KIẾM" id="searchInput">
+            </div>
+    </div>
+        
+    <div id="main" >
+       @RenderBody()
+    </div>
+    <div class="footer"> 
+        <div class="footer-box">
+            <img height= "150px" width= "150px" src="~/assets/images/logo1.png" />
+            <div class="main-footersocial">   
+                <div style="margin:5px;">
+                  <a href="https://www.facebook.com/Durex.Vietnam" class="facebook" target="_blank" rel="noopener noreferrer" title="Durex Vietnam on Facebook">
+                    <svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m752 176c-8.836667 0-16 7.163333-16 16s7.163333 16 16 16 16-7.163333 16-16-7.163333-16-16-16zm3.79 11.056667h-2.405c-.285 0-.601667.375-.601667.873333v1.736667h3.008334l-.455 2.476666h-2.553334v7.435h-2.838333v-7.435h-2.575v-2.476666h2.575v-1.456667c0-2.09 1.45-3.788333 3.44-3.788333h2.405z" fill="#fff" transform="translate(-736 -176)"></path></svg>
+                  </a>
+                </div>
+                <div style="margin:5px;">
+                  <a href="https://www.instagram.com/durexvietnamofficial/?hl=vi" class="instagram" target="_blank" rel="noopener noreferrer" title="Durex Vietnam on Instagram">
+                    <svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m822.496283 187.08525c.183639.495517.280709 1.01892.286967 1.547333.040083.878817.048517 1.142267.048517 3.367417s-.008517 2.488617-.048517 3.367417c-.006245.52842-.103315 1.051831-.286967 1.54735-.280366.726734-.854782 1.30115-1.581516 1.581516-.495522.183641-1.018931.28071-1.54735.286967-.8786.040067-1.142167.048517-3.367417.048517s-2.488817-.008517-3.367417-.048517c-.528419-.006257-1.051828-.103326-1.54735-.286967-.726734-.280366-1.30115-.854782-1.581516-1.581516-.183652-.495519-.280722-1.01893-.286967-1.54735-.040067-.878817-.048517-1.142417-.048517-3.367417s.008434-2.4886.048517-3.367417c.006257-.528419.103326-1.051828.286967-1.54735.280366-.726734.854782-1.30115 1.581516-1.581516.495522-.183641 1.018931-.28071 1.54735-.286967.878817-.040083 1.142284-.048517 3.367417-.048517s2.4886.008434 3.367417.048534c.528419.006256 1.051828.103326 1.54735.286966.726734.280367 1.30115.854783 1.581516 1.581517zm-6.496283 9.194033c1.134938.000005 2.223393-.450846 3.025915-1.253368s1.253373-1.890977 1.253368-3.025915c0-2.363383-1.9159-4.279283-4.279283-4.279283s-4.279283 1.9159-4.279283 4.279283 1.9159 4.279283 4.279283 4.279283zm4.448333-7.727616c.552285 0 1-.447716 1-1 0-.552285-.447715-1-1-1-.552284 0-1 .447715-1 1 0 .552284.447716 1 1 1zm-4.448333 6.22615c-1.534146 0-2.777817-1.243671-2.777817-2.777817s1.243671-2.777817 2.777817-2.777817 2.777817 1.243671 2.777817 2.777817-1.243671 2.777817-2.777817 2.777817zm0-18.777817c4.243471-.000022 8.313146 1.68568 11.313733 4.686267s4.686289 7.070262 4.686267 11.313733c0 8.836556-7.163444 16-16 16s-16-7.163444-16-16 7.163444-16 16-16zm8.283183 19.435833v.000034c.040584-.888867.05015-1.172684.05015-3.435867s-.009566-2.547-.050166-3.435883c-.013874-.691314-.144852-1.375272-.387367-2.0228-.432823-1.119401-1.317733-2.004311-2.437133-2.437134-.647529-.242515-1.331487-.373493-2.0228-.387366-.888867-.040584-1.172684-.05015-3.435867-.05015s-2.547.009566-3.435883.05015c-.691314.013873-1.375272.144851-2.0228.387366-1.119404.432827-2.004315 1.317743-2.437134 2.43715-.242515.647529-.373493 1.331487-.387366 2.0228-.040584.888867-.05015 1.172684-.05015 3.435867s.009566 2.547.050166 3.435883c.013874.691314.144852 1.375272.387367 2.0228.432823 1.119401 1.317733 2.004311 2.437133 2.437134.647529.242515 1.331487.373493 2.0228.387366.888867.040584 1.172684.05015 3.435867.05015s2.547-.009566 3.435883-.0502c.691314-.013873 1.375272-.144851 2.0228-.387366 1.119401-.432823 2.004311-1.317733 2.437134-2.437134.242515-.647528.373493-1.331486.387366-2.0228z" fill="#fff" transform="translate(-800 -176)"></path></svg>
+                  </a>
+                </div> 
+                <div style="margin:5px;">
+                  <a href="https://www.youtube.com/channel/UCbcISjwMqny5HV5so2GuYZg" class="youtube" target="_blank" rel="noopener noreferrer" title="Durex Vietnam on YouTube">
+                    <svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m628.671667 191.721667-3.743334-1.746667c-.326666-.151667-.595.018333-.595.38v3.29c0 .361667.268334.531667.595.38l3.741667-1.746667c.328333-.153333.328333-.403333.001667-.556666zm-2.671667-15.721667c-8.836667 0-16 7.163333-16 16s7.163333 16 16 16 16-7.163333 16-16-7.163333-16-16-16zm0 22.5c-8.19 0-8.333333-.738333-8.333333-6.5s.143333-6.5 8.333333-6.5 8.333333.738333 8.333333 6.5-.143333 6.5-8.333333 6.5z" fill="#fff" transform="translate(-610 -176)"></path></svg>
+                  </a>
+                </div>
+            </div>
+            <div class="extra-footer" style="width:100%;margin-left:30px;display:flex;text-align:center;">      
+                <div style="margin:5px;"><a class="font-link" href="/pages/lien-he">Liên hệ</a></div>      
+                <div style="margin:5px;"><a class="font-link" href="/pages/chinh-sach-bao-mat">Chính sách bảo mật</a></div>      
+                <div style="margin:5px;"><a class="font-link" href="/pages/chinh-sach-cookie">Chính sách Cookie</a></div>   
+            </div>
+          <div class="footer-credits">© 2022, BCS Vietnam</div>
+        </div>
+   
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            console.log("CLicked it");
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+    </script> 
+</body>
+</html>
