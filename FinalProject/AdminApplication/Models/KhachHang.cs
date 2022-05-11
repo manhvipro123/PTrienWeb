@@ -7,7 +7,7 @@ namespace AdminApplication.Models
     {
         public KhachHang()
         {
-            DanhGia = new HashSet<DanhGia>();
+            DanhGias = new HashSet<DanhGia>();
             DonHangs = new HashSet<DonHang>();
         }
 
@@ -18,7 +18,7 @@ namespace AdminApplication.Models
         public string? DiaChiKh { get; set; }
 
         public virtual User? User { get; set; }
-        public virtual ICollection<DanhGia> DanhGia { get; set; }
+        public virtual ICollection<DanhGia> DanhGias { get; set; }
         public virtual ICollection<DonHang> DonHangs { get; set; }
     }
 }

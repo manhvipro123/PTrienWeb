@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb-old\\FinalProject\\AdminApplication\\AdminApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb-old\\FinalProject\\AdminApplication\\AdminApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb-old\\FinalProject\\AdminApplication\\AdminApplication.csproj",
         "projectName": "AdminApplication",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb-old\\FinalProject\\AdminApplication\\AdminApplication.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb-old\\FinalProject\\AdminApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

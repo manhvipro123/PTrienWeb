@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\CustomerApplication.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb-old\\FinalProject\\CustomerApplication\\CustomerApplication.csproj",
       "projectName": "CustomerApplication",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\CustomerApplication.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb-old\\FinalProject\\CustomerApplication\\CustomerApplication.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb-old\\FinalProject\\CustomerApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

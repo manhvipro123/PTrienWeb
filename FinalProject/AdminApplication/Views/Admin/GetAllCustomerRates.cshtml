@@ -3,10 +3,10 @@
 }
 
 @model List<AdminApplication.Models.DanhGia>
-@{
+@*@{
     var lst = new List<AdminApplication.Models.DanhGia>();
     var id = lst[0].MaKh;
-}
+}*@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
@@ -16,7 +16,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">All Customer ID: @id 's Rates</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">All Customer's Rates</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">

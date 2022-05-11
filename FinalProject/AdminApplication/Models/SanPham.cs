@@ -8,7 +8,7 @@ namespace AdminApplication.Models
         public SanPham()
         {
             ChiTietDonHangs = new HashSet<ChiTietDonHang>();
-            DanhGia = new HashSet<DanhGia>();
+            DanhGias = new HashSet<DanhGia>();
         }
 
         public int MaSp { get; set; }
@@ -25,6 +25,6 @@ namespace AdminApplication.Models
 
         public virtual DanhMuc? MaDmNavigation { get; set; }
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
-        public virtual ICollection<DanhGia> DanhGia { get; set; }
+        public virtual ICollection<DanhGia> DanhGias { get; set; }
     }
 }

@@ -82,6 +82,8 @@ namespace AdminApplication.Models
             {
                 entity.HasKey(e => e.MaDg);
 
+                entity.ToTable("DanhGia");
+
                 entity.Property(e => e.MaDg).HasColumnName("MaDG");
 
                 entity.Property(e => e.MaKh).HasColumnName("MaKH");
@@ -93,12 +95,12 @@ namespace AdminApplication.Models
                 entity.Property(e => e.NhanXet).HasMaxLength(300);
 
                 entity.HasOne(d => d.MaKhNavigation)
-                    .WithMany(p => p.DanhGia)
+                    .WithMany(p => p.DanhGias)
                     .HasForeignKey(d => d.MaKh)
                     .HasConstraintName("FK_DanhGia_KhachHang");
 
                 entity.HasOne(d => d.MaSpNavigation)
-                    .WithMany(p => p.DanhGia)
+                    .WithMany(p => p.DanhGias)
                     .HasForeignKey(d => d.MaSp)
                     .HasConstraintName("FK_DanhGia_SanPham");
             });

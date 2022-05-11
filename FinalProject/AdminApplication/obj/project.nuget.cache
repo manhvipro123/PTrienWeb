@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WJvd5x26//Ms9FSTiuuDFGI4CGRWGSqFFyCw7AOh3RHcsq+I/9KyudqOvC5habMZyc9j1N7W1QQuqEGAdRazAg==",
+  "dgSpecHash": "GmeD1r99C8mTflHFjUjOa4KAq5Im3IbrWGle/5ww+jo1zCO3/eFpsV/0OnFl7aMPGT+KK0x92Iv0ijO+rmWhHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb-old\\FinalProject\\AdminApplication\\AdminApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

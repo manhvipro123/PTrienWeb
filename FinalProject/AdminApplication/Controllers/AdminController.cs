@@ -146,9 +146,15 @@ namespace AdminApplication.Controllers
         }
         public IActionResult GetAllCustomerRates(int id)
         {
-            //select * from danhgia
-            /*DanhGia dg = ctx.DanhGias.Include(x => x.KhachHang);*/
-            return View();
+            List<DanhGia> lst = new List<DanhGia> { };
+            foreach(DanhGia d in ctx.DanhGias)
+            {
+                if(d.MaKh == id)
+                {
+                    lst.Add(d);
+                }
+            }
+            return View(lst);
         }
         public IActionResult GetUserAccount(int id)
         {
