@@ -45,7 +45,7 @@ namespace AdminApplication.Controllers
             {
                 if (adm.Email == ad.Email)
                 {
-                    ViewBag.Message = string.Format("Error.\\nYour email is existed !!!\\nPlease enter again ^^");
+                    ViewBag.Message = string.Format("Error.\\nEmail is existed !!!\\nPlease enter again ^^");
                     return View("Register");
                 }
             }
