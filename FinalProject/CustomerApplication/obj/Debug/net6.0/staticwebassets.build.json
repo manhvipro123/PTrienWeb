@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l5VERPVQsjc8Cs8gxVK611+30e4DFS66xQPCxIwbTRU=",
+  "Hash": "0Q90aDE8957fP8xb+9h9bDDv2iS+g3FCq7N+40eDL/c=",
   "Source": "CustomerApplication",
   "BasePath": "_content/CustomerApplication",
   "Mode": "Default",
@@ -255,6 +255,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\9.png"
     },
     {
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\a.png",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "assets/images/a.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\a.png"
+    },
+    {
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\b.png",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "assets/images/b.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\b.png"
+    },
+    {
       "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\banner.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
@@ -272,6 +306,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner.png"
     },
     {
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\c.png",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "assets/images/c.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\c.png"
+    },
+    {
       "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\choice.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
@@ -287,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\choice.png"
+    },
+    {
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\d.png",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "assets/images/d.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\d.png"
     },
     {
       "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\footer.png",
@@ -372,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style.css",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style3.css",
