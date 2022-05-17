@@ -32,6 +32,8 @@ namespace AdminApplication.Controllers
         }
         public IActionResult AddProduct()
         {
+            List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+            ViewBag.DanhMucs = DanhMucs;
             return View();
         }
 
