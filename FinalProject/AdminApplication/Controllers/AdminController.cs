@@ -4,13 +4,23 @@ using System.Linq;
 
 namespace AdminApplication.Controllers
 {
-
     public class AdminController : Controller
     {
+        public Admin MainLayoutViewModel { get; set; }
         StoreContext ctx = new StoreContext();
-        public IActionResult Index()
-        {
-            return View();
+       
+        public IActionResult Index(int id)
+        {        
+            this.MainLayoutViewModel  = new Admin();
+            foreach (Admin ad in ctx.Admins)
+            {
+                if(ad.UserAd == id)
+                {
+                    this.MainLayoutViewModel = ad;
+                }
+            }
+            this.ViewData["MainLayoutViewModel"] = this.MainLayoutViewModel;
+            return View(this.MainLayoutViewModel);
         }
 
         //==========================Product================================================
@@ -22,6 +32,8 @@ namespace AdminApplication.Controllers
         }
         public IActionResult AddProduct()
         {
+            List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+            ViewBag.DanhMucs = DanhMucs;
             return View();
         }
 
