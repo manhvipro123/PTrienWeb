@@ -312,7 +312,7 @@ span#btn-next {
     justify-content: space-between;
 }
 
-   /* .nut-slide ul li {
+    .nut-slide ul li {
         width: 20px;
         height: 20px;
         background: white;
@@ -327,7 +327,7 @@ span#btn-next {
     animation: bien-mat-ben-trai 1s forwards;
 }
 
-@-webkit-keyframes bien-mat-ben-trai {
+-webkit-keyframes bien-mat-ben-trai {
     from {
         transform: translateX(0%);
     }
@@ -341,7 +341,7 @@ span#btn-next {
     animation: di-vao-ben-phai 1s forwards;
 }
 
-@-webkit-keyframes di-vao-ben-phai {
+-webkit-keyframes di-vao-ben-phai {
     from {
         transform: translateX(100%);
     }
@@ -350,12 +350,12 @@ span#btn-next {
         transform: translateX(0%);
     }
 }
-/*xử lý nút prev*/
-/*.bien-mat-ben-phai {
+xử lý nút prev
+.bien-mat-ben-phai {
     animation: bien-mat-ben-phai 1s forwards;
 }
 
-@-webkit-keyframes bien-mat-ben-phai {
+-webkit-keyframes bien-mat-ben-phai {
     from {
         transform: translateX(0%);
     }
@@ -363,13 +363,13 @@ span#btn-next {
     to {
         transform: translateX(100%);
     }
-}*/
+}
 
-/*.di-vao-ben-trai {
+.di-vao-ben-trai {
     animation: di-vao-ben-trai 1s forwards;
 }
 
-@-webkit-keyframes di-vao-ben-trai {
+-webkit-keyframes di-vao-ben-trai {
     from {
         transform: translateX(-100%);
     }
@@ -381,7 +381,7 @@ span#btn-next {
 
 .nut-slide ul li.active_nut {
     opacity: 0.8;
-}*/
+}
 
 
     </style>
@@ -491,7 +491,7 @@ span#btn-next {
 
 
 <div class="wrapper">
-    <img id="slide" src="~/assets/images/1.png" />
+  
 </div>
 
 
@@ -506,11 +506,11 @@ span#btn-next {
 	<script type="text/javascript" src="~/js/popper.min.js"></script>
 	<script type="text/javascript" src="~/lib/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="~/js/script.js"></script>
-   <script type="text/javascript">
+@*   <script type="text/javascript">
         function validateCaseSensitiveEmail() {
 
             var email = document.getElementById('txtEmail').value;
-            var reg = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+            var reg = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*[a-z0-9-])+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
             if (reg.test(email)) {
                 alert("Valid");
             }
@@ -518,7 +518,7 @@ span#btn-next {
                 alert("In Valid");
             }
         } 
-</script>
+</script>*@
 
 
 </body>
