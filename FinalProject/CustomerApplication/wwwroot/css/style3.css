@@ -13,17 +13,21 @@ body {
     background-color: rgba(0,91,170,255);
     width: 100%;
     display: flex;
+    height: 100px;
 }
 
 #logo-bar {
     /*  padding-left: 10px;*/
     display: flex;
+    -webkit-appearance: none;
+    padding: 20px;
+    margin: 0px 0 0 0;
 }
 
     #logo-bar img {
-        height: 100px;
-        width: 100px;
-        padding: 10px;
+        height: 70px;
+        width: 68px;
+        padding: 0px;
     }
 
 .dropdown {
@@ -75,7 +79,7 @@ body {
 
 #search-bar {
     -webkit-appearance: none;
-    padding: 30px;
+    padding: 20px;
     margin: 15px 0 0 0;
 }
 
@@ -86,8 +90,10 @@ body {
 }
 
 .font-link {
+    padding-top:20px;
     color: white;
-    font-size: small;
+    font-size: 20px;
+    height: 100px;
     text-decoration: none;
 }
 
@@ -152,6 +158,11 @@ ul {
 }
 
 .container {
+    width: 100%;
+    display: flex;
+}
+
+.container1 {
     width: 100%;
     display: flex;
 }

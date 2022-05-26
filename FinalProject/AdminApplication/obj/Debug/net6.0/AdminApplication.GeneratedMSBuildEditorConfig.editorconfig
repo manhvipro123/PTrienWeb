@@ -8,101 +8,101 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AdminApplication
 build_property.RootNamespace = AdminApplication
-build_property.ProjectDir = C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication\
+build_property.ProjectDir = C:\PTrienWeb\FinalProject\AdminApplication\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication
+build_property.MSBuildProjectDirectory = C:\PTrienWeb\FinalProject\AdminApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/AddCategory.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/AddCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/AddProduct.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/EditCategory.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/EditCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/EditCustomer.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/EditCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEN1c3RvbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/EditProduct.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/EditProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/EditUser.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllCategories.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllCategories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0QWxsQ2F0ZWdvcmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllCustomerRates.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllCustomerRates.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0QWxsQ3VzdG9tZXJSYXRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllCustomers.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllCustomers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0QWxsQ3VzdG9tZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllProductRates.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllProductRates.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0QWxsUHJvZHVjdFJhdGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllProducts.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetAllProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0QWxsUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetUserAccount.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/GetUserAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0VXNlckFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Admin/Index.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Home/ForgotPassword.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Home/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Home/Login.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Home/Register.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Shared/Error.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Shared/_adminLayout.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Shared/_adminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9hZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Shared/_homeLayout.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Shared/_homeLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9ob21lTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/_ViewImports.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/_ViewStart.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/manhvipro123/PTrienWeb/FinalProject/AdminApplication/Views/Shared/_Layout.cshtml]
+[C:/PTrienWeb/FinalProject/AdminApplication/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3bstmdjyjw

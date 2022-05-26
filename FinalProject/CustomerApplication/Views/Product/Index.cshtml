@@ -1,0 +1,244 @@
+﻿@{
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+@*<link rel="stylesheet" href="~/css/style3.css">*@
+@model List<CustomerApplication.Models.SanPham>
+
+<style>
+
+/*    .wrapper1 {
+  height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS 
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+.product-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -13px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+span {
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+
+.product-price-btn button {
+  float: right;
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #9cebd5;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #79b0a1;
+}*/
+
+#itemDiv{
+    width: 350px;
+    height: 600px;
+}
+ </style>
+<body>
+
+        <div id="banner">
+           <div style="width: 100%; font-size:xx-large; text-align: center;color:white;">CÁC SẢN PHẨM BAO CAO SU VÀ GEL BÔI TRƠN TỐT</div>
+        </div>
+        <div>
+            <h4 style="color:rgba(0,91,170,255);text-align: center;padding-top:2%;">Tại đây bạn sẽ tìm thấy các sản phẩm nâng cao chất lượng cuộc yêu: từ bao cao su có gân và hạt nổi, bao cao su kéo dài thời gian quan hệ đến các loại gel bôi trơn. Hãy lựa chọn ngay! </h4>
+            <h3 id = "total" style="color:rgba(0,91,170,255);text-align:left;font-size:xx-large;padding:2% 0 0 3%;">22 SẢN PHẨM</h3>
+        </div>
+        <div class="container1">
+            <div id="item-choice">
+                <div style="">Pack size</div>
+                <ul class="size-option" style="display:flex;">
+                    <li><button>3</button></li>
+                    <li><button>10</button></li>
+                    <li><button>12</button></li>
+                </ul>
+                <ul>
+                    <li class="option">
+                        <label>Bổ sung gel</label>
+                        <input type="checkbox" />
+                    </li>
+                    <li class="option">
+                        <label>Có gân và gai</label>
+                        <input type="checkbox" />
+                    </li>
+                    <li class="option">
+                        <label>Có mùi vị</label>
+                        <input type="checkbox" />
+                    </li>
+                    <li class="option">
+                        <label>Cơ bản</label>
+                        <input type="checkbox" />
+                    </li>
+                    <li class="option">
+                        <label>Gel có mùi</label>
+                        <input type="checkbox" />
+                    </li>
+                    <li class="option">
+                        <label>Gel gốc nước</label>
+                        <input type="checkbox" />
+                    </li>
+                    <li class="option">
+                        <label>Kéo dài thời gian</label>
+                        <input type="checkbox" />
+                    </li>
+                    <li class="option">
+                        <label>Mỏng</label>
+                        <input type="checkbox" />
+                    </li>
+                </ul>
+            </div>
+
+          
+                 <!-- Product Grid -->
+                 <div class="items" >
+                  
+                        
+                                 @foreach(var c in Model){
+                                      <div id="itemDiv">
+                                 <img style = "width:300px; height: 300px; padding-bottom:10px;" src="~/assets/images/@c.HinhAnh" alt=""/>
+@*                                 style="font-size: 16px;font-family: 'Raleway', sans-serif;font-weight: 400;text-transform: uppercase;color: black;letter-spacing: 0.2em;"*@                                 <h3 >@c.TenSp</h3>
+                                 <p style="font-family: 'Playfair Display', serif; color: #8d8d8d;line-height: 1.7em;font-size: 15px;font-weight: lighter;overflow: hidden;">@c.MoTa</p>
+                                 <p style="font-family: 'Suranna', serif; font-size: 30px; color: #8d8d8d;line-height: 1.7em;font-weight: lighter;overflow: hidden; "><span>$ @c.Gia đ</span></p>
+                                 <button style="height: 50px; 
+                                    width: 176px; 
+                                    margin: 0 40px 0 16px; 
+                                    box-sizing: border-box; 
+                                    border: transparent; 
+                                    border-radius: 60px; 
+                                    font-family: 'Raleway', sans-serif; 
+                                    font-size: 14px; font-weight: 200;
+                                    text-transform: uppercase;
+                                    letter-spacing: 0.2em;
+                                    color: #ffffff;
+                                    background-color: #6495ED;
+                                    cursor: pointer;
+                                    outline: none;
+                                    background-color: #6495ED;" type="button">Buy Now</button>
+                                       </div>
+                                 }
+                                   
+                           
+                         </div>
+                       
+         </div>
+
+                @*<div class="wrapper1">
+                    <div class="product-img">
+                        @foreach(var c in Model){
+                        <img src="~/assets/images/@c.HinhAnh" alt="" />
+                        }
+                     <div class="product-info">
+                        <div class="product-text">
+                        @foreach(var c in Model)
+                        {
+                        <h1>@c.TenSp</h1>
+                        <p>@c.MoTa</p>
+                        }
+                        </div>
+                        <div class="product-price-btn">
+                            @foreach(var c in Model){
+                            <p><span>@c.Gia</span></p>
+                            <button type="button">buy now</button>
+                            }
+                        </div>
+                        </div>
+                        </div>
+
+                </div>
+                </div>*@
+                
+               
+</body>

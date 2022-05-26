@@ -16,17 +16,16 @@
 
 <body>
     <div id="header">
-      
             <div id="logo-bar">
             <a href="~/home/index"><img  src="~/assets/images/logo1.png"/></a>
-            <ul style="font-size: larger;padding:16px">
-                <li ><a class="font-link" href="~/home/products">Sản Phẩm</a></li>
+            <ul>
+                <li ><a class="font-link" href="~/product">Sản Phẩm</a></li>
                 <li ><a class="font-link" href="https://www.durexvietnam.vn/collections/find-your-best-fit">Chọn Bao Vừa Vặn</a></li>
             </ul>
-            <ul style="font-size: larger;padding:22px;">
+            <ul>
                 <li>
                     <div class="dropdown">
-                        <div class="dropbtn" onclick="myFunction()">
+                        <div style=" color: white;font-size: 20px;text-decoration: none;" class="dropbtn" onclick="myFunction()">
                             Bao Cao Su
                           <i class="fa fa-caret-down"></i>
                         </div>
@@ -39,7 +38,7 @@
                         </div>
                     </div> 
                 </li>
-                <li ><a class="font-link" href="https://www.durexvietnam.vn/blogs/bi-kip-cho-cuoc-yeu-thang-hoa">Bí Kíp Cho Cuộc Yêu Thăng Hoa</a></li>
+                <li ><a  class="font-link" href="https://www.durexvietnam.vn/blogs/bi-kip-cho-cuoc-yeu-thang-hoa">Bí Kíp Cho Cuộc Yêu Thăng Hoa</a></li>
             </ul>
             </div>
             <div id="search-bar" style="float:left;">
@@ -52,9 +51,10 @@
     <div id="main" >
        @RenderBody()
     </div>
+
     <div class="footer"> 
         <div class="footer-box">
-            <img height= "150px" width= "150px" src="~/assets/images/logo1.png" />
+            <img height= "150px" width= "110px" src="~/assets/images/logo1.png" />
             <div class="main-footersocial">   
                 <div style="margin:5px;">
                   <a href="https://www.facebook.com/Durex.Vietnam" class="facebook" target="_blank" rel="noopener noreferrer" title="Durex Vietnam on Facebook">

@@ -22,9 +22,23 @@ namespace CustomerApplication.Controllers
         {
             return View();
         }
+        public IActionResult ProductsCard()
+        {
+            return View();
+        }
 
         public IActionResult Products()
         {
+            ProductRepository rep = new ProductRepository();
+            List<Product> lst = rep.getAllProducts();
+            //passing data to view
+            return View(lst); ;
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Your application description page.";
+
             return View();
         }
 
