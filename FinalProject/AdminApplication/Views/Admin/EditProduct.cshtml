@@ -5,7 +5,7 @@
 @model AdminApplication.Models.SanPham
 <div class="container-fluid">
         <!-- Page Heading -->
-        <h1 class="h3 mb-1 text-gray-800">Thêm Sản Phẩm</h1>
+        <h1 class="h3 mb-1 text-gray-800">Cập Nhật Sản Phẩm</h1>
         <p class="mb-4">
         </p>
         <!-- Content Row -->
@@ -25,9 +25,15 @@
                                     <label for="MaSp" class="form-label">Mã Sản Phẩm:</label>
                                     @Html.TextBoxFor(m => m.MaSp, new { @class = "form-control" , @readonly = "readonly" } ) 
                                 </div>
-                                <div class="mb-3">
+                         @*       <div class="mb-3">
                                     <label for="MaDm" class="form-label">Mã Danh Mục: </label>
                                       @Html.TextBoxFor(m => m.MaDm,new { @class = "form-control" }) 
+                                </div>*@
+                                  <div class="mb-3">
+                                <label for="MaDm" class="form-label">Danh mục </label>
+                                    @Html.DropDownListFor(m => m.MaDm,
+                                                     new SelectList(ViewBag.DanhMucs, "MaDm", "TenDm"),
+                                                     new { @class = "form-control" }) 
                                 </div>
                                 <div class="mb-3">
                                     <label for="TenSp" class="form-label">Tên Sản Phẩm:</label>
@@ -43,7 +49,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="NgayNhap" class="form-label">Ngày nhập (MM-dd-YYYY):</label>
-                                    @Html.TextBoxFor(m => m.NgayNhap, new { @class = "form-control" }) 
+                                    @Html.TextBoxFor(m => m.NgayNhap, new { @class = "form-control" ,@type="datetime-local"}) 
                                 </div>
                                 <div class="mb-3">
                                     <label for="MoTa" class="form-label">Mô Tả:</label>

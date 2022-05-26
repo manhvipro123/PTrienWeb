@@ -8,7 +8,7 @@ namespace AdminApplication.Controllers
     {
         public Admin MainLayoutViewModel { get; set; }
         StoreContext ctx = new StoreContext();
-       
+      
         public IActionResult Index(int id)
         {        
             this.MainLayoutViewModel  = new Admin();
@@ -51,7 +51,7 @@ namespace AdminApplication.Controllers
             //tim doi tuong co id
             //select * from sanpham where maSP = id 
             SanPham sp = ctx.SanPhams.Where(x => x.MaSp == id).SingleOrDefault();
-            List<DanhGia> lst = new List<DanhGia> { };
+          
             //xoa du lieu
 
             foreach (DanhGia d in ctx.DanhGias)
@@ -59,6 +59,7 @@ namespace AdminApplication.Controllers
                 if (d.MaKh == id)
                 {
                     ctx.DanhGias.Remove(d);
+                    ctx.SaveChanges();
                 }
             }
             ctx.SanPhams.Remove(sp);
@@ -69,7 +70,8 @@ namespace AdminApplication.Controllers
         public IActionResult EditProduct(int id)
         {
             //tim doi tuong co id
-            //select * from countries where CCategoryId = id 
+            List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+            ViewBag.DanhMucs = DanhMucs;
             SanPham sp = ctx.SanPhams.Where(x => x.MaSp == id).SingleOrDefault();
             return View(sp);
         }
@@ -123,8 +125,18 @@ namespace AdminApplication.Controllers
             //tim doi tuong co id
             //select * from DanhMuc where MaDm = id 
             DanhMuc dm = ctx.DanhMucs.Where(x => x.MaDm == id).SingleOrDefault();
+
             //xoa du lieu
-            if(dm != null)
+
+            foreach (SanPham sp in ctx.SanPhams)
+            {
+                if (sp.MaDm == id)
+                {
+                    ctx.SanPhams.Remove(sp);
+                }
+            }
+            //xoa du lieu
+            if (dm != null)
             {
                 ctx.DanhMucs.Remove(dm);
                 ctx.SaveChanges();
@@ -167,6 +179,7 @@ namespace AdminApplication.Controllers
         }
         public IActionResult GetAllCustomerRates(int id)
         {
+            ViewBag.cusID = id;
             List<DanhGia> lst = new List<DanhGia> { };
             foreach(DanhGia d in ctx.DanhGias)
             {
@@ -179,6 +192,7 @@ namespace AdminApplication.Controllers
         }
         public IActionResult GetAllProductRates(int id)
         {
+            ViewBag.prodID = id;
             List<DanhGia> lst = new List<DanhGia> { };
             foreach (DanhGia d in ctx.DanhGias)
             {
@@ -226,7 +240,7 @@ namespace AdminApplication.Controllers
         public IActionResult DeleteRatingByC(int id1, int id2)
         {
             //tim doi tuong co id
-            //select * from KhachHang where MaDg = id 
+            //select * from DanhGia where MaDg = id1 
             DanhGia dg = ctx.DanhGias.Where(x => x.MaDg == id1).SingleOrDefault();
             
             //xoa du lieu
@@ -297,5 +311,59 @@ namespace AdminApplication.Controllers
             ctx.SaveChanges();
             return RedirectToAction("GetUserAccount", new { id = u_indb.UserId });
         }
+
+
+        //-------------------------------------------------------BILL-----------------------------------------------------//
+
+        //GET ALL BILLS
+        public IActionResult GetAllBills()
+        {
+            //select * from DanhMuc
+            List<DonHang> dh = ctx.DonHangs.ToList();
+            return View(dh);
+        }
+
+        //EDIT AND UPDATE BILL
+        public IActionResult EditBill(int id)
+        {
+            var types = new List<SelectOption>();
+            types.Add(new SelectOption() { Value = "Đang giao", Text = "Đang giao" });
+            types.Add(new SelectOption() { Value = "Đã giao", Text = "Đã giao" });
+            ViewBag.PartialTypes = types;
+            //tim doi tuong co id
+            DonHang dh = ctx.DonHangs.Where(x => x.MaDh == id).SingleOrDefault();
+            return View(dh);
+        }
+
+        public IActionResult UpdateBill(DonHang dh)
+        {
+            //tim doi tuong co trong db tuong ung ma id
+            DonHang dh_indb = ctx.DonHangs.Where(x => x.MaDh == dh.MaDh).SingleOrDefault();
+            if (dh_indb != null)
+            {
+                dh_indb.TrangThaiDh = dh.TrangThaiDh;
+                dh_indb.NgayGiao = dh.NgayGiao;
+            }
+            //cap nhat thong tin
+            ctx.SaveChanges();
+            return RedirectToAction("GetAllBills");
+        }
+
+        //---------------------------------------------- BILL's DETAIL----------------------------------------------------------//
+
+        public IActionResult GetBillDetail(int id)
+        {
+            ViewBag.billID = id;
+            List<ChiTietDonHang> lst = new List<ChiTietDonHang> { };
+            foreach (ChiTietDonHang ctdh in ctx.ChiTietDonHangs)
+            {
+                if (ctdh.MaDh == id)
+                {
+                    lst.Add(ctdh);
+                }
+            }
+            return View(lst);
+        }
+
     }
 }

@@ -10863,21 +10863,21 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
+  background: url("../img/background.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .bg-register-image {
-  background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
-  background-position: center;
-  background-size: cover;
+    background: url("https://as1.ftcdn.net/v2/jpg/02/47/63/84/1000_F_247638403_K5u9yauOoDZadxewdDLWsy00G0ckuKf4.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-password-image {
-  background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
-  background-position: center;
-  background-size: cover;
+    background: url("https://as1.ftcdn.net/v2/jpg/02/33/34/48/1000_F_233344847_EuSMFUBZgyBGtpkQoPgBifLXGaDdeTwj.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 form.user .custom-checkbox.small label {

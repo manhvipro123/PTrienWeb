@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+@model AdminApplication.Models.DonHang
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-1 text-gray-800">Cập Nhật Hóa Đơn</h1>
+    <p class="mb-4">
+    </p>
+    <!-- Content Row -->
+
+    <div class="row">
+        <!-- First Column -->
+        <div class="col-lg-4">
+            <!-- Custom Text Color Utilities -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary"></h6>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm("UpdateBill", "Admin", FormMethod.Post))
+                    {
+                        <div class="mb-3">
+                            <label for="MaSp" class="form-label">Mã Đơn Hàng:</label>
+                            @Html.TextBoxFor(m => m.MaDh, new { @class = "form-control" , @readonly = "readonly" } )
+                        </div>
+                        <div class="mb-3">
+                            <label for="MaSp" class="form-label">Ngày Giao:</label>
+                            @Html.TextBoxFor(m => m.NgayGiao, new { @class = "form-control", @type="datetime-local"} )
+                        </div>
+                        @*<div class="mb-3">
+                            <label for="MaSp" class="form-label">Ngày Nhận</label>
+                            @Html.TextBoxFor(m => m.NgayNhan, new { @class = "form-control" , @readonly = "readonly" , @type="datetime-local"} )
+                        </div>*@
+                        <div class="mb-3">
+                            <label for="MaDm" class="form-label">Trạng Thái Đơn Hàng</label>
+
+                            @Html.DropDownListFor(m => m.TrangThaiDh,
+                            new SelectList(ViewBag.PartialTypes, "Value", "Text"),
+                            new { @class = "form-control" })    
+                        </div>
+
+
+                        <a href="~/admin/getallbills" class="btn btn-outline-danger" role="button" aria-pressed="true">Quay lại</a>
+                        <button class="btn btn-primary" type="reset">Reset</button>
+                        <button class="btn btn-primary" type="submit">Cập nhật</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
