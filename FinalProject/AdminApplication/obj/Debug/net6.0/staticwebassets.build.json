@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YnUPc04yklM3Zp1xX9D+DBH3sqmVh1486ulwgr8hr4U=",
+  "Hash": "9+NIUBasCoA5xNP3Bt+JxfwQJNshA7NRrrGmEziI1Ts=",
   "Source": "AdminApplication",
   "BasePath": "_content/AdminApplication",
   "Mode": "Default",
@@ -287,6 +287,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\gulpfile.js"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\img\\background.jpg",
+      "SourceId": "AdminApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\",
+      "BasePath": "_content/AdminApplication",
+      "RelativePath": "img/background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\background.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\img\\background2.jpg",
+      "SourceId": "AdminApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\",
+      "BasePath": "_content/AdminApplication",
+      "RelativePath": "img/background2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\background2.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\wwwroot\\img\\undraw_posting_photo.svg",
