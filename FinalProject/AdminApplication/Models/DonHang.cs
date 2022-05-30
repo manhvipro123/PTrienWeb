@@ -15,12 +15,11 @@ namespace AdminApplication.Models
         public string? DiaChiGiao { get; set; }
         public DateTime? NgayLap { get; set; }
         public DateTime? NgayGiao { get; set; }
+        public DateTime? NgayNhan { get; set; }
         public string? TrangThaiDh { get; set; }
         public string? PhuongThucTt { get; set; }
-        public string? Cod { get; set; }
-        public string? TheTinDung { get; set; }
         public string? NganHangNhan { get; set; }
-        public int? SoThe { get; set; }
+        public string? SoThe { get; set; }
         public decimal? TongTien { get; set; }
 
         public virtual KhachHang? MaKhNavigation { get; set; }

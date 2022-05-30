@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+
 namespace AdminApplication.Models
 {
     public partial class SanPham
@@ -14,12 +14,12 @@ namespace AdminApplication.Models
         public int MaSp { get; set; }
         public string? TenSp { get; set; }
         public int? MaDm { get; set; }
-        public Double? Gia { get; set; }
+        public decimal? Gia { get; set; }
         public int? SoLuong { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? NgayNhap { get; set; }
+        public string? DacDiem { get; set; }
         public string? MoTa { get; set; }
+        public int? Goi { get; set; }
         public string? TrangThai { get; set; }
         public string? HinhAnh { get; set; }
 

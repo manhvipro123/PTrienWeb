@@ -30,7 +30,7 @@ namespace CustomerApplication.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("server=YenNhi\\SQLEXPRESS; user id = sa; password = 1; database=Store");
+                optionsBuilder.UseSqlServer("server=YENNHI\\SQLEXPRESS;user Id = sa; password = 1; database=Store");
             }
         }
 
@@ -48,7 +48,7 @@ namespace CustomerApplication.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Name).HasMaxLength(150);
+                entity.Property(e => e.Name).HasMaxLength(50);
 
                 entity.Property(e => e.Password)
                     .HasMaxLength(50)
@@ -126,10 +126,6 @@ namespace CustomerApplication.Models
 
                 entity.Property(e => e.MaDh).HasColumnName("MaDH");
 
-                entity.Property(e => e.Cod)
-                    .HasMaxLength(50)
-                    .HasColumnName("COD");
-
                 entity.Property(e => e.DiaChiGiao).HasMaxLength(200);
 
                 entity.Property(e => e.MaKh).HasColumnName("MaKH");
@@ -140,11 +136,15 @@ namespace CustomerApplication.Models
 
                 entity.Property(e => e.NgayLap).HasColumnType("datetime");
 
+                entity.Property(e => e.NgayNhan).HasColumnType("datetime");
+
                 entity.Property(e => e.PhuongThucTt)
                     .HasMaxLength(50)
                     .HasColumnName("PhuongThucTT");
 
-                entity.Property(e => e.TheTinDung).HasMaxLength(50);
+                entity.Property(e => e.SoThe)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.TongTien).HasColumnType("money");
 
@@ -196,6 +196,8 @@ namespace CustomerApplication.Models
 
                 entity.Property(e => e.MaSp).HasColumnName("MaSP");
 
+                entity.Property(e => e.DacDiem).HasMaxLength(1000);
+
                 entity.Property(e => e.Gia).HasColumnType("money");
 
                 entity.Property(e => e.HinhAnh).HasMaxLength(50);
@@ -204,7 +206,7 @@ namespace CustomerApplication.Models
 
                 entity.Property(e => e.MoTa).HasMaxLength(1000);
 
-                entity.Property(e => e.NgayNhap).HasColumnType("date");
+                entity.Property(e => e.NgayNhap).HasColumnType("datetime");
 
                 entity.Property(e => e.TenSp)
                     .HasMaxLength(1000)

@@ -35,6 +35,10 @@ namespace CustomerApplication.Controllers
             return View(lst); ;
         }
 
+        public IActionResult AddToCart()
+        {
+            return View();
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
