@@ -17,7 +17,7 @@ namespace AdminApplication.Controllers
 
         public IActionResult Login(Boolean id)
         {
-            if(id == true)
+            if (id == true)
             {
                 ViewBag.Message = string.Format("Sign up Successfull!!!");
                 return View();
@@ -68,13 +68,13 @@ namespace AdminApplication.Controllers
             var temp = false;
             foreach (Admin adm in ctx.Admins)
             {
-                if(adm.Email == account && adm.Password == pass)
+                if (adm.Email == account && adm.Password == pass)
                 {
                     temp = true;
-                    return RedirectToAction("Index", "Admin", new {id = adm.UserAd});
+                    return RedirectToAction("Index", "Admin", new { id = adm.UserAd });
                 }
             }
-            if(temp == false)
+            if (temp == false)
             {
                 ViewBag.Message = string.Format("Your password or your email account is not correct" +
                     "\\n Please enter again!!!");
@@ -84,7 +84,7 @@ namespace AdminApplication.Controllers
             {
                 return View("Login");
             }
-            
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

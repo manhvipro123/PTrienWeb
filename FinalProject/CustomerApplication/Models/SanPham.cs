@@ -22,7 +22,6 @@ namespace CustomerApplication.Models
         public string? HinhAnh { get; set; }
 
         public virtual DanhMuc? MaDmNavigation { get; set; }
-      
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
         public virtual ICollection<DanhGia> DanhGias { get; set; }
     }

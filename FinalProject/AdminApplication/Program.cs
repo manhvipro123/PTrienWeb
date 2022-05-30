@@ -1,10 +1,21 @@
+using AdminApplication.Models;
+using Microsoft.EntityFrameworkCore;
+using AdminApplication.Repository;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<StoreContext>(
+    option => option.UseSqlServer("server=DESKTOP-O14444V\\SQLEXPRESS;user Id = sa; password = 1;database=Store")
+);
+builder.Services.AddTransient<IReviewRepository, ReviewRepository>();
+
+
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

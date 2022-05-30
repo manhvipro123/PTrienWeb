@@ -20,11 +20,12 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th style="vertical-align:middle;">Mã Đơn Hàng</th>
+                            @*<th style="vertical-align:middle;">Mã Đơn Hàng</th>*@
                             <th style="vertical-align:middle;">Mã Khách Hàng</th>
                             <th style="vertical-align:middle;">Địa Chỉ Giao</th>
                             <th style="vertical-align:middle;">Ngày Lập</th>
                             <th style="vertical-align:middle;">Ngày Giao</th>
+                            <th style="vertical-align:middle;">Ngày Nhận</th>
                             <th style="vertical-align:middle;">Trạng Thái Đơn Hàng</th>
                             <th style="vertical-align:middle;">Phương Thức Thanh Toán</th>
                             <th style="vertical-align:middle;">Ngân Hàng Nhận</th>
@@ -37,11 +38,12 @@
                     </thead>
                     <tfoot>
                         <tr>
-                            <th style="vertical-align:middle;">Mã Đơn Hàng</th>
+                            @*<th style="vertical-align:middle;">Mã Đơn Hàng</th>*@
                             <th style="vertical-align:middle;">Mã Khách Hàng</th>
                             <th style="vertical-align:middle;">Địa Chỉ Giao</th>
                             <th style="vertical-align:middle;">Ngày Lập</th>
                             <th style="vertical-align:middle;">Ngày Giao</th>
+                            <th style="vertical-align:middle;">Ngày Nhận</th>
                             <th style="vertical-align:middle;">Trạng Thái Đơn Hàng</th>
                             <th style="vertical-align:middle;">Phương Thức Thanh Toán</th>
                             <th style="vertical-align:middle;">Ngân Hàng Nhận</th>
@@ -55,11 +57,12 @@
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td style="vertical-align:middle;">@item.MaDh</td>
-                                <td style="vertical-align:middle;">@item.MaKh</td>
+@*                                <td style="vertical-align:middle;">@item.MaDh</td>
+*@                                <td style="vertical-align:middle;">@item.MaKh</td>
                                 <td style="vertical-align:middle;">@item.DiaChiGiao</td>
                                 <td style="vertical-align:middle;">@item.NgayLap</td>
                                 <td style="vertical-align:middle;">@item.NgayGiao</td>
+                                <td style="vertical-align:middle;">@item.NgayNhan</td>
                                 <td style="vertical-align:middle;">@item.TrangThaiDh</td>
                                 <td style="vertical-align:middle;">@item.PhuongThucTt</td>
                                 <td style="vertical-align:middle;">@item.NganHangNhan</td>
@@ -71,7 +74,7 @@
 
                                 <td style="vertical-align:middle;">
                                     @Html.ActionLink("Edit","EditBill",new{id = item.MaDh})
-                                  
+
                                 </td>
                             </tr>
                         }

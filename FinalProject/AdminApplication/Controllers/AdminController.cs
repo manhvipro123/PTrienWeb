@@ -8,13 +8,13 @@ namespace AdminApplication.Controllers
     {
         public Admin MainLayoutViewModel { get; set; }
         StoreContext ctx = new StoreContext();
-      
+
         public IActionResult Index(int id)
-        {        
-            this.MainLayoutViewModel  = new Admin();
+        {
+            this.MainLayoutViewModel = new Admin();
             foreach (Admin ad in ctx.Admins)
             {
-                if(ad.UserAd == id)
+                if (ad.UserAd == id)
                 {
                     this.MainLayoutViewModel = ad;
                 }
@@ -51,7 +51,7 @@ namespace AdminApplication.Controllers
             //tim doi tuong co id
             //select * from sanpham where maSP = id 
             SanPham sp = ctx.SanPhams.Where(x => x.MaSp == id).SingleOrDefault();
-          
+
             //xoa du lieu
 
             foreach (DanhGia d in ctx.DanhGias)
@@ -174,16 +174,16 @@ namespace AdminApplication.Controllers
         {
             //select * from khachhang
             List<KhachHang> kh = ctx.KhachHangs.ToList();
-            
+
             return View(kh);
         }
         public IActionResult GetAllCustomerRates(int id)
         {
             ViewBag.cusID = id;
             List<DanhGia> lst = new List<DanhGia> { };
-            foreach(DanhGia d in ctx.DanhGias)
+            foreach (DanhGia d in ctx.DanhGias)
             {
-                if(d.MaKh == id)
+                if (d.MaKh == id)
                 {
                     lst.Add(d);
                 }
@@ -202,7 +202,7 @@ namespace AdminApplication.Controllers
                 }
             }
             return View(lst);
-        }   
+        }
         public IActionResult GetUserAccount(int id)
         {
             //select * from khachhang
@@ -214,7 +214,7 @@ namespace AdminApplication.Controllers
         public IActionResult DeleteCustomer(int cId, int uId)
         {
             Console.Write(" " + cId + " " + uId);
-            
+
             //tim doi tuong co id
             //select * from KhachHang where MaKh = id 
             KhachHang kh = ctx.KhachHangs.Where(x => x.MaKh == cId).SingleOrDefault();
@@ -232,7 +232,7 @@ namespace AdminApplication.Controllers
             }
             ctx.KhachHangs.Remove(kh);
             ctx.Users.Remove(u);
-          
+
             ctx.SaveChanges();
             return RedirectToAction("GetAllCustomers");
         }
@@ -242,11 +242,11 @@ namespace AdminApplication.Controllers
             //tim doi tuong co id
             //select * from DanhGia where MaDg = id1 
             DanhGia dg = ctx.DanhGias.Where(x => x.MaDg == id1).SingleOrDefault();
-            
+
             //xoa du lieu
             ctx.DanhGias.Remove(dg);
             ctx.SaveChanges();
-            return RedirectToAction("GetAllCustomerRates", new {id = id2});
+            return RedirectToAction("GetAllCustomerRates", new { id = id2 });
         }
 
         public IActionResult DeleteRatingByP(int id1, int id2)
@@ -280,8 +280,8 @@ namespace AdminApplication.Controllers
 
         //-----------------------------------------------UPDATE-----------------------------------------------//
         [HttpPost]
-        public IActionResult UpdateCustomer(KhachHang kh) 
-        { 
+        public IActionResult UpdateCustomer(KhachHang kh)
+        {
             //tim doi tuong co trong db tuong ung ma id
             KhachHang kh_indb = ctx.KhachHangs.Where(x => x.MaKh == kh.MaKh).SingleOrDefault();
             if (kh_indb != null)
@@ -343,6 +343,7 @@ namespace AdminApplication.Controllers
             {
                 dh_indb.TrangThaiDh = dh.TrangThaiDh;
                 dh_indb.NgayGiao = dh.NgayGiao;
+                dh_indb.NgayNhan = dh.NgayNhan;
             }
             //cap nhat thong tin
             ctx.SaveChanges();
