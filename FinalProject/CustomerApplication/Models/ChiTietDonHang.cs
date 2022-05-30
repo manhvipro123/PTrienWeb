@@ -5,7 +5,6 @@ namespace CustomerApplication.Models
 {
     public partial class ChiTietDonHang
     {
-
         public int MaCtdh { get; set; }
         public int? MaDh { get; set; }
         public int? MaSp { get; set; }

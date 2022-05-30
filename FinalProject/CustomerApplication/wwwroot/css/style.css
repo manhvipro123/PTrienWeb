@@ -1,20 +1,13 @@
-﻿
-
-.khoi-slide {
-    width: 700px;
-    height: 200px;
+﻿.khoi-slide {
+    width: 100%;
+    height: 400px;
     position: relative;
-
 }
 
-img {
-    width: 700px;
-    height: 200px;
-}
 
 .cac-slide {
-    width: 700px;
-    height: 200px;
+    width: 100%;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -34,7 +27,7 @@ img {
 .nut-slide span {
     color: black;
     font-size: 60px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 span#btn-prev {
