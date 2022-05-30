@@ -17,7 +17,9 @@ namespace AdminApplication.Models
         public decimal? Gia { get; set; }
         public int? SoLuong { get; set; }
         public DateTime? NgayNhap { get; set; }
+        public string? DacDiem { get; set; }
         public string? MoTa { get; set; }
+        public int? Goi { get; set; }
         public string? TrangThai { get; set; }
         public string? HinhAnh { get; set; }
 

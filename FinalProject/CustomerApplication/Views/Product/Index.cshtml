@@ -2,7 +2,7 @@
     Layout = "~/Views/Shared/_CustomerLayout.cshtml";
 }
 
-@*<link rel="stylesheet" href="~/css/style3.css">*@
+<link rel="stylesheet" href="~/css/style3.css">
 @model List<CustomerApplication.Models.SanPham>
 
 <style>
@@ -127,6 +127,34 @@ span {
     width: 350px;
     height: 600px;
 }
+
+.button {
+            background-color: black;
+            border-radius: 50px;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white;
+            color: #133e7a;
+            font-size: 13px;
+            font-weight: bold; 
+            border: 2px solid black;
+        }
+
+        .button1:hover {
+            border: 2px solid white;
+            background-color: #133e7a;
+            color: white;
+        }
+
  </style>
 <body>
 
@@ -183,17 +211,20 @@ span {
 
           
                  <!-- Product Grid -->
-                 <div class="items" >
-                  
-                        
+                 <div id="myModal" class="items" >
+                  <div class="modal-content"></div>   
                                  @foreach(var c in Model){
                                       <div id="itemDiv">
                                  <img style = "width:300px; height: 300px; padding-bottom:10px;" src="~/assets/images/@c.HinhAnh" alt=""/>
-@*                                 style="font-size: 16px;font-family: 'Raleway', sans-serif;font-weight: 400;text-transform: uppercase;color: black;letter-spacing: 0.2em;"*@                                 <h3 >@c.TenSp</h3>
-                                 <p style="font-family: 'Playfair Display', serif; color: #8d8d8d;line-height: 1.7em;font-size: 15px;font-weight: lighter;overflow: hidden;">@c.MoTa</p>
-                                 <p style="font-family: 'Suranna', serif; font-size: 30px; color: #8d8d8d;line-height: 1.7em;font-weight: lighter;overflow: hidden; "><span>$ @c.Gia đ</span></p>
-                                 <button style="height: 50px; 
-                                    width: 176px; 
+@*                                 style="font-size: 16px;font-family: 'Raleway', sans-serif;font-weight: 400;text-transform: uppercase;color: black;letter-spacing: 0.2em;"*@                                 
+                                 <h3 style="font-family:'Playfair Display', serif;color:rgba(0,91,170,255);" >@c.TenSp</h3>
+                                 @*<p style="font-family: 'Playfair Display', serif; color: #8d8d8d;line-height: 1.7em;font-size: 15px;font-weight: lighter;overflow: hidden;">@c.MoTa</p>*@
+                                 @*<p style="font-family: 'Playfair Display', serif; font-size: 30px; color: red;line-height: 1.7em;font-weight: lighter;overflow: hidden; "><span><i class="fa fa-dollar" style="font-size:40px;color:red"></i> @c.Gia đ</span></p>*@
+                               
+                                 <button class="button button1">MUA NGAY</button>
+
+                                 @*  <button style="height: 30px;padding: 10px 24px; 
+                                    width: 150px; 
                                     margin: 0 40px 0 16px; 
                                     box-sizing: border-box; 
                                     border: transparent; 
@@ -206,14 +237,48 @@ span {
                                     background-color: #6495ED;
                                     cursor: pointer;
                                     outline: none;
-                                    background-color: #6495ED;" type="button">Buy Now</button>
+                                    background-color: #6495ED;" type="button">MUA</button>*@
+                                   
+                                    @*<button type="button" style="font-family: lato,sans-serif;
+                                    background: #6495ED;
+                                    font-weight: bold;
+                                    font-size: 1em;
+                                    letter-spacing: 0.1em;
+                                    text-decoration: none;
+                                    color: white;
+                                    display: inline-block;
+                                    padding: 10px 40px 10px 40px;
+                                    position: relative;
+                                    border: 3px solid #ffffff;
+                                    border-radius: 20px;"> *@
+                                    @Html.ActionLink("XEM","details","product",new{masp=c.MaSp }, new{ @class = "button button1"})
+                                    
+                                 @*<button style="
+                                    height: 30px; 
+                                    width: 150px; 
+                                    margin: 0 40px 0 16px; 
+                                    box-sizing: border-box; 
+                                    border: transparent; 
+                                    border-radius: 60px; 
+                                    font-family: 'Raleway', sans-serif; 
+                                    font-size: 14px; font-weight: 200;
+                                    text-transform: uppercase;
+                                    letter-spacing: 0.2em;
+                                    color: #ffffff;
+                                    background-color: #6495ED;
+                                    cursor: pointer;
+                                    outline: none;
+                                    background-color: #6495ED;" type="button">Xem</button>*@
                                        </div>
                                  }
+
+                                 
                                    
                            
                          </div>
                        
-         </div>
+</div>
+
 
                 @*<div class="wrapper1">
                     <div class="product-img">
