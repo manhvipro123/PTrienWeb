@@ -22,16 +22,13 @@
                     <p class="form-label" style="color: red">(*)Mã sản phẩm sẽ được tạo tự động</p>
                     @using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post))
                     {
-                        @*  <div class="mb-3">
-                    <label for="MaDm" class="form-label">Mã Danh Mục: </label>
-                    @Html.TextBoxFor(m => m.MaDm,  new { @class = "form-control" })
-                    </div>*@
+
                         <div class="mb-3">
                             <label for="MaDm" class="form-label">Danh mục: </label>
                             @Html.DropDownListFor(m => m.MaDm,
-                                                    new SelectList(ViewBag.DanhMucs, "MaDm", "TenDm"),
-                                                    new { @class = "form-control" })
-                   
+                        new SelectList(ViewBag.DanhMucs, "MaDm", "TenDm"),
+                        new { @class = "form-control" })
+
                         </div>
 
                         <div class="mb-3">
@@ -71,7 +68,7 @@
                             @Html.DropDownListFor(m => m.TrangThai,
                         new SelectList(ViewBag.PartialTypes_1, "Value", "Text"),
                         new { @class = "form-control" })
-                   @*         @Html.ValidationMessageFor(m => m.TrangThai,"", new { @class = "text-danger" } )*@
+                            @*         @Html.ValidationMessageFor(m => m.TrangThai,"", new { @class = "text-danger" } )*@
 
                         </div>
                         <div class="mb-3">
@@ -80,7 +77,7 @@
                             @Html.DropDownListFor(m => m.Goi,
                         new SelectList(ViewBag.PartialTypes_2, "Value", "Text"),
                         new { @class = "form-control" })
-                     @*       @Html.ValidationMessageFor(m => m.Goi,"", new { @class = "text-danger" } )*@
+                            @*       @Html.ValidationMessageFor(m => m.Goi,"", new { @class = "text-danger" } )*@
 
                         </div>
                         <div class="mb-3">
@@ -89,7 +86,7 @@
                             @Html.DropDownListFor(m => m.DacDiem,
                         new SelectList(ViewBag.PartialTypes_3, "Value", "Text"),
                         new { @class = "form-control" })
-                   @*         @Html.ValidationMessageFor(m => m.DacDiem,"", new { @class = "text-danger" } )*@
+                            @*         @Html.ValidationMessageFor(m => m.DacDiem,"", new { @class = "text-danger" } )*@
 
                         </div>
                         <div class="mb-3">

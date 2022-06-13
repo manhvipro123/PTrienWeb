@@ -20,7 +20,7 @@
                         </div>
                         <div class="card-body">
                            
-                            @using (Html.BeginForm("UpdateCategory", "Admin", FormMethod.Post))
+                            @using (Html.BeginForm("EditCategory", "Admin", FormMethod.Post))
                             {   
                                 <div class="mb-3">
                                     <label for="MaDm" class="form-label">Mã Danh Mục:</label>
@@ -29,8 +29,9 @@
                                 <div class="mb-3">
                                     <label for="TenDm" class="form-label">Tên Danh Mục: </label>
                                     @Html.TextBoxFor(m => m.TenDm,  new { @class = "form-control" }) 
+                                     @Html.ValidationMessageFor(m => m.TenDm,"", new { @class = "text-danger" } )
                                 </div>
-                                             
+                                @Html.ValidationSummary(true,"",new { @class = "text-danger" })           
                                 <a href="~/admin/getallcategories" class="btn btn-outline-danger" role="button" aria-pressed="true">Quay lại</a>
                                 <button type="submit" class="btn btn-primary">Xác nhận</button>
                             }
