@@ -30,7 +30,7 @@ namespace AdminApplication.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("server=DESKTOP-O14444V\\SQLEXPRESS;user Id = sa; password = 1; database=Store");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-O14444V\\SQLEXPRESS;user id = sa; password=1;database=Store");
             }
         }
 
@@ -229,8 +229,6 @@ namespace AdminApplication.Models
                 entity.Property(e => e.Email)
                     .HasMaxLength(50)
                     .IsUnicode(false);
-
-                entity.Property(e => e.Name).HasMaxLength(150);
 
                 entity.Property(e => e.Password)
                     .HasMaxLength(50)

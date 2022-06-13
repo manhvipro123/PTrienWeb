@@ -4,72 +4,105 @@
 
 @model AdminApplication.Models.SanPham
 <div class="container-fluid">
-        <!-- Page Heading -->
-        <h1 class="h3 mb-1 text-gray-800">Cập Nhật Sản Phẩm</h1>
-        <p class="mb-4">
-        </p>
-        <!-- Content Row -->
-       
-            <div class="row">
-                <!-- First Column -->
-                <div class="col-lg-4">
-                    <!-- Custom Text Color Utilities -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Cập nhật thông tin sản phẩm cần thêm</h6>
+    <!-- Page Heading -->
+    <h1 class="h3 mb-1 text-gray-800">Cập Nhật Sản Phẩm</h1>
+    <p class="mb-4">
+    </p>
+    <!-- Content Row -->
+
+    <div class="row">
+        <!-- First Column -->
+        <div class="col-lg-4">
+            <!-- Custom Text Color Utilities -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Cập nhật thông tin sản phẩm cần thêm</h6>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm("EditProduct", "Admin", FormMethod.Post))
+                    {
+                        <div class="mb-3">
+                            <label for="MaSp" class="form-label">Mã Sản Phẩm:</label>
+                            @Html.TextBoxFor(m => m.MaSp, new { @class = "form-control" , @readonly = "readonly" } )
                         </div>
-                        <div class="card-body">
-                            @using (Html.BeginForm("UpdateProduct", "Admin", FormMethod.Post))
-                            {
-                                <div class="mb-3">
-                                    <label for="MaSp" class="form-label">Mã Sản Phẩm:</label>
-                                    @Html.TextBoxFor(m => m.MaSp, new { @class = "form-control" , @readonly = "readonly" } ) 
-                                </div>
-                         @*       <div class="mb-3">
-                                    <label for="MaDm" class="form-label">Mã Danh Mục: </label>
-                                      @Html.TextBoxFor(m => m.MaDm,new { @class = "form-control" }) 
-                                </div>*@
-                                  <div class="mb-3">
-                                <label for="MaDm" class="form-label">Danh mục </label>
-                                    @Html.DropDownListFor(m => m.MaDm,
-                                                     new SelectList(ViewBag.DanhMucs, "MaDm", "TenDm"),
-                                                     new { @class = "form-control" }) 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="TenSp" class="form-label">Tên Sản Phẩm:</label>
-                                    @Html.TextBoxFor(m => m.TenSp, new { @class = "form-control" }) 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="Gia" class="form-label">Đơn Giá:</label>
-                                    @Html.TextBoxFor(m => m.Gia, new { @class = "form-control" })
-                                </div>
-                                <div class="mb-3">
-                                    <label for="SoLuong" class="form-label">Số Lượng:</label>
-                                    @Html.TextBoxFor(m => m.SoLuong, new { @class = "form-control" }) 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="NgayNhap" class="form-label">Ngày nhập (MM-dd-YYYY):</label>
-                                    @Html.TextBoxFor(m => m.NgayNhap, new { @class = "form-control" ,@type="datetime-local"}) 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="MoTa" class="form-label">Mô Tả:</label>
-                                    @Html.TextAreaFor(m => m.MoTa, new { @class = "form-control" }) 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="TrangThai" class="form-label">Trạng Thái:</label>
-                                    @Html.TextBoxFor(m => m.TrangThai, new { @class = "form-control" }) 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="HinhAnh" class="form-label">Hình ảnh:</label>
-                                    @Html.TextBoxFor(m => m.HinhAnh, new { @class = "form-control" })
-                                </div>
-               
-                                <a href="~/admin/getallproducts" class="btn btn-outline-danger" role="button" aria-pressed="true">Quay lại</a>
-                                <button class="btn btn-primary" type="reset">Reset</button>
-                                <button class="btn btn-primary" type="submit" >Cập nhật</button>
-                            }
+
+                        <div class="mb-3">
+                            <label for="MaDm" class="form-label">Danh mục </label>
+                            @Html.DropDownListFor(m => m.MaDm,
+                        new SelectList(ViewBag.DanhMucs, "MaDm", "TenDm"),
+                        new { @class = "form-control" })
                         </div>
-                    </div>
+
+                        <div class="mb-3">
+                            <label for="TenSp" class="form-label">Tên Sản Phẩm:</label>
+                            @Html.TextBoxFor(m => m.TenSp, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.TenSp,"", new { @class = "text-danger" } )
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="Gia" class="form-label">Đơn Giá:</label>
+                            @Html.TextBoxFor(m => m.Gia, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Gia,"", new { @class = "text-danger" } )
+
+                        </div>
+                        <div class="mb-3">
+
+                            <label for="SoLuong" class="form-label">Số Lượng:</label>
+                            @Html.TextBoxFor(m => m.SoLuong, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.SoLuong,"", new { @class = "text-danger" } )
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="NgayNhap" class="form-label">Ngày nhập:</label>
+                            @Html.TextBoxFor(m => m.NgayNhap, new { @class = "form-control" ,@type="datetime-local"})
+                            @Html.ValidationMessageFor(m => m.NgayNhap,"", new { @class = "text-danger" } )
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="MoTa" class="form-label">Mô Tả:</label>
+                            @Html.TextAreaFor(m => m.MoTa, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.MoTa,"", new { @class = "text-danger" } )
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="TrangThai" class="form-label">Trạng Thái:</label>
+                            @* @Html.TextBoxFor(m => m.TrangThai, new { @class = "form-control" })*@
+                            @Html.DropDownListFor(m => m.TrangThai,
+                        new SelectList(ViewBag.PartialTypes_1, "Value", "Text"),
+                        new { @class = "form-control" })
+                            @*         @Html.ValidationMessageFor(m => m.TrangThai,"", new { @class = "text-danger" } )*@
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="Goi" class="form-label">Gói:</label>
+                            @* @Html.TextBoxFor(m => m.TrangThai, new { @class = "form-control" })*@
+                            @Html.DropDownListFor(m => m.Goi,
+                        new SelectList(ViewBag.PartialTypes_2, "Value", "Text"),
+                        new { @class = "form-control" })
+                            @*       @Html.ValidationMessageFor(m => m.Goi,"", new { @class = "text-danger" } )*@
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="TrangThai" class="form-label">Đặc điểm:</label>
+                            @* @Html.TextBoxFor(m => m.TrangThai, new { @class = "form-control" })*@
+                            @Html.DropDownListFor(m => m.DacDiem,
+                        new SelectList(ViewBag.PartialTypes_3, "Value", "Text"),
+                        new { @class = "form-control" })
+                            @*         @Html.ValidationMessageFor(m => m.DacDiem,"", new { @class = "text-danger" } )*@
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="HinhAnh" class="form-label">Hình ảnh:</label>
+                            @Html.TextBoxFor(m => m.HinhAnh, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.HinhAnh,"", new { @class = "text-danger" } )
+                        </div>
+
+                        <a href="~/admin/getallproducts" class="btn btn-outline-danger" role="button" aria-pressed="true">Quay lại</a>
+                        <button class="btn btn-primary" type="reset">Reset</button>
+                        <button class="btn btn-primary" type="submit">Cập nhật</button>
+                    }
                 </div>
             </div>
+        </div>
+    </div>
 </div>

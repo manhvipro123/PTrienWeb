@@ -1,6 +1,4 @@
-﻿
-using AdminApplication.Models;
-
+﻿using AdminApplication.Models;
 using Microsoft.EntityFrameworkCore;
 namespace AdminApplication.Repository
 {
