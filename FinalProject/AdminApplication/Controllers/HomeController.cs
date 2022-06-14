@@ -39,27 +39,39 @@ namespace AdminApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult SaveAdmin(Admin ad, string rp_pass)
+        public IActionResult Register(Admin ad, string rp_pass)
         {
-            foreach (Admin adm in ctx.Admins)
+            if (ModelState.IsValid)
             {
-                if (adm.Email == ad.Email)
+                //checked Email 
+                Admin a = ctx.Admins.Where(x => x.Email == ad.Email).FirstOrDefault();
+                if(a != null)
                 {
-                    ViewBag.Message = string.Format("Error.\\nEmail is existed !!!\\nPlease enter again ^^");
-                    return View("Register");
+                    ModelState.AddModelError(string.Empty, "Email is existed!!!");
+                   /* ViewBag.Message = string.Format("Error.\\nEmail is existed !!!\\nPlease enter again ^^");*/
+                    return View(ad);
                 }
-            }
-            if (ad.Password == rp_pass)
-            {
-                ctx.Admins.Add(ad);
-                ctx.SaveChanges();
-                return RedirectToAction("Login", new { id = true });
+                else
+                {
+                    if (ad.Password == rp_pass)
+                    {
+                        ctx.Admins.Add(ad);
+                        ctx.SaveChanges();
+                        return RedirectToAction("Login", new { id = true });
+                    }
+                    else
+                    {
+                        ViewBag.Message = string.Format("Error.\\nYour password and repeat password is not correct!!!\\nPlease regist again ^^");
+                        return View();
+                    }
+                }   
+                
             }
             else
             {
-                ViewBag.Message = string.Format("Error.\\nYour password and repeat password is not correct!!!\\nPlease regist again ^^");
-                return View("Register");
+                return View(ad);
             }
+         
         }
 
         [HttpPost]

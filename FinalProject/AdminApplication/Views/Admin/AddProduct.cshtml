@@ -22,7 +22,7 @@
                     <p class="form-label" style="color: red">(*)Mã sản phẩm sẽ được tạo tự động</p>
                     @using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post))
                     {
-
+                        @Html.ValidationSummary(true,"",new { @class = "text-danger" })
                         <div class="mb-3">
                             <label for="MaDm" class="form-label">Danh mục: </label>
                             @Html.DropDownListFor(m => m.MaDm,
