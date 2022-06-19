@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FDXpL2sdWKsN2OPQx/gqeQCCpwT2x1oLNS58sMkAWdk=",
+  "Hash": "OWqA25VewSqSzvuW2srP/YGdN60CT8MIWqHY/vxaPvI=",
   "Source": "CustomerApplication",
   "BasePath": "_content/CustomerApplication",
   "Mode": "Default",
@@ -595,6 +595,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\t1.jpg"
     },
     {
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\add.css",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "css/add.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\add.css"
+    },
+    {
       "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\app.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
@@ -610,6 +627,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\details.css",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "css/details.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\details.css"
     },
     {
       "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\index.css",
@@ -712,6 +746,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style4.css"
+    },
+    {
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\thanhtoan.css",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "css/thanhtoan.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\thanhtoan.css"
     },
     {
       "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\favicon.ico",

@@ -25,12 +25,16 @@ namespace CustomerApplication.Models
         public virtual DbSet<SanPham> SanPhams { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
+
+
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("server=YENNHI\\SQLEXPRESS;user Id = sa; password = 1; database=Store");
+                optionsBuilder.UseSqlServer("server=YenNhi\\SQLEXPRESS;user Id=sa;password=1;database=Store");
             }
         }
 
@@ -235,6 +239,26 @@ namespace CustomerApplication.Models
                 entity.Property(e => e.Password)
                     .HasMaxLength(50)
                     .IsUnicode(false);
+            });
+            //them
+            modelBuilder.Entity<ShoppingCart>(entity =>
+            {
+                entity.HasKey(e => new { e.CartId, e.MaSp });
+
+                entity.Property(e => e.CartId)
+                    .HasColumnName("cartId")
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.MaSp).HasColumnName("maSp");
+
+                entity.Property(e => e.Sl).HasColumnName("sl");
+
+                entity.HasOne(d => d.MaSpNavigation)
+                    .WithMany(p => p.ShoppingCarts)
+                    .HasForeignKey(d => d.MaSp)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ShoppingCart_SanPham");
             });
 
             OnModelCreatingPartial(modelBuilder);

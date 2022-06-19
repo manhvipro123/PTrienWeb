@@ -123,7 +123,7 @@ span {
   background-color: #79b0a1;
 }*/
 
-#itemDiv{
+#itemDiv1{
     width: 350px;
     height: 600px;
 }
@@ -214,14 +214,14 @@ span {
                  <div id="myModal" class="items" >
                   <div class="modal-content"></div>   
                                  @foreach(var c in Model){
-                                      <div id="itemDiv">
+                                      <div id="itemDiv1">
                                  <img style = "width:300px; height: 300px; padding-bottom:10px;" src="~/assets/images/@c.HinhAnh" alt=""/>
 @*                                 style="font-size: 16px;font-family: 'Raleway', sans-serif;font-weight: 400;text-transform: uppercase;color: black;letter-spacing: 0.2em;"*@                                 
                                  <h3 style="font-family:'Playfair Display', serif;color:rgba(0,91,170,255);" >@c.TenSp</h3>
                                  @*<p style="font-family: 'Playfair Display', serif; color: #8d8d8d;line-height: 1.7em;font-size: 15px;font-weight: lighter;overflow: hidden;">@c.MoTa</p>*@
                                  @*<p style="font-family: 'Playfair Display', serif; font-size: 30px; color: red;line-height: 1.7em;font-weight: lighter;overflow: hidden; "><span><i class="fa fa-dollar" style="font-size:40px;color:red"></i> @c.Gia đ</span></p>*@
                                
-                                 <button class="button button1">MUA NGAY</button>
+                                
 
                                  @*  <button style="height: 30px;padding: 10px 24px; 
                                     width: 150px; 
@@ -251,7 +251,7 @@ span {
                                     position: relative;
                                     border: 3px solid #ffffff;
                                     border-radius: 20px;"> *@
-                                    @Html.ActionLink("XEM","details","product",new{masp=c.MaSp }, new{ @class = "button button1"})
+                                    @Html.ActionLink("XEM","details","product",new{masp= c.MaSp}, new{ @class = "button button1"})
                                     
                                  @*<button style="
                                     height: 30px; 
@@ -280,30 +280,7 @@ span {
 </div>
 
 
-                @*<div class="wrapper1">
-                    <div class="product-img">
-                        @foreach(var c in Model){
-                        <img src="~/assets/images/@c.HinhAnh" alt="" />
-                        }
-                     <div class="product-info">
-                        <div class="product-text">
-                        @foreach(var c in Model)
-                        {
-                        <h1>@c.TenSp</h1>
-                        <p>@c.MoTa</p>
-                        }
-                        </div>
-                        <div class="product-price-btn">
-                            @foreach(var c in Model){
-                            <p><span>@c.Gia</span></p>
-                            <button type="button">buy now</button>
-                            }
-                        </div>
-                        </div>
-                        </div>
-
-                </div>
-                </div>*@
+             
                 
                
 </body>

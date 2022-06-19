@@ -20,5 +20,6 @@ namespace CustomerApplication.Models
         public virtual User? User { get; set; }
         public virtual ICollection<DanhGia> DanhGias { get; set; }
         public virtual ICollection<DonHang> DonHangs { get; set; }
+      
     }
 }

@@ -13,5 +13,7 @@ namespace CustomerApplication.Models
 
         public virtual KhachHang? MaKhNavigation { get; set; }
         public virtual SanPham? MaSpNavigation { get; set; }
+
+        
     }
 }

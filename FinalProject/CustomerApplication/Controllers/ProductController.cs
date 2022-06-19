@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CustomerApplication.Controllers;
 using CustomerApplication.Repository;
 using CustomerApplication.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace CustomerApplication.Controllers
 {
     public class ProductController : Controller
@@ -16,9 +17,31 @@ namespace CustomerApplication.Controllers
 
         public IActionResult Details (int masp)
         {
-            SanPham sanpham = ctx.SanPhams.Where(x => x.MaSp == masp).SingleOrDefault();
-
-            return View(sanpham);
+            SanPham sp = ctx.SanPhams.Where(x => x.MaSp == masp).FirstOrDefault();
+            List<DanhGia> lst = new List<DanhGia>();
+           /* DanhGiaRepository danhGiaRepository = new DanhGiaRepository(ctx);
+            List<DanhGia> temp = danhGiaRepository.GetDanhGiaByMaSp(masp);
+            ViewBag.khachhangs = danhGiaRepository.GetDanhGiaWithTenKh();
+            foreach(DanhGia danhgia in ViewBag.khachhangs)
+            {
+                foreach(DanhGia dg in temp)
+                {
+                    if(dg.MaKh == danhgia.MaKhNavigation.MaKh)
+                    {
+                        lst.Add(danhgia); 
+                    }
+                }
+            }
+            ViewBag.danhgias = lst; */
+            List<DanhGia> danhGiaList = ctx.DanhGias.Include(x => x.MaKhNavigation).Include(y => y.MaSpNavigation).ToList();
+            foreach(DanhGia danhGia in danhGiaList)
+            {
+                if (danhGia.MaSp == sp.MaSp) { 
+                    lst.Add(danhGia);
+                }
+            }
+            ViewBag.danhgias = lst;
+            return View(sp);
         }
 
     }

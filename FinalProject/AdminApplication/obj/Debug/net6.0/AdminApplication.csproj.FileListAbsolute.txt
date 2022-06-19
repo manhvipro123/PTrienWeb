@@ -181,3 +181,5 @@ C:\PTrienWeb\FinalProject\AdminApplication\obj\Debug\net6.0\refint\AdminApplicat
 C:\PTrienWeb\FinalProject\AdminApplication\obj\Debug\net6.0\AdminApplication.pdb
 C:\PTrienWeb\FinalProject\AdminApplication\obj\Debug\net6.0\AdminApplication.genruntimeconfig.cache
 C:\PTrienWeb\FinalProject\AdminApplication\obj\Debug\net6.0\ref\AdminApplication.dll
+C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\PagedList.dll
+C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\PagedList.Mvc.dll
