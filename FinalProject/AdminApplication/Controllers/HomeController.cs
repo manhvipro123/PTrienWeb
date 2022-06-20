@@ -27,7 +27,32 @@ namespace AdminApplication.Controllers
                 return View();
             }
         }
+        [HttpPost]
+        public IActionResult Login(Admin ad)
+        {
+          
+            if (ModelState.IsValid)
+            {
+                Admin adm = ctx.Admins.Where(x => x.Email == ad.Email).Where(y => y.Password == ad.Password).SingleOrDefault();
+                if (adm != null)
+                {
+                    return RedirectToAction("Index", "Admin", new { id = adm.UserAd });
+                }
+                else
+                {
+                    /* ViewBag.Message = string.Format("Your password or your email account is not correct" +
+                         "\\n Please enter again!!!");*/
+                    ModelState.AddModelError(string.Empty, "Email or password is not correct!!!");
+                    return View(ad);
+                }
+            }
+            else 
+            {
+                return View(ad);
+            }
 
+
+        }
         public IActionResult Register()
         {
             return View();
@@ -45,15 +70,25 @@ namespace AdminApplication.Controllers
             {
                 //checked Email 
                 Admin a = ctx.Admins.Where(x => x.Email == ad.Email).FirstOrDefault();
-                if(a != null)
+                if (ad.Name == null)
                 {
-                    ModelState.AddModelError(string.Empty, "Email is existed!!!");
-                   /* ViewBag.Message = string.Format("Error.\\nEmail is existed !!!\\nPlease enter again ^^");*/
+                    ModelState.AddModelError(string.Empty, "Vui lòng điền vào tên tài khoản");
+                    return View(ad);
+                }
+                else if (a != null)
+                {
+                    ModelState.AddModelError(string.Empty, "Email is existed !!!");
+                    /* ViewBag.Message = string.Format("Error.\\nEmail is existed !!!\\nPlease enter again ^^");*/
                     return View(ad);
                 }
                 else
                 {
-                    if (ad.Password == rp_pass)
+                    if(rp_pass == null)
+                    {
+                        ModelState.AddModelError(string.Empty, "Vui lòng nhập lại mật khẩu xác minh !!!!!");
+                        return View(ad);
+                    }
+                    else if (ad.Password == rp_pass)
                     {
                         ctx.Admins.Add(ad);
                         ctx.SaveChanges();
@@ -61,43 +96,21 @@ namespace AdminApplication.Controllers
                     }
                     else
                     {
-                        ViewBag.Message = string.Format("Error.\\nYour password and repeat password is not correct!!!\\nPlease regist again ^^");
-                        return View();
+                        ModelState.AddModelError(string.Empty, "Your password and repeat password is not correct!!!!!");
+                     /*   ViewBag.Message = string.Format("Error.\\nYour password and repeat password is not correct!!!\\nPlease regist again ^^");*/
+                        return View(ad);
                     }
-                }   
-                
+                }
+
             }
             else
             {
                 return View(ad);
             }
-         
-        }
-
-        [HttpPost]
-        public IActionResult CheckAccount(string account, string pass)
-        {
-            var temp = false;
-            foreach (Admin adm in ctx.Admins)
-            {
-                if (adm.Email == account && adm.Password == pass)
-                {
-                    temp = true;
-                    return RedirectToAction("Index", "Admin", new { id = adm.UserAd });
-                }
-            }
-            if (temp == false)
-            {
-                ViewBag.Message = string.Format("Your password or your email account is not correct" +
-                    "\\n Please enter again!!!");
-                return View("Login");
-            }
-            else
-            {
-                return View("Login");
-            }
 
         }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
