@@ -59,14 +59,14 @@
                                                 <td style="vertical-align:middle;">@item.DiaChiKh</td>
                                                 <td style="vertical-align:middle;text-align:center;"> 
                                                
-                                                    @Html.ActionLink("Detail","GetUserAccount",new{id = item.UserId})
+                                                    @Html.ActionLink("Detail","GetUserAccount",new{id = item.Id})
                                                 </td>
                                                 <td style="vertical-align:middle;text-align:center;"> 
-                                                    @Html.ActionLink("Show","GetAllCustomerRates",new{id = item.MaKh})
+                                                    @Html.ActionLink("Show","GetAllCustomerRates",new{id = item.Id})
                                                 </td>
                                                 <td style="vertical-align:middle;">
-                                                     @Html.ActionLink("Edit","EditCustomer",new{id = item.MaKh})
-                                                     @Html.ActionLink("Delete","DeleteCustomer",new{cId = item.MaKh, uId = item.UserId})
+                                                     @Html.ActionLink("Edit","EditCustomer",new{id = item.Id})
+                                                     @Html.ActionLink("Delete","DeleteCustomer",new{cId = item.Id, uId = item.UserId})
                                                 </td>
                                                 @*
                                                 <td style="vertical-align:middle;">@item.User.Email</td>

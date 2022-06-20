@@ -2,7 +2,7 @@
     Layout = "~/Views/Shared/_adminLayout.cshtml";
 }
 
-@model AdminApplication.Models.SanPham
+@model AdminApplication.Models.SanPhamModel
 <div class="container-fluid">
     <!-- Page Heading -->
     <h1 class="h3 mb-1 text-gray-800">Thêm Sản Phẩm</h1>
@@ -22,7 +22,7 @@
                     <p class="form-label" style="color: red">(*)Mã sản phẩm sẽ được tạo tự động</p>
                     @using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post))
                     {
-                        @Html.ValidationSummary(true,"",new { @class = "text-danger" })
+                        @Html.ValidationSummary(false,"",new { @class = "text-danger" })
                         <div class="mb-3">
                             <label for="MaDm" class="form-label">Danh mục: </label>
                             @Html.DropDownListFor(m => m.MaDm,
@@ -92,7 +92,9 @@
                         <div class="mb-3">
                             <label for="HinhAnh" class="form-label">Hình ảnh:</label>
                             @Html.TextBoxFor(m => m.HinhAnh, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.HinhAnh,"", new { @class = "text-danger" } )
+                        @*    @Html.ValidationMessageFor(m => m.HinhAnh,"", new { @class = "text-danger" } )*@
+                            <input type="file" name="formFile" class="form-control" />
+                            @Html.TextBoxFor(m => m.FormFile, new { @class = "form-control" , type="file"})
                         </div>
 
                         <a href="~/admin/addproduct" class="btn btn-outline-danger" role="button" aria-pressed="true">Hủy</a>

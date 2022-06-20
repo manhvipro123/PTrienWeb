@@ -3,15 +3,12 @@
 }
 
 @model List<AdminApplication.Models.DanhGia>
-@{
-    var name = @Model[0].MaKhNavigation.TenKh;
-}
 
 
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Bảng Danh Sách Thông Tin Các Bài Đánh Giá Của Khách Hàng: @name </h1>
+                    <h1 class="h3 mb-2 text-gray-800">Bảng Danh Sách Thông Tin Các Bài Đánh Giá Của Khách Hàng: @ViewBag.custName </h1>
                   
 
                     <!-- DataTales Example -->
