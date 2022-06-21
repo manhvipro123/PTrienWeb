@@ -183,3 +183,5 @@ C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication
 C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication\obj\Debug\net6.0\AdminApplication.pdb
 C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication\obj\Debug\net6.0\AdminApplication.genruntimeconfig.cache
 C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication\obj\Debug\net6.0\ref\AdminApplication.dll
+C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\PagedList.dll
+C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\PagedList.Mvc.dll
