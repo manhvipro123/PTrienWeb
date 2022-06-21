@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace CustomerApplication.Models
 {
@@ -11,8 +10,8 @@ namespace CustomerApplication.Models
             KhachHangs = new HashSet<KhachHang>();
         }
 
-        
         public int UserId { get; set; }
+        public string Id { get; set; } = null!;
         public string? Password { get; set; }
         public string? Name { get; set; }
         public string? Email { get; set; }

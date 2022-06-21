@@ -45,8 +45,9 @@ namespace CustomerApplication.Controllers
 
         }
 
-
+        
         [HttpPost]
+        /*[Route("api/cart/add")*/
         public IActionResult AddToCart()
         {
             int masp = int.Parse(Request.Form["MaSp"].ToString());
@@ -65,6 +66,17 @@ namespace CustomerApplication.Controllers
             {
                 items = new List<ItemCart>();
             }
+
+            /*try
+            {
+                if (items != null)
+                {
+                    if (items.soluong > 0)
+                    {
+                        items.soluong = soluong.Value;
+                    }
+                }
+            }*/
             //tim san pham co trong db
             SanPham sanpham = ctx.SanPhams.Where(x => x.MaSp == masp).SingleOrDefault();
             //teo item trong gio hang
@@ -92,7 +104,12 @@ namespace CustomerApplication.Controllers
 
     
         public IActionResult ThanhToan()
-        {               
+        {
+            var types = new List<SelectOption>();
+            types.Add(new SelectOption() { Value = "COD", Text = "COD" });
+            types.Add(new SelectOption() { Value = "Thẻ tín dụng", Text = "Thẻ tín dụng" });
+            ViewBag.PartialTypes = types;
+            
             List<ItemCart> items = null;
             var giohang = HttpContext.Session.GetString("giohang");
             //chuyen tu chuoi json thanh object
@@ -114,8 +131,15 @@ namespace CustomerApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult ThanhToan(string s_name, string s_email, string s_phone, string s_pass, string s_dc, string s_dcg, string s_ttd, string s_cod, string s_nh, string s_st)
+        public IActionResult ThanhToan(string s_name, string s_email, string s_phone, string s_pass, string s_dc, string s_dcg, string PhuongThucTt, string s_nh, string s_st)
         {
+            var types = new List<SelectOption>();
+            types.Add(new SelectOption() { Value = "COD", Text = "COD" });
+            types.Add(new SelectOption() { Value = "Thẻ tín dụng", Text = "Thẻ tín dụng" });
+            ViewBag.PartialTypes = types;
+            
+            DateTime now = DateTime.Now;
+            
             List<ItemCart> items = null;
             var giohang = HttpContext.Session.GetString("giohang");
             //chuyen tu chuoi json thanh object
@@ -130,32 +154,65 @@ namespace CustomerApplication.Controllers
             {
                 tongTien += item.Gia * item.SoLuong;
             }
-            
 
-            KhachHang kh = new KhachHang() 
-            {
-                TenKh = s_name,
-                Sdt = s_phone,
-                DiaChiKh = s_dc,
-               
-                
-            };
-            DonHang dh = new DonHang()
-            {
-                MaKh = 
-            };
-            ChiTietDonHang ctdh = new ChiTietDonHang();
-            User u = new User() 
+            //create user + khachhang + donhang + ctdh
+            User u = new User()
             {
                 Email = s_email,
                 Password = s_pass,
                 Name = s_name,
+                Id = "U" + now.ToString("MMddyyyyHHmmsstt"),
             };
-
+            KhachHang kh = new KhachHang()
+            {
+                TenKh = s_name,
+                Sdt = s_phone,
+                DiaChiKh = s_dc,
+                UserId = "U" + now.ToString("MMddyyyyHHmmsstt"),
+                Id = "KH" + now.ToString("MMddyyyyHHmmsstt"),
+            };
+            DonHang dh = new DonHang();
+            dh.Id = "DH" + now.ToString("MMddyyyyHHmmsstt");
+            dh.MaKh = "KH" + now.ToString("MMddyyyyHHmmsstt");
+            if (PhuongThucTt == "Thẻ tín dụng")
+            {
+                
+                dh.DiaChiGiao = s_dcg;
+                dh.SoThe = s_st;
+                dh.NganHangNhan = s_nh;
+                dh.TongTien = tongTien;
+                dh.PhuongThucTt = PhuongThucTt;
+                dh.NgayLap = now;
+               
+                dh.TrangThaiDh = "Đang chuẩn bị hàng";            
+            }
+            else if(PhuongThucTt == "COD")
+            {
+                
+                dh.DiaChiGiao = s_dcg;
+                dh.SoThe = null;
+                dh.NganHangNhan = null;
+                dh.TongTien = tongTien;
+                dh.PhuongThucTt = PhuongThucTt;
+                dh.NgayLap = now;
            
-            
+                dh.TrangThaiDh = "Đang chuẩn bị hàng";
+            }
+           
+            ChiTietDonHang ctdh = new ChiTietDonHang();
+            foreach (ItemCart item in items)
+            {
+                ctdh.SoLuong = item.SoLuong;
+                ctdh.MaSp = item.MaSp;
+                ctdh.MaDh = "DH" + now.ToString("MMddyyyyHHmmsstt");
+                ctx.ChiTietDonHangs.Add(ctdh);
+            }
+            ctx.Users.Add(u);
+            ctx.KhachHangs.Add(kh);
+            ctx.DonHangs.Add(dh);
+            ctx.SaveChanges();
 
-            return ViewBag(s_name,s_email,s_phone,s_pass,s_dc,s_dcg,s_ttd,s_cod,s_nh,s_st);
+            return RedirectToAction("Index","Product");
         }
         
     }

@@ -15,6 +15,7 @@ namespace CustomerApplication.Models
             : base(options)
         {
         }
+       
 
         public virtual DbSet<Admin> Admins { get; set; } = null!;
         public virtual DbSet<ChiTietDonHang> ChiTietDonHangs { get; set; } = null!;
@@ -25,16 +26,12 @@ namespace CustomerApplication.Models
         public virtual DbSet<SanPham> SanPhams { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
-
-
-
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("server=YenNhi\\SQLEXPRESS;user Id=sa;password=1;database=Store");
+                optionsBuilder.UseSqlServer("server=YENNHI\\SQLEXPRESS ;user Id=sa; password=1; database=Store");
             }
         }
 
@@ -65,15 +62,22 @@ namespace CustomerApplication.Models
 
                 entity.ToTable("ChiTietDonHang");
 
+                entity.HasIndex(indexExpression: e => e.MaCtdh, name: "IX_ChiTietDonHang")
+                    .IsUnique();
+
                 entity.Property(e => e.MaCtdh).HasColumnName("MaCTDH");
 
-                entity.Property(e => e.MaDh).HasColumnName("MaDH");
+                entity.Property(e => e.MaDh)
+                    .HasMaxLength(50)
+                    .HasColumnName("MaDH");
 
                 entity.Property(e => e.MaSp).HasColumnName("MaSP");
 
                 entity.HasOne(d => d.MaDhNavigation)
                     .WithMany(p => p.ChiTietDonHangs)
+                    .HasPrincipalKey(p => p.Id)
                     .HasForeignKey(d => d.MaDh)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_ChiTietDonHang_DonHang");
 
                 entity.HasOne(d => d.MaSpNavigation)
@@ -85,12 +89,14 @@ namespace CustomerApplication.Models
             modelBuilder.Entity<DanhGia>(entity =>
             {
                 entity.HasKey(e => e.MaDg);
-
+                
                 entity.ToTable("DanhGia");
 
                 entity.Property(e => e.MaDg).HasColumnName("MaDG");
 
-                entity.Property(e => e.MaKh).HasColumnName("MaKH");
+                entity.Property(e => e.MaKh)
+                    .HasMaxLength(50)
+                    .HasColumnName("MaKH");
 
                 entity.Property(e => e.MaSp).HasColumnName("MaSP");
 
@@ -100,7 +106,9 @@ namespace CustomerApplication.Models
 
                 entity.HasOne(d => d.MaKhNavigation)
                     .WithMany(p => p.DanhGias)
+                    .HasPrincipalKey(p => p.Id)
                     .HasForeignKey(d => d.MaKh)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_DanhGia_KhachHang");
 
                 entity.HasOne(d => d.MaSpNavigation)
@@ -128,11 +136,18 @@ namespace CustomerApplication.Models
 
                 entity.ToTable("DonHang");
 
+                entity.HasIndex(e => e.Id, "IX_DonHang")
+                    .IsUnique();
+
                 entity.Property(e => e.MaDh).HasColumnName("MaDH");
 
                 entity.Property(e => e.DiaChiGiao).HasMaxLength(200);
 
-                entity.Property(e => e.MaKh).HasColumnName("MaKH");
+                entity.Property(e => e.Id).HasMaxLength(50);
+
+                entity.Property(e => e.MaKh)
+                    .HasMaxLength(50)
+                    .HasColumnName("MaKH");
 
                 entity.Property(e => e.NganHangNhan).HasMaxLength(50);
 
@@ -158,7 +173,9 @@ namespace CustomerApplication.Models
 
                 entity.HasOne(d => d.MaKhNavigation)
                     .WithMany(p => p.DonHangs)
+                    .HasPrincipalKey(p => p.Id)
                     .HasForeignKey(d => d.MaKh)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_DonHang_KhachHang");
             });
 
@@ -168,11 +185,16 @@ namespace CustomerApplication.Models
 
                 entity.ToTable("KhachHang");
 
+                entity.HasIndex(e => e.Id, "IX_KhachHang")
+                    .IsUnique();
+
                 entity.Property(e => e.MaKh).HasColumnName("MaKH");
 
                 entity.Property(e => e.DiaChiKh)
                     .HasMaxLength(200)
                     .HasColumnName("DiaChiKH");
+
+                entity.Property(e => e.Id).HasMaxLength(50);
 
                 entity.Property(e => e.Sdt)
                     .HasMaxLength(10)
@@ -184,11 +206,15 @@ namespace CustomerApplication.Models
                     .HasMaxLength(150)
                     .HasColumnName("TenKH");
 
-                entity.Property(e => e.UserId).HasColumnName("UserID");
+                entity.Property(e => e.UserId)
+                    .HasMaxLength(50)
+                    .HasColumnName("UserID");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.KhachHangs)
+                    .HasPrincipalKey(p => p.Id)
                     .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_KhachHang_User");
             });
 
@@ -226,7 +252,12 @@ namespace CustomerApplication.Models
 
             modelBuilder.Entity<User>(entity =>
             {
+                entity.HasKey(e => e.UserId);
+
                 entity.ToTable("User");
+
+                entity.HasIndex(e => e.Id, "IX_User")
+                    .IsUnique();
 
                 entity.Property(e => e.UserId).HasColumnName("UserID");
 
@@ -234,31 +265,13 @@ namespace CustomerApplication.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Id).HasMaxLength(50);
+
                 entity.Property(e => e.Name).HasMaxLength(150);
 
                 entity.Property(e => e.Password)
                     .HasMaxLength(50)
                     .IsUnicode(false);
-            });
-            //them
-            modelBuilder.Entity<ShoppingCart>(entity =>
-            {
-                entity.HasKey(e => new { e.CartId, e.MaSp });
-
-                entity.Property(e => e.CartId)
-                    .HasColumnName("cartId")
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.MaSp).HasColumnName("maSp");
-
-                entity.Property(e => e.Sl).HasColumnName("sl");
-
-                entity.HasOne(d => d.MaSpNavigation)
-                    .WithMany(p => p.ShoppingCarts)
-                    .HasForeignKey(d => d.MaSp)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ShoppingCart_SanPham");
             });
 
             OnModelCreatingPartial(modelBuilder);

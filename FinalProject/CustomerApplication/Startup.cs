@@ -33,7 +33,7 @@ namespace CustomerApplication
             services.AddSession();
             //DI
             services.AddTransient<IDanhGiaRepository, DanhGiaRepository>();//gắn 1 hàm của mình len, tên lớp trước tên interface
-
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

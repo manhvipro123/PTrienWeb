@@ -9,7 +9,7 @@ namespace CustomerApplication.Models
         {
             ChiTietDonHangs = new HashSet<ChiTietDonHang>();
             DanhGias = new HashSet<DanhGia>();
-            ShoppingCarts = new HashSet<ShoppingCart>();
+           
         }
 
         public int MaSp { get; set; }
@@ -28,7 +28,6 @@ namespace CustomerApplication.Models
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
         public virtual ICollection<DanhGia> DanhGias { get; set; }
 
-        public virtual ICollection<ShoppingCart> ShoppingCarts { get; set; }
-
+        
     }
 }
