@@ -17,7 +17,7 @@ namespace AdminApplication.Controllers
 
         public IActionResult Login(Boolean id)
         {
-            if(id == true)
+            if (id == true)
             {
                 ViewBag.Message = string.Format("Sign up Successfull!!!");
                 return View();
@@ -27,7 +27,32 @@ namespace AdminApplication.Controllers
                 return View();
             }
         }
+        [HttpPost]
+        public IActionResult Login(Admin ad)
+        {
+          
+            if (ModelState.IsValid)
+            {
+                Admin adm = ctx.Admins.Where(x => x.Email == ad.Email).Where(y => y.Password == ad.Password).SingleOrDefault();
+                if (adm != null)
+                {
+                    return RedirectToAction("Index", "Admin", new { id = adm.UserAd });
+                }
+                else
+                {
+                    /* ViewBag.Message = string.Format("Your password or your email account is not correct" +
+                         "\\n Please enter again!!!");*/
+                    ModelState.AddModelError(string.Empty, "Email or password is not correct!!!");
+                    return View(ad);
+                }
+            }
+            else 
+            {
+                return View(ad);
+            }
 
+
+        }
         public IActionResult Register()
         {
             return View();
@@ -39,53 +64,53 @@ namespace AdminApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult SaveAdmin(Admin ad, string rp_pass)
+        public IActionResult Register(Admin ad, string rp_pass)
         {
-            foreach (Admin adm in ctx.Admins)
+            if (ModelState.IsValid)
             {
-                if (adm.Email == ad.Email)
+                //checked Email 
+                Admin a = ctx.Admins.Where(x => x.Email == ad.Email).FirstOrDefault();
+                if (ad.Name == null)
                 {
-                    ViewBag.Message = string.Format("Error.\\nEmail is existed !!!\\nPlease enter again ^^");
-                    return View("Register");
+                    ModelState.AddModelError(string.Empty, "Vui lòng điền vào tên tài khoản");
+                    return View(ad);
                 }
-            }
-            if (ad.Password == rp_pass)
-            {
-                ctx.Admins.Add(ad);
-                ctx.SaveChanges();
-                return RedirectToAction("Login", new { id = true });
+                else if (a != null)
+                {
+                    ModelState.AddModelError(string.Empty, "Email is existed !!!");
+                    /* ViewBag.Message = string.Format("Error.\\nEmail is existed !!!\\nPlease enter again ^^");*/
+                    return View(ad);
+                }
+                else
+                {
+                    if(rp_pass == null)
+                    {
+                        ModelState.AddModelError(string.Empty, "Vui lòng nhập lại mật khẩu xác minh !!!!!");
+                        return View(ad);
+                    }
+                    else if (ad.Password == rp_pass)
+                    {
+                        ctx.Admins.Add(ad);
+                        ctx.SaveChanges();
+                        return RedirectToAction("Login", new { id = true });
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Your password and repeat password is not correct!!!!!");
+                     /*   ViewBag.Message = string.Format("Error.\\nYour password and repeat password is not correct!!!\\nPlease regist again ^^");*/
+                        return View(ad);
+                    }
+                }
+
             }
             else
             {
-                ViewBag.Message = string.Format("Error.\\nYour password and repeat password is not correct!!!\\nPlease regist again ^^");
-                return View("Register");
+                return View(ad);
             }
+
         }
 
-        [HttpPost]
-        public IActionResult CheckAccount(string account, string pass)
-        {
-            var temp = false;
-            foreach (Admin adm in ctx.Admins)
-            {
-                if(adm.Email == account && adm.Password == pass)
-                {
-                    temp = true;
-                    return RedirectToAction("Index", "Admin", new {id = adm.UserAd});
-                }
-            }
-            if(temp == false)
-            {
-                ViewBag.Message = string.Format("Your password or your email account is not correct" +
-                    "\\n Please enter again!!!");
-                return View("Login");
-            }
-            else
-            {
-                return View("Login");
-            }
-            
-        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

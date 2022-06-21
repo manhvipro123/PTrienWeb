@@ -2,11 +2,11 @@
     Layout = "~/Views/Shared/_adminLayout.cshtml";
 }
 
-@model AdminApplication.Models.User
+@model AdminApplication.Models.KhachHang
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Thông Tin Tài Khoản Của Người Dùng @Model.UserId</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Thông Tin Tài Khoản Của Người Dùng @Model.TenKh</h1>
                   
 
                     <!-- DataTales Example -->
@@ -23,7 +23,6 @@
                                             <th style="vertical-align:middle;">Mã Tài Khoản</th>
                                             <th style="vertical-align:middle;">Email</th>
                                             <th style="vertical-align:middle;">Password</th>
-                                            <th style="vertical-align:middle;">Tên</th>
                                             <th style="vertical-align:middle;">Tùy Chỉnh</th>
                                         </tr>
                                     </thead>
@@ -32,7 +31,6 @@
                                             <th style="vertical-align:middle;">Mã Tài Khoản</th>
                                             <th style="vertical-align:middle;">Email</th>
                                             <th style="vertical-align:middle;">Password</th>
-                                            <th style="vertical-align:middle;">Tên</th>
                                             <th style="vertical-align:middle;">Tùy Chỉnh</th>
                                       
                                         </tr>
@@ -40,14 +38,13 @@
                                     <tbody>
                                       
                                             <tr>
-                                                <td style="vertical-align:middle;">@Model.UserId</td>
-                                                <td style="vertical-align:middle;">@Model.Email</td>
-                                                <td style="vertical-align:middle;">@Model.Password</td>
-                                                <td style="vertical-align:middle;">@Model.Name</td>
+                                                <td style="vertical-align:middle;">@Model.User.Id</td>
+                                                <td style="vertical-align:middle;">@Model.User.Email</td>
+                                                <td style="vertical-align:middle;">@Model.User.Password</td>
                                     
                                                 <td style="vertical-align:middle;">
                                                      @Html.ActionLink("Edit","EditUser",new{id = Model.UserId})
-                                                  @*   @Html.ActionLink("Delete","DeleteProduct",new{id = item.UserId})*@
+                                                   @*  @Html.ActionLink("Delete","DeleteProduct",new{id = item.UserId})*@
                                                 </td>
                                             </tr>
                                        

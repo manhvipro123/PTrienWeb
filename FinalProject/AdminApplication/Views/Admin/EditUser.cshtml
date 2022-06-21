@@ -4,50 +4,49 @@
 
 @model AdminApplication.Models.User
 <div class="container-fluid">
-        <!-- Page Heading -->
-        <h1 class="h3 mb-1 text-gray-800">Thêm Danh Mục</h1>
-        <p class="mb-4">
-        </p>
-        <!-- Content Row -->
-       
-            <div class="row">
-                <!-- First Column -->
-                <div class="col-lg-4">
-                    <!-- Custom Text Color Utilities -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Cập nhật thông tin khách hàng</h6>
+    <!-- Page Heading -->
+    <h1 class="h3 mb-1 text-gray-800">Thêm Danh Mục</h1>
+    <p class="mb-4">
+    </p>
+    <!-- Content Row -->
+
+    <div class="row">
+        <!-- First Column -->
+        <div class="col-lg-4">
+            <!-- Custom Text Color Utilities -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Cập nhật thông tin khách hàng</h6>
+                </div>
+                <div class="card-body">
+
+                    @using (Html.BeginForm("EditUser", "Admin", FormMethod.Post))
+                    {
+                        <div class="mb-3">
+                            <label for="UserId" class="form-label">Mã Tài Khoản:</label>
+                            @Html.TextBoxFor(m => m.UserId, new { @class = "form-control" , @readonly = "readonly" } )
                         </div>
-                        <div class="card-body">
-                            <p class="form-label" style="color: red">(*)Mã danh mục sẽ được tạo tự động</p>
-                            @using (Html.BeginForm("UpdateUser", "Admin", FormMethod.Post))
-                            {   
-                                 <div class="mb-3">
-                                    <label for="UserId" class="form-label">Mã Tài Khoản:</label>
-                                    @Html.TextBoxFor(m => m.UserId, new { @class = "form-control" , @readonly = "readonly" } ) 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="Name" class="form-label">Tên: </label>
-                                    @Html.TextBoxFor(m => m.Name,  new { @class = "form-control" }) 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="Email" class="form-label">Tài Khoản: </label>
-                                    @Html.TextBoxFor(m => m.Email,  new { @class = "form-control" }) 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="Password" class="form-label">Mật Khẩu </label>
-                                    @Html.TextBoxFor(m => m.Password,  new { @class = "form-control" }) 
-                                </div>
-                                 
-                                <button class="btn btn-outline-danger" role="button" aria-pressed="true">
-                                        @Html.ActionLink("Quay lại","GetAllCustomers", new{@style="text-decoration:none;"})
-                                </button>
-                              @*  <a href="~/admin/getal" class="btn btn-outline-danger" role="button" aria-pressed="true">Huy</a>*@
-                                <button type="submit" class="btn btn-primary">Xác nhận</button>
-                            }
+
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Tài Khoản: </label>
+                            @Html.TextBoxFor(m => m.Email,  new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Email,"", new { @class = "text-danger" } )
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="Password" class="form-label">Mật Khẩu </label>
+                            @Html.TextBoxFor(m => m.Password,  new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Password,"", new { @class = "text-danger" } )
+                        </div>
+
+                        <button class="btn btn-outline-danger" role="button" aria-pressed="true">
+                            @Html.ActionLink("Quay lại","GetAllCustomers", new{@style="text-decoration:none;"})
+                        </button>
+                        @*    <a href="~/admin/getal" class="btn btn-outline-danger" role="button" aria-pressed="true">Huy</a>*@
+                        <button type="submit" class="btn btn-primary">Xác nhận</button>
+                    }
                 </div>
             </div>
- 
+        </div>
+    </div>
+
 </div>

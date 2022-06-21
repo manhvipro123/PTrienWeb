@@ -1,20 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using AdminApplication.Models;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace AdminApplication.Controllers
 {
     public class AdminController : Controller
     {
+
         public Admin MainLayoutViewModel { get; set; }
         StoreContext ctx = new StoreContext();
-      
+
+
         public IActionResult Index(int id)
-        {        
-            this.MainLayoutViewModel  = new Admin();
+        {
+            this.MainLayoutViewModel = new Admin();
             foreach (Admin ad in ctx.Admins)
             {
-                if(ad.UserAd == id)
+                if (ad.UserAd == id)
                 {
                     this.MainLayoutViewModel = ad;
                 }
@@ -26,24 +31,121 @@ namespace AdminApplication.Controllers
         //==========================Product================================================
         public IActionResult GetAllProducts()
         {
+
             //select * from SanPham
-            List<SanPham> sp = ctx.SanPhams.ToList();
+            List<SanPham> sp = ctx.SanPhams.Include(x => x.MaDmNavigation).ToList();
             return View(sp);
         }
         public IActionResult AddProduct()
         {
+            var sTypes = new List<SelectOption>();
+            sTypes.Add(new SelectOption() { Value = "Tồn tại", Text = "Tồn tại" });
+            sTypes.Add(new SelectOption() { Value = "Hết hàng", Text = "Hết hàng" });
+            sTypes.Add(new SelectOption() { Value = "Ngưng bán", Text = "Ngưng bán" });
+            ViewBag.PartialTypes_1 = sTypes;
+            var pTypes = new List<SelectOption>();
+            pTypes.Add(new SelectOption() { Value = "0", Text = "0" });
+            pTypes.Add(new SelectOption() { Value = "3", Text = "3" });
+            pTypes.Add(new SelectOption() { Value = "10", Text = "10" });
+            pTypes.Add(new SelectOption() { Value = "12", Text = "12" });
+            ViewBag.PartialTypes_2 = pTypes;
+            var dTypes = new List<SelectOption>();
+            dTypes.Add(new SelectOption() { Value = "Bổ sung gel", Text = "Bổ sung gel" });
+            dTypes.Add(new SelectOption() { Value = "Có gân và gai", Text = "Có gân và gai" });
+            dTypes.Add(new SelectOption() { Value = "Có mùi vị", Text = "Có mùi vị" });
+            dTypes.Add(new SelectOption() { Value = "Cơ bản", Text = "Cơ bản" });
+            dTypes.Add(new SelectOption() { Value = "Gel có mùi", Text = "Gel có mùi" });
+            dTypes.Add(new SelectOption() { Value = "Gel gốc nước", Text = "Gel gốc nước" });
+            dTypes.Add(new SelectOption() { Value = "Kéo dài thời gian", Text = "Kéo dài thời gian" });
+            dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
+            ViewBag.PartialTypes_3 = dTypes;
+
             List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
             ViewBag.DanhMucs = DanhMucs;
             return View();
         }
 
         [HttpPost]
-        public IActionResult SaveProduct(SanPham sp)
+        public IActionResult AddProduct(SanPhamModel spm)
         {
-            //insert db
-            ctx.SanPhams.Add(sp);
-            ctx.SaveChanges();
-            return RedirectToAction("GetAllProducts");
+            //option forms
+            var sTypes = new List<SelectOption>();
+            sTypes.Add(new SelectOption() { Value = "Tồn tại", Text = "Tồn tại" });
+            sTypes.Add(new SelectOption() { Value = "Hết hàng", Text = "Hết hàng" });
+            sTypes.Add(new SelectOption() { Value = "Ngưng bán", Text = "Ngưng bán" });
+            ViewBag.PartialTypes_1 = sTypes;
+            var pTypes = new List<SelectOption>();
+            pTypes.Add(new SelectOption() { Value = "0", Text = "0" });
+            pTypes.Add(new SelectOption() { Value = "3", Text = "3" });
+            pTypes.Add(new SelectOption() { Value = "10", Text = "10" });
+            pTypes.Add(new SelectOption() { Value = "12", Text = "12" });
+            ViewBag.PartialTypes_2 = pTypes;
+            var dTypes = new List<SelectOption>();
+            dTypes.Add(new SelectOption() { Value = "Bổ sung gel", Text = "Bổ sung gel" });
+            dTypes.Add(new SelectOption() { Value = "Có gân và gai", Text = "Có gân và gai" });
+            dTypes.Add(new SelectOption() { Value = "Có mùi vị", Text = "Có mùi vị" });
+            dTypes.Add(new SelectOption() { Value = "Cơ bản", Text = "Cơ bản" });
+            dTypes.Add(new SelectOption() { Value = "Gel có mùi", Text = "Gel có mùi" });
+            dTypes.Add(new SelectOption() { Value = "Gel gốc nước", Text = "Gel gốc nước" });
+            dTypes.Add(new SelectOption() { Value = "Kéo dài thời gian", Text = "Kéo dài thời gian" });
+            dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
+            ViewBag.PartialTypes_3 = dTypes;
+            List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+            ViewBag.DanhMucs = DanhMucs;
+
+            try
+            {
+                //images url
+                var formFile = Request.Form.Files[0];
+
+                string rootPath = @"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\";
+                var fileName = formFile.FileName;
+                string path = rootPath + fileName;
+                var stream = System.IO.File.Create(path);
+                formFile.CopyTo(stream);
+                if (ModelState.IsValid)
+                {
+
+                    //check TenSp
+                    SanPham sp = new SanPham()
+                    {
+                        MaDm = spm.MaDm,
+                        TenSp = spm.TenSp,
+                        Gia = spm.Gia,
+                        SoLuong = spm.SoLuong,
+                        MoTa = spm.MoTa,
+                        NgayNhap = spm.NgayNhap,
+                        TrangThai = spm.TrangThai,
+                        HinhAnh = fileName,
+                        Goi = spm.Goi,
+                        DacDiem = spm.DacDiem,
+
+                    };
+                    SanPham sp_indb = ctx.SanPhams.Where(x => x.TenSp == sp.TenSp).SingleOrDefault();
+                    if (sp_indb != null)
+                    {
+                        ModelState.AddModelError(string.Empty, "Tên sản phẩm đã tồn tại");
+                        return View(spm);
+                    }
+                    else
+                    {
+                        //insert db
+                        ctx.SanPhams.Add(sp);
+                        ctx.SaveChanges();
+                        return RedirectToAction("GetAllProducts");
+                    }
+                }
+                else
+                {
+                    return View(spm);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                /*         ModelState.AddModelError(string.Empty, "Something Error");*/
+            }
+            return View(spm);
         }
 
         public IActionResult DeleteProduct(int id)
@@ -51,15 +153,14 @@ namespace AdminApplication.Controllers
             //tim doi tuong co id
             //select * from sanpham where maSP = id 
             SanPham sp = ctx.SanPhams.Where(x => x.MaSp == id).SingleOrDefault();
-          
+
             //xoa du lieu
 
             foreach (DanhGia d in ctx.DanhGias)
             {
-                if (d.MaKh == id)
+                if (d.MaSp == id)
                 {
                     ctx.DanhGias.Remove(d);
-                    ctx.SaveChanges();
                 }
             }
             ctx.SanPhams.Remove(sp);
@@ -69,6 +170,27 @@ namespace AdminApplication.Controllers
 
         public IActionResult EditProduct(int id)
         {
+            var sTypes = new List<SelectOption>();
+            sTypes.Add(new SelectOption() { Value = "Tồn tại", Text = "Tồn tại" });
+            sTypes.Add(new SelectOption() { Value = "Hết hàng", Text = "Hết hàng" });
+            sTypes.Add(new SelectOption() { Value = "Ngưng bán", Text = "Ngưng bán" });
+            ViewBag.PartialTypes_1 = sTypes;
+            var pTypes = new List<SelectOption>();
+            pTypes.Add(new SelectOption() { Value = "0", Text = "0" });
+            pTypes.Add(new SelectOption() { Value = "3", Text = "3" });
+            pTypes.Add(new SelectOption() { Value = "10", Text = "10" });
+            pTypes.Add(new SelectOption() { Value = "12", Text = "12" });
+            ViewBag.PartialTypes_2 = pTypes;
+            var dTypes = new List<SelectOption>();
+            dTypes.Add(new SelectOption() { Value = "Bổ sung gel", Text = "Bổ sung gel" });
+            dTypes.Add(new SelectOption() { Value = "Có gân và gai", Text = "Có gân và gai" });
+            dTypes.Add(new SelectOption() { Value = "Có mùi vị", Text = "Có mùi vị" });
+            dTypes.Add(new SelectOption() { Value = "Cơ bản", Text = "Cơ bản" });
+            dTypes.Add(new SelectOption() { Value = "Gel có mùi", Text = "Gel có mùi" });
+            dTypes.Add(new SelectOption() { Value = "Gel gốc nước", Text = "Gel gốc nước" });
+            dTypes.Add(new SelectOption() { Value = "Kéo dài thời gian", Text = "Kéo dài thời gian" });
+            dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
+            ViewBag.PartialTypes_3 = dTypes;
             //tim doi tuong co id
             List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
             ViewBag.DanhMucs = DanhMucs;
@@ -77,24 +199,69 @@ namespace AdminApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult UpdateProduct(SanPham sp)
+        public IActionResult EditProduct(SanPham sp)
         {
-            //tim doi tuong co trong db tuong ung ma cateid
-            SanPham sp_indb = ctx.SanPhams.Where(x => x.MaSp == sp.MaSp).SingleOrDefault();
-            if (sp_indb != null)
+            if (ModelState.IsValid)
             {
-                sp_indb.MaDm = sp.MaDm;
-                sp_indb.TenSp = sp.TenSp;
-                sp_indb.Gia = sp.Gia;
-                sp_indb.SoLuong = sp.SoLuong;
-                sp_indb.MoTa = sp.MoTa;
-                sp_indb.NgayNhap = sp.NgayNhap;
-                sp_indb.TrangThai = sp.TrangThai;
-                sp_indb.HinhAnh = sp.HinhAnh;
+
+                //check tenDM
+                SanPham s = ctx.SanPhams.Where(x => x.TenSp == sp.TenSp).FirstOrDefault();
+                if (s != null)
+                {
+                    ModelState.AddModelError(string.Empty, "Tên sản phẩm đã tồn tại");
+                    return View(sp);
+                }
+                else
+                {
+                    //tim doi tuong co trong db tuong ung ma cateid
+                    SanPham sp_indb = ctx.SanPhams.Where(x => x.MaSp == sp.MaSp).SingleOrDefault();
+                    if (sp_indb != null)
+                    {
+                        sp_indb.MaDm = sp.MaDm;
+                        sp_indb.TenSp = sp.TenSp;
+                        sp_indb.Gia = sp.Gia;
+                        sp_indb.SoLuong = sp.SoLuong;
+                        sp_indb.MoTa = sp.MoTa;
+                        sp_indb.NgayNhap = sp.NgayNhap;
+                        sp_indb.TrangThai = sp.TrangThai;
+                        sp_indb.HinhAnh = sp.HinhAnh;
+                        sp_indb.Goi = sp.Goi;
+                        sp_indb.DacDiem = sp.DacDiem;
+                    }
+                    //cap nhat thong tin
+                    ctx.SaveChanges();
+                    return RedirectToAction("GetAllProducts");
+                }
+
             }
-            //cap nhat thong tin
-            ctx.SaveChanges();
-            return RedirectToAction("GetAllProducts");
+            else
+            {
+                var sTypes = new List<SelectOption>();
+                sTypes.Add(new SelectOption() { Value = "Tồn tại", Text = "Tồn tại" });
+                sTypes.Add(new SelectOption() { Value = "Hết hàng", Text = "Hết hàng" });
+                sTypes.Add(new SelectOption() { Value = "Ngưng bán", Text = "Ngưng bán" });
+                ViewBag.PartialTypes_1 = sTypes;
+                var pTypes = new List<SelectOption>();
+                pTypes.Add(new SelectOption() { Value = "0", Text = "0" });
+                pTypes.Add(new SelectOption() { Value = "3", Text = "3" });
+                pTypes.Add(new SelectOption() { Value = "10", Text = "10" });
+                pTypes.Add(new SelectOption() { Value = "12", Text = "12" });
+                ViewBag.PartialTypes_2 = pTypes;
+                var dTypes = new List<SelectOption>();
+                dTypes.Add(new SelectOption() { Value = "Bổ sung gel", Text = "Bổ sung gel" });
+                dTypes.Add(new SelectOption() { Value = "Có gân và gai", Text = "Có gân và gai" });
+                dTypes.Add(new SelectOption() { Value = "Có mùi vị", Text = "Có mùi vị" });
+                dTypes.Add(new SelectOption() { Value = "Cơ bản", Text = "Cơ bản" });
+                dTypes.Add(new SelectOption() { Value = "Gel có mùi", Text = "Gel có mùi" });
+                dTypes.Add(new SelectOption() { Value = "Gel gốc nước", Text = "Gel gốc nước" });
+                dTypes.Add(new SelectOption() { Value = "Kéo dài thời gian", Text = "Kéo dài thời gian" });
+                dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
+                ViewBag.PartialTypes_3 = dTypes;
+                //tim doi tuong co id
+                List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+                ViewBag.DanhMucs = DanhMucs;
+            }
+            return View(sp);
         }
 
 
@@ -112,12 +279,30 @@ namespace AdminApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult SaveCategory(DanhMuc dm)
+        public IActionResult AddCategory(DanhMuc dm)
         {
-            //insert db
-            ctx.DanhMucs.Add(dm);
-            ctx.SaveChanges();
-            return RedirectToAction("GetAllCategories");
+            if (ModelState.IsValid)
+            {
+                //check tenDM
+                DanhMuc d = ctx.DanhMucs.Where(x => x.TenDm == dm.TenDm).FirstOrDefault();
+                if (d != null)
+                {
+                    ModelState.AddModelError(string.Empty, "Tên danh mục đã tồn tại");
+                    return View(dm);
+                }
+                else
+                {
+                    //insert db
+                    ctx.DanhMucs.Add(dm);
+                    ctx.SaveChanges();
+                    return RedirectToAction("GetAllCategories");
+                }
+
+            }
+            else
+            {
+                return View(dm);
+            }
         }
 
         public IActionResult DeleteCategory(int id)
@@ -125,15 +310,21 @@ namespace AdminApplication.Controllers
             //tim doi tuong co id
             //select * from DanhMuc where MaDm = id 
             DanhMuc dm = ctx.DanhMucs.Where(x => x.MaDm == id).SingleOrDefault();
-
+            List<SanPham> prodLST = ctx.SanPhams.Where(x => x.MaDm == id).ToList();
             //xoa du lieu
-
-            foreach (SanPham sp in ctx.SanPhams)
+            List<DanhGia> temp = new List<DanhGia>();
+            foreach (SanPham pham in prodLST)
             {
-                if (sp.MaDm == id)
-                {
-                    ctx.SanPhams.Remove(sp);
-                }
+                temp = ctx.DanhGias.Where(x => x.MaSp == pham.MaSp).ToList();
+            }
+            foreach (DanhGia gia in temp)
+            {
+                ctx.DanhGias.Remove(gia);
+            }
+
+            foreach (SanPham sp in prodLST)
+            {
+                ctx.SanPhams.Remove(sp);
             }
             //xoa du lieu
             if (dm != null)
@@ -146,6 +337,7 @@ namespace AdminApplication.Controllers
 
         public IActionResult EditCategory(int id)
         {
+
             //tim doi tuong co id
             //select * from DanhMuc where MaDm = id 
             DanhMuc dm = ctx.DanhMucs.Where(x => x.MaDm == id).SingleOrDefault();
@@ -153,18 +345,36 @@ namespace AdminApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult UpdateCategory(DanhMuc dm)
+        public IActionResult EditCategory(DanhMuc dm)
         {
-            //tim doi tuong co trong db tuong ung ma id
-            DanhMuc dm_indb = ctx.DanhMucs.Where(x => x.MaDm == dm.MaDm).SingleOrDefault();
-            if (dm_indb != null)
-            {
-                dm_indb.TenDm = dm.TenDm;
-            }
-            //cap nhat thong tin
-            ctx.SaveChanges();
-            return RedirectToAction("GetAllCategories");
 
+            if (ModelState.IsValid)
+            {
+                //check tenDM
+                DanhMuc d = ctx.DanhMucs.Where(x => x.TenDm == dm.TenDm).FirstOrDefault();
+                if (d != null)
+                {
+                    ModelState.AddModelError(string.Empty, "Tên danh mục đã tồn tại hoặc trùng với tên danh mục ban đầu!");
+                    return View(dm);
+                }
+                else
+                {
+                    //tim doi tuong co trong db tuong ung ma id
+                    DanhMuc dm_indb = ctx.DanhMucs.Where(x => x.MaDm == dm.MaDm).SingleOrDefault();
+                    if (dm_indb != null)
+                    {
+                        dm_indb.TenDm = dm.TenDm;
+                    }
+                    //cap nhat thong tin
+                    ctx.SaveChanges();
+                    return RedirectToAction("GetAllCategories");
+                }
+
+            }
+            else
+            {
+                return View(dm);
+            }
         }
 
         //========================================Customer 000 User 00 Rating =====================================
@@ -174,53 +384,72 @@ namespace AdminApplication.Controllers
         {
             //select * from khachhang
             List<KhachHang> kh = ctx.KhachHangs.ToList();
-            
+
             return View(kh);
         }
-        public IActionResult GetAllCustomerRates(int id)
+        public IActionResult GetAllCustomerRates(string id)
         {
-            ViewBag.cusID = id;
-            List<DanhGia> lst = new List<DanhGia> { };
-            foreach(DanhGia d in ctx.DanhGias)
+            KhachHang kh = ctx.KhachHangs.Where(x => x.Id == id).SingleOrDefault();
+            ViewBag.custName = kh.TenKh;
+            List<DanhGia> lst = new List<DanhGia>();
+            List<DanhGia> lst_tmp = ctx.DanhGias.Include(x => x.MaKhNavigation)
+                .Include(y => y.MaSpNavigation).ToList();
+            foreach (DanhGia d in lst_tmp)
             {
-                if(d.MaKh == id)
+                if (d.MaKh == id)
                 {
                     lst.Add(d);
                 }
             }
+
             return View(lst);
+
+
+
+
+
         }
         public IActionResult GetAllProductRates(int id)
         {
-            ViewBag.prodID = id;
-            List<DanhGia> lst = new List<DanhGia> { };
-            foreach (DanhGia d in ctx.DanhGias)
+            SanPham sp = ctx.SanPhams.Where(x => x.MaSp == id).SingleOrDefault();
+            ViewBag.prodName = sp.TenSp;
+            List<DanhGia> lst = new List<DanhGia>();
+            List<DanhGia> lst_tmp = ctx.DanhGias.Include(x => x.MaKhNavigation)
+             .Include(y => y.MaSpNavigation).ToList();
+            foreach (DanhGia d in lst_tmp)
             {
                 if (d.MaSp == id)
                 {
                     lst.Add(d);
                 }
             }
+
             return View(lst);
-        }   
-        public IActionResult GetUserAccount(int id)
+
+
+        }
+        public IActionResult GetUserAccount(string id)
         {
+            KhachHang kh_temp = new KhachHang();
             //select * from khachhang
-            User u = ctx.Users.Where(x => x.UserId == id).SingleOrDefault();
-            return View(u);
+            List<KhachHang> khs = ctx.KhachHangs.Include(x => x.User).ToList();
+            foreach (KhachHang kh in khs)
+            {
+                if (kh.User.Id == id)
+                {
+                    kh_temp = kh;
+                }
+            }
+            return View(kh_temp);
         }
 
         //--------------------------DELETE---------------------------------------------------------------------------//
-        public IActionResult DeleteCustomer(int cId, int uId)
+        public IActionResult DeleteCustomer(string cId, string uId)
         {
-            Console.Write(" " + cId + " " + uId);
-            
             //tim doi tuong co id
             //select * from KhachHang where MaKh = id 
-            KhachHang kh = ctx.KhachHangs.Where(x => x.MaKh == cId).SingleOrDefault();
-            User u = ctx.Users.Where(x => x.UserId == uId).SingleOrDefault();
-            List<DanhGia> lst = new List<DanhGia> { };
-
+            KhachHang kh = ctx.KhachHangs.Where(x => x.Id == cId).SingleOrDefault();
+            User u = ctx.Users.Where(x => x.Id == uId).SingleOrDefault();
 
             //xoa du lieu
             foreach (DanhGia d in ctx.DanhGias)
@@ -232,21 +461,21 @@ namespace AdminApplication.Controllers
             }
             ctx.KhachHangs.Remove(kh);
             ctx.Users.Remove(u);
-          
+
             ctx.SaveChanges();
             return RedirectToAction("GetAllCustomers");
         }
 
-        public IActionResult DeleteRatingByC(int id1, int id2)
+        public IActionResult DeleteRatingByC(int id1, string id2)
         {
             //tim doi tuong co id
             //select * from DanhGia where MaDg = id1 
             DanhGia dg = ctx.DanhGias.Where(x => x.MaDg == id1).SingleOrDefault();
-            
+
             //xoa du lieu
             ctx.DanhGias.Remove(dg);
             ctx.SaveChanges();
-            return RedirectToAction("GetAllCustomerRates", new {id = id2});
+            return RedirectToAction("GetAllCustomerRates", new { id = id2 });
         }
 
         public IActionResult DeleteRatingByP(int id1, int id2)
@@ -262,11 +491,11 @@ namespace AdminApplication.Controllers
         }
 
         //--------------------------EDIT----------------------------------------------------------------------//
-        public IActionResult EditCustomer(int id)
+        public IActionResult EditCustomer(string id)
         {
             //tim doi tuong co id
             //select * from KhachHnag where MaDm = id 
-            KhachHang dm = ctx.KhachHangs.Where(x => x.MaKh == id).SingleOrDefault();
+            KhachHang dm = ctx.KhachHangs.Where(x => x.Id == id).SingleOrDefault();
             return View(dm);
         }
 
@@ -280,12 +509,14 @@ namespace AdminApplication.Controllers
 
         //-----------------------------------------------UPDATE-----------------------------------------------//
         [HttpPost]
-        public IActionResult UpdateCustomer(KhachHang kh) 
-        { 
+        public IActionResult EditCustomer(KhachHang kh)
+        {
+
             //tim doi tuong co trong db tuong ung ma id
             KhachHang kh_indb = ctx.KhachHangs.Where(x => x.MaKh == kh.MaKh).SingleOrDefault();
             if (kh_indb != null)
             {
+                kh_indb.Id = kh.Id;
                 kh_indb.TenKh = kh.TenKh;
                 kh_indb.Sdt = kh.Sdt;
                 kh_indb.DiaChiKh = kh.DiaChiKh;
@@ -294,22 +525,33 @@ namespace AdminApplication.Controllers
             //cap nhat thong tin
             ctx.SaveChanges();
             return RedirectToAction("GetAllCustomers");
+
+
         }
 
+
+
         [HttpPost]
-        public IActionResult UpdateUser(User u)
+        public IActionResult EditUser(User u)
         {
-            //tim doi tuong co trong db tuong ung ma cateid
-            User u_indb = ctx.Users.Where(x => x.UserId == u.UserId).SingleOrDefault();
-            if (u_indb != null)
+            if (ModelState.IsValid)
             {
-                u_indb.Name = u.Name;
-                u_indb.Password = u.Password;
-                u_indb.Email = u.Email;
+                //tim doi tuong co trong db tuong ung ma cateid
+                User u_indb = ctx.Users.Where(x => x.UserId == u.UserId).SingleOrDefault();
+                if (u_indb != null)
+                {
+                    u_indb.Password = u.Password;
+                    u_indb.Email = u.Email;
+                }
+                //cap nhat thong tin
+                ctx.SaveChanges();
+                return RedirectToAction("GetUserAccount", new { id = u_indb.UserId });
             }
-            //cap nhat thong tin
-            ctx.SaveChanges();
-            return RedirectToAction("GetUserAccount", new { id = u_indb.UserId });
+            else
+            {
+                return View(u);
+            }
+
         }
 
 
@@ -319,11 +561,12 @@ namespace AdminApplication.Controllers
         public IActionResult GetAllBills()
         {
             //select * from DanhMuc
-            List<DonHang> dh = ctx.DonHangs.ToList();
+            List<DonHang> dh = ctx.DonHangs.Include(x => x.MaKhNavigation).ToList();
             return View(dh);
         }
 
         //EDIT AND UPDATE BILL
+        [HttpGet]
         public IActionResult EditBill(int id)
         {
             var types = new List<SelectOption>();
@@ -335,7 +578,8 @@ namespace AdminApplication.Controllers
             return View(dh);
         }
 
-        public IActionResult UpdateBill(DonHang dh)
+        [HttpPost]
+        public IActionResult SaveBill(DonHang dh)
         {
             //tim doi tuong co trong db tuong ung ma id
             DonHang dh_indb = ctx.DonHangs.Where(x => x.MaDh == dh.MaDh).SingleOrDefault();
@@ -343,6 +587,7 @@ namespace AdminApplication.Controllers
             {
                 dh_indb.TrangThaiDh = dh.TrangThaiDh;
                 dh_indb.NgayGiao = dh.NgayGiao;
+                dh_indb.NgayNhan = dh.NgayNhan;
             }
             //cap nhat thong tin
             ctx.SaveChanges();
@@ -351,11 +596,11 @@ namespace AdminApplication.Controllers
 
         //---------------------------------------------- BILL's DETAIL----------------------------------------------------------//
 
-        public IActionResult GetBillDetail(int id)
+        public IActionResult GetBillDetail(string id)
         {
-            ViewBag.billID = id;
+            List<ChiTietDonHang> lst_temp = ctx.ChiTietDonHangs.Include(x => x.MaDhNavigation).Include(y => y.MaSpNavigation).ToList();
             List<ChiTietDonHang> lst = new List<ChiTietDonHang> { };
-            foreach (ChiTietDonHang ctdh in ctx.ChiTietDonHangs)
+            foreach (ChiTietDonHang ctdh in lst_temp)
             {
                 if (ctdh.MaDh == id)
                 {

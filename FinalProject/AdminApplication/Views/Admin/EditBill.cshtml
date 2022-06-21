@@ -19,7 +19,7 @@
                     <h6 class="m-0 font-weight-bold text-primary"></h6>
                 </div>
                 <div class="card-body">
-                    @using (Html.BeginForm("UpdateBill", "Admin", FormMethod.Post))
+                    @using (Html.BeginForm("SaveBill", "Admin", FormMethod.Post))
                     {
                         <div class="mb-3">
                             <label for="MaSp" class="form-label">Mã Đơn Hàng:</label>
@@ -28,11 +28,13 @@
                         <div class="mb-3">
                             <label for="MaSp" class="form-label">Ngày Giao:</label>
                             @Html.TextBoxFor(m => m.NgayGiao, new { @class = "form-control", @type="datetime-local"} )
+                          
                         </div>
-                        @*<div class="mb-3">
+                        <div class="mb-3">
                             <label for="MaSp" class="form-label">Ngày Nhận</label>
-                            @Html.TextBoxFor(m => m.NgayNhan, new { @class = "form-control" , @readonly = "readonly" , @type="datetime-local"} )
-                        </div>*@
+                            @Html.TextBoxFor(m => m.NgayNhan, new { @class = "form-control"  , @type="datetime-local"} )
+                                
+                        </div>
                         <div class="mb-3">
                             <label for="MaDm" class="form-label">Trạng Thái Đơn Hàng</label>
 
