@@ -2,22 +2,18 @@
 @{
     Layout = "~/Views/Shared/_CustomerLayout.cshtml";
 }
-@model SanPham
 
+@model CustomerApplication.Models.SanPham
 
-<html lang="en">
+<link rel="stylesheet" href="~/css/details.css">
 
-<head>
-  <title>Harvest vase</title>
-  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
-</head>
 <style>
-body {
+/*body {
   background-color: white;
-}
+}*/
 
 .wrapper {
-  height: 420px;
+  height: 100%;
   width: 654px;
   margin: 50px auto;
   border-radius: 7px 7px 7px 7px;
@@ -29,7 +25,7 @@ body {
 
 .product-img {
   float: left;
-  height: 420px;
+  height: 450px;
   width: 327px;
 }
 
@@ -39,7 +35,7 @@ body {
 
 .product-info {
   float: left;
-  height: 420px;
+  height: 450px;
   width: 327px;
   border-radius: 0 7px 10px 7px;
   background-color: #ffffff;
@@ -111,7 +107,7 @@ span {
 .product-price-btn button {
   float: right;
   display: inline-block;
-  height: 50px;
+  height: 20px;
   width: 176px;
   margin: 0 40px 0 16px;
   box-sizing: border-box;
@@ -123,7 +119,7 @@ span {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
-  background-color: #9cebd5;
+  /*background-color: #9cebd5;*/
   cursor: pointer;
   outline: none;
 }
@@ -131,27 +127,68 @@ span {
 .product-price-btn button:hover {
   background-color: #79b0a1;
 }
+
+
 </style>
 
 <body>
-
   <div class="wrapper">
-    
-    <div class="product-img">
-      <img src="~/assets/images/@Model.HinhAnh">
-    </div>
-    <div class="product-info">
-      <div class="product-text">
-        <h1>@Model.TenSp</h1>
-        <h2>@Model.MoTa </h2>
-        <p><i class="fa fa-dollar" style="font-size:48px;color:#005baa"></i> @Model.Gia đ</p>
-      </div>
-      <div class="product-price-btn">
-        <button type="button">Buy now</button>
-      </div>
-    </div>
+        <div class="product-img">
+          <img src="~/assets/images/@Model.HinhAnh">
+        </div>
+        <div class="product-info">
+              <div class="product-text">
+                <h1>@Model.TenSp</h1>
+                <h2>@Model.MoTa </h2>
+                <p><i class="fa fa-dollar" style="font-size:48px;color:#005baa"></i> @Model.Gia đ</p>
+              </div>
+              <div class="product-price-btn">
+              @using (Html.BeginForm("AddToCart","Shopping", FormMethod.Post))
+                {
+                        @Html.HiddenFor(m=>m.MaSp)
+                        @Html.TextBox("sl", "1")
+                        <button style="margin-top: 15px;height:50px;width:130px;" type="submit" class="btn btn-primary">Buy now</button>
+                }    
+              </div>
+        </div>
+        
+        <div class="table-users">
+        <div class="header3"  style="background-color: rgba(0,91,170,255);
+                                    color: white;
+                                    box-sizing: border-box;
+                                    border: transparent;
+                                    border-radius: 60px;
+                                    font-size: 1.5em;
+                                    padding-top: 15px;
+                                    padding-bottom: 15px;
+                                    text-align: center;
+                                    text-transform: uppercase;">ĐÁNH GIÁ</div>
+        <table cellspacing="0">
+          <thead>
+              <tr>
+             <th>Tên khách hàng</th>
+             <th width="230">Comments</th>
+             <th>Mức đánh giá</th>
+             </tr>
+          </thead>
+          <tbody>
+              @foreach (var danhgia in ViewBag.danhgias)
+              {
+          <tr>
+             
+             <td>@danhgia.MaKhNavigation.TenKh</td>
+             <td>@danhgia.NhanXet</td>
+             <td>@danhgia.MucDg / 5</td>
+            
+          </tr>
+              }
+          </tbody>
+       </table>
+        </div>
+ 
+     </div>
+
   </div>
 
 </body>
 
-</html>

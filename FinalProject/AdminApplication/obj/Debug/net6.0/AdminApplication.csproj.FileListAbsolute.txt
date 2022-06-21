@@ -82,6 +82,8 @@ C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\Microsoft.IdentityMo
 C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\PagedList.dll
+C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\PagedList.Mvc.dll
 C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\PTrienWeb\FinalProject\AdminApplication\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -2,7 +2,8 @@
 @{
     Layout = "~/Views/Shared/_CustomerLayout.cshtml";
 }
-@model SanPham
+model List<CustomerApplication.Models.SanPham>
+
 
 
 <head>
@@ -16,7 +17,7 @@
   
   .wrapper {
     height: 420px;
-    width: 654px;
+    width: 720px;
     margin: 50px auto;
     border-radius: 10px 10px 10px 10px;
     /* VIA CSS MATIC https://goo.gl/cIbnS */
@@ -29,7 +30,7 @@
     background-color: white;
     float: left;
     height: 420px;
-    width: 327px;
+    width: 360px;
   }
   
   .product-img img {
@@ -39,7 +40,7 @@
   .product-info {
     float: left;
     height: 420px;
-    width: 327px;
+    width: 360px;
     border-radius: 0 7px 10px 7px;
     background-color: #ffffff;
   }
@@ -52,13 +53,15 @@
   .product-text h1 {
     margin: 0 0 0 38px;
     padding-top: 30px;
-    font-size: 35px;
+    font-size: 30px;
     color: #474747;
+    font-family:'Playfair Display', serif;
+    
   }
   
   .product-text h1,
   .product-price-btn p {
-    font-family: 'Bentham', serif;
+    font-family:'Playfair Display', serif;
   }
   
   .product-text h2 {
@@ -135,6 +138,7 @@
         <button type="button">buy now</button>
       </div>
     </div>
-  </div>
+    
+        </div>
 
 </body>

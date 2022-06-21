@@ -9,6 +9,7 @@ namespace CustomerApplication.Models
         {
             ChiTietDonHangs = new HashSet<ChiTietDonHang>();
             DanhGias = new HashSet<DanhGia>();
+           
         }
 
         public int MaSp { get; set; }
@@ -26,5 +27,7 @@ namespace CustomerApplication.Models
         public virtual DanhMuc? MaDmNavigation { get; set; }
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
         public virtual ICollection<DanhGia> DanhGias { get; set; }
+
+        
     }
 }

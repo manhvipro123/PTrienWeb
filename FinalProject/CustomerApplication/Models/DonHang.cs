@@ -11,7 +11,8 @@ namespace CustomerApplication.Models
         }
 
         public int MaDh { get; set; }
-        public int? MaKh { get; set; }
+        public string Id { get; set; } = null!;
+        public string MaKh { get; set; } = null!;
         public string? DiaChiGiao { get; set; }
         public DateTime? NgayLap { get; set; }
         public DateTime? NgayGiao { get; set; }
@@ -22,7 +23,7 @@ namespace CustomerApplication.Models
         public string? SoThe { get; set; }
         public decimal? TongTien { get; set; }
 
-        public virtual KhachHang? MaKhNavigation { get; set; }
+        public virtual KhachHang MaKhNavigation { get; set; } = null!;
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
     }
 }
