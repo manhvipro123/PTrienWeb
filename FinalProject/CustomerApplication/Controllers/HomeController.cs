@@ -1,12 +1,19 @@
 ﻿using CustomerApplication.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Session;
+using Microsoft.AspNetCore.Http;
+using System.Text.Json;
+
 
 namespace CustomerApplication.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        StoreContext ctx = new StoreContext();
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -15,9 +22,9 @@ namespace CustomerApplication.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View ();
         }
-
+       
         public IActionResult Privacy()
         {
             return View();
@@ -35,11 +42,8 @@ namespace CustomerApplication.Controllers
             return View(lst); ;
         }
 
-        public IActionResult AddToCart()
-        {
-            return View();
-        }
-        public IActionResult About()
+    
+    public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
 
