@@ -122,3 +122,5 @@ C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplicat
 C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\obj\Debug\net6.0\CustomerApplication.csproj.CopyComplete
 C:\PTrienWeb\FinalProject\CustomerApplication\bin\Debug\net6.0\PagedList.dll
 C:\PTrienWeb\FinalProject\CustomerApplication\bin\Debug\net6.0\PagedList.Mvc.dll
+C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\bin\Debug\net6.0\PagedList.dll
+C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\bin\Debug\net6.0\PagedList.Mvc.dll
