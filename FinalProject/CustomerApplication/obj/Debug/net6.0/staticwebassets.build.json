@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L409Qx1i6oFz/xDg3HX82UWiGPIUI//KbPkXdjUEnTA=",
+  "Hash": "OWqA25VewSqSzvuW2srP/YGdN60CT8MIWqHY/vxaPvI=",
   "Source": "CustomerApplication",
   "BasePath": "_content/CustomerApplication",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CustomerApplication\\wwwroot",
       "Source": "CustomerApplication",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CustomerApplication.styles.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CustomerApplication.styles.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "CustomerApplication.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CustomerApplication.styles.css"
+      "OriginalItemSpec": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CustomerApplication.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CustomerApplication.bundle.scp.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CustomerApplication.bundle.scp.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "CustomerApplication.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CustomerApplication.bundle.scp.css"
+      "OriginalItemSpec": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CustomerApplication.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\a.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\a.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/a.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\a.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\b.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\b.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/b.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\b.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\banner.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\banner.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/banner.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\c.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\c.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/c.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\c.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\choice.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\choice.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/choice.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\choice.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\d.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\d.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/d.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\d.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\footer.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\footer.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/footer.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\footer.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\gel-boi-tron-cho-nu.jpg",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\gel-boi-tron-cho-nu.jpg",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/gel-boi-tron-cho-nu.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\gel-boi-tron-cho-nu.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh1.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh1.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh1.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh1.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh10.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh10.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh10.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh10.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh11.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh11.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh11.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh11.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh12.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh12.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh12.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh12.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh2.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh2.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh2.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh2.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh3.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh3.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh3.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh3.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh4.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh4.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh4.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh4.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh5.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh5.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh5.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh5.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh6.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh6.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh6.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh6.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh7.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh7.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh7.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh7.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh8.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh8.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh8.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh8.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh9.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh9.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/hinh9.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh9.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\icon-1.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\icon-1.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/icon-1.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\icon-1.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\icon-2.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\icon-2.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/icon-2.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\icon-2.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\icon-3.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\icon-3.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/icon-3.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\icon-3.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l1.jpg",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l1.jpg",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/l1.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\l1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l1.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l1.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/l1.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\l1.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l2.jpg",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l2.jpg",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/l2.jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\l2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l3.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l3.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/l3.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\l3.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l4.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\l4.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/l4.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\l4.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\logo1.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\logo1.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/logo1.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo1.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\marketing-1.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\marketing-1.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/marketing-1.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\marketing-1.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\marketing-2.png",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\marketing-2.png",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/marketing-2.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\marketing-2.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\t1.jpg",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\t1.jpg",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "assets/images/t1.jpg",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\t1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\add.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\add.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/add.css",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\css\\add.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\app.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\app.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\details.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\details.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/details.css",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\css\\details.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\index.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\index.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\product-detail.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\product-detail.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/product-detail.css",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\css\\product-detail.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\site.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\site.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style3.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style3.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/style3.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style3.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style4.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\style4.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/style4.css",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style4.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\thanhtoan.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\css\\thanhtoan.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "css/thanhtoan.css",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\css\\thanhtoan.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\favicon.ico",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\favicon.ico",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\index.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\index.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "js/index.js",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\js\\index.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\jquery-3.3.1.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "js/jquery-3.3.1.min.js",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.3.1.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\main.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\main.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\popper.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\popper.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "js/popper.min.js",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\script.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\script.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "js/script.js",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\js\\script.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\site.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\js\\site.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap.css",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/js/bootstrap.js",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\vendor\\jquery\\jquery.min.js",
+      "Identity": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\vendor\\jquery\\jquery.min.js",
       "SourceId": "CustomerApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "ContentRoot": "C:\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
       "BasePath": "_content/CustomerApplication",
       "RelativePath": "vendor/jquery/jquery.min.js",
       "AssetKind": "All",
