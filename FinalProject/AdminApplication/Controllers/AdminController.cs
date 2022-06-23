@@ -403,11 +403,6 @@ namespace AdminApplication.Controllers
             }
 
             return View(lst);
-
-
-
-
-
         }
         public IActionResult GetAllProductRates(int id)
         {
@@ -435,7 +430,7 @@ namespace AdminApplication.Controllers
             List<KhachHang> khs = ctx.KhachHangs.Include(x => x.User).ToList();
             foreach (KhachHang kh in khs)
             {
-                if (kh.User.Id == id)
+                if (kh.UserId == id)
                 {
                     kh_temp = kh;
                 }
