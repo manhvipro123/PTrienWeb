@@ -106,19 +106,19 @@ namespace AdminApplication.Controllers
                 var fileName = formFile.FileName;
                 string path = rootPath + fileName;
                 string[] fileEntries = Directory.GetFiles(@"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\");
-              /*  if (System.IO.File.Exists(path))
-                {
-                    ModelState.AddModelError(string.Empty, "File name hình ảnh đã tồn tại");
-                    return View(sp);
-                }*/
-              /*  foreach (string fName in fileEntries)
-                {
-                    if (fName == path)
-                    {
-                        check = true;
-                        System.IO.File.Replace(fName, path, null);
-                    }
-                }*/
+                /*  if (System.IO.File.Exists(path))
+                  {
+                      ModelState.AddModelError(string.Empty, "File name hình ảnh đã tồn tại");
+                      return View(sp);
+                  }*/
+                /*  foreach (string fName in fileEntries)
+                  {
+                      if (fName == path)
+                      {
+                          check = true;
+                          System.IO.File.Replace(fName, path, null);
+                      }
+                  }*/
 
                 var stream = System.IO.File.Create(path);
                 formFile.CopyTo(stream);
@@ -250,8 +250,8 @@ namespace AdminApplication.Controllers
             List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
             ViewBag.DanhMucs = DanhMucs;
             try
-            {      
-                if(Request.Form.Files[0] != null)
+            {
+                if (Request.Form.Files[0] != null)
                 {
                     //images url
                     var formFile = Request.Form.Files[0];
@@ -261,6 +261,7 @@ namespace AdminApplication.Controllers
                     /*  string[] fileEntries = Directory.GetFiles(@"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\");*/
                     var stream = System.IO.File.Create(path);
                     formFile.CopyTo(stream);
+                    stream.Close();
                     if (ModelState.IsValid)
                     {
 
@@ -280,10 +281,11 @@ namespace AdminApplication.Controllers
                             sp_indb.DacDiem = sp.DacDiem;
                         }
                         //cap nhat thong tin
-                        stream.Close();
+
                         ctx.SaveChanges();
                         return RedirectToAction("GetAllProducts");
-                    }else
+                    }
+                    else
                     {
                         return View();
                     }
@@ -317,9 +319,9 @@ namespace AdminApplication.Controllers
                         return View(sp);
                     }
                 }
-             
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 ModelState.AddModelError(string.Empty, ex.ToString());
             }
@@ -376,20 +378,25 @@ namespace AdminApplication.Controllers
             DanhMuc dm = ctx.DanhMucs.Where(x => x.MaDm == id).SingleOrDefault();
             List<SanPham> prodLST = ctx.SanPhams.Where(x => x.MaDm == id).ToList();
             //xoa du lieu
-            List<DanhGia> temp = new List<DanhGia>();
+         
             foreach (SanPham pham in prodLST)
             {
-                temp = ctx.DanhGias.Where(x => x.MaSp == pham.MaSp).ToList();
+                List<DanhGia> temp = ctx.DanhGias.Where(x => x.MaSp == pham.MaSp).ToList();
+                if(temp.Count > 0)
+                {
+                    foreach (DanhGia gia in temp)
+                    {
+                        ctx.DanhGias.Remove(gia);
+                    }
+                    temp.Clear();
+                }
+                
             }
-            foreach (DanhGia gia in temp)
-            {
-                ctx.DanhGias.Remove(gia);
-            }
-
             foreach (SanPham sp in prodLST)
             {
                 ctx.SanPhams.Remove(sp);
             }
+
             //xoa du lieu
             if (dm != null)
             {
