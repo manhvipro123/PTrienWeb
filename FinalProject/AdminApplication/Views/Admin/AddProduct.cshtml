@@ -2,7 +2,7 @@
     Layout = "~/Views/Shared/_adminLayout.cshtml";
 }
 
-@model AdminApplication.Models.SanPhamModel
+@model AdminApplication.Models.SanPham
 <div class="container-fluid">
     <!-- Page Heading -->
     <h1 class="h3 mb-1 text-gray-800">Thêm Sản Phẩm</h1>
@@ -20,7 +20,7 @@
                 </div>
                 <div class="card-body">
                     <p class="form-label" style="color: red">(*)Mã sản phẩm sẽ được tạo tự động</p>
-                    @using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post))
+                    @using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post,new {enctype="multipart/form-data"}))
                     {
                         @Html.ValidationSummary(false,"",new { @class = "text-danger" })
                         <div class="mb-3">
@@ -90,11 +90,8 @@
 
                         </div>
                         <div class="mb-3">
-                            <label for="HinhAnh" class="form-label">Hình ảnh:</label>
-                            @Html.TextBoxFor(m => m.HinhAnh, new { @class = "form-control" })
-                        @*    @Html.ValidationMessageFor(m => m.HinhAnh,"", new { @class = "text-danger" } )*@
-                            <input type="file" name="formFile" class="form-control" />
-                            @Html.TextBoxFor(m => m.FormFile, new { @class = "form-control" , type="file"})
+                            <label for="HinhAnh" class="form-label">Hình ảnh:</label>   
+                            @Html.TextBox("formFile","", new { @class = "form-control" , type="file"})
                         </div>
 
                         <a href="~/admin/addproduct" class="btn btn-outline-danger" role="button" aria-pressed="true">Hủy</a>

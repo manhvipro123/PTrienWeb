@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<StoreContext>(
     option => option.UseSqlServer("server=DESKTOP-O14444V\\SQLEXPRESS;user Id = sa; password = 1;database=Store")
+
 );
 builder.Services.AddTransient<IReviewRepository, ReviewRepository>();
 

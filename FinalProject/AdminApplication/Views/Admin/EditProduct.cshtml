@@ -19,8 +19,9 @@
                     <h6 class="m-0 font-weight-bold text-primary">Cập nhật thông tin sản phẩm</h6>
                 </div>
                 <div class="card-body">
-                    @using (Html.BeginForm("EditProduct", "Admin", FormMethod.Post))
+                    @using (Html.BeginForm("EditProduct", "Admin", FormMethod.Post,new {enctype="multipart/form-data"}))
                     {
+                        @Html.ValidationSummary(false,"",new { @class = "text-danger" })
                         <div class="mb-3">
                             <label for="MaSp" class="form-label">Mã Sản Phẩm:</label>
                             @Html.TextBoxFor(m => m.MaSp, new { @class = "form-control" , @readonly = "readonly" } )
@@ -94,7 +95,7 @@
                         <div class="mb-3">
                             <label for="HinhAnh" class="form-label">Hình ảnh:</label>
                             @Html.TextBoxFor(m => m.HinhAnh, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.HinhAnh,"", new { @class = "text-danger" } )
+                            @Html.TextBox("formFile","", new { @class = "form-control" , type="file"})
                         </div>
 
                         <a href="~/admin/getallproducts" class="btn btn-outline-danger" role="button" aria-pressed="true">Quay lại</a>
