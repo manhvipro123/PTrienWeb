@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj": {}
   },
   "projects": {
-    "C:\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj",
         "projectName": "AdminApplication",
-        "projectPath": "C:\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj",
-        "packagesPath": "C:\\Users\\Yen Nhi\\.nuget\\packages\\",
-        "outputPath": "C:\\PTrienWeb\\FinalProject\\AdminApplication\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\AdminApplication.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\AdminApplication\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Yen Nhi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
