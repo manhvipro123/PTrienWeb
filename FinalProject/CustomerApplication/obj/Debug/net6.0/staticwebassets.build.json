@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L409Qx1i6oFz/xDg3HX82UWiGPIUI//KbPkXdjUEnTA=",
+  "Hash": "rIt4Rm3BCiBpFhQ3tpsGqTc1XISu3e+zXH3gSHRVw3I=",
   "Source": "CustomerApplication",
   "BasePath": "_content/CustomerApplication",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\hinh12.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh13.png",
+      "SourceId": "CustomerApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\",
+      "BasePath": "_content/CustomerApplication",
+      "RelativePath": "assets/images/hinh13.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\hinh13.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\manhvipro123\\PTrienWeb\\FinalProject\\CustomerApplication\\wwwroot\\assets\\images\\hinh2.png",

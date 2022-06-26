@@ -4,6 +4,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using System.Collections;
 
 namespace AdminApplication.Controllers
 {
@@ -48,6 +49,7 @@ namespace AdminApplication.Controllers
             pTypes.Add(new SelectOption() { Value = "3", Text = "3" });
             pTypes.Add(new SelectOption() { Value = "10", Text = "10" });
             pTypes.Add(new SelectOption() { Value = "12", Text = "12" });
+            pTypes.Add(new SelectOption() { Value = "30", Text = "30" });
             ViewBag.PartialTypes_2 = pTypes;
             var dTypes = new List<SelectOption>();
             dTypes.Add(new SelectOption() { Value = "Bổ sung gel", Text = "Bổ sung gel" });
@@ -66,7 +68,7 @@ namespace AdminApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddProduct(SanPhamModel spm)
+        public IActionResult AddProduct(SanPham sp)
         {
             //option forms
             var sTypes = new List<SelectOption>();
@@ -79,6 +81,7 @@ namespace AdminApplication.Controllers
             pTypes.Add(new SelectOption() { Value = "3", Text = "3" });
             pTypes.Add(new SelectOption() { Value = "10", Text = "10" });
             pTypes.Add(new SelectOption() { Value = "12", Text = "12" });
+            pTypes.Add(new SelectOption() { Value = "30", Text = "30" });
             ViewBag.PartialTypes_2 = pTypes;
             var dTypes = new List<SelectOption>();
             dTypes.Add(new SelectOption() { Value = "Bổ sung gel", Text = "Bổ sung gel" });
@@ -95,57 +98,76 @@ namespace AdminApplication.Controllers
 
             try
             {
+                /*Boolean check = false;*/
                 //images url
                 var formFile = Request.Form.Files[0];
 
                 string rootPath = @"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\";
                 var fileName = formFile.FileName;
                 string path = rootPath + fileName;
+                string[] fileEntries = Directory.GetFiles(@"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\");
+              /*  if (System.IO.File.Exists(path))
+                {
+                    ModelState.AddModelError(string.Empty, "File name hình ảnh đã tồn tại");
+                    return View(sp);
+                }*/
+              /*  foreach (string fName in fileEntries)
+                {
+                    if (fName == path)
+                    {
+                        check = true;
+                        System.IO.File.Replace(fName, path, null);
+                    }
+                }*/
+
                 var stream = System.IO.File.Create(path);
                 formFile.CopyTo(stream);
+
+
                 if (ModelState.IsValid)
                 {
 
                     //check TenSp
-                    SanPham sp = new SanPham()
+                    SanPham spm = new SanPham()
                     {
-                        MaDm = spm.MaDm,
-                        TenSp = spm.TenSp,
-                        Gia = spm.Gia,
-                        SoLuong = spm.SoLuong,
-                        MoTa = spm.MoTa,
-                        NgayNhap = spm.NgayNhap,
-                        TrangThai = spm.TrangThai,
+                        MaDm = sp.MaDm,
+                        TenSp = sp.TenSp,
+                        Gia = sp.Gia,
+                        SoLuong = sp.SoLuong,
+                        MoTa = sp.MoTa,
+                        NgayNhap = sp.NgayNhap,
+                        TrangThai = sp.TrangThai,
                         HinhAnh = fileName,
-                        Goi = spm.Goi,
-                        DacDiem = spm.DacDiem,
+                        Goi = sp.Goi,
+                        DacDiem = sp.DacDiem,
 
                     };
+
                     SanPham sp_indb = ctx.SanPhams.Where(x => x.TenSp == sp.TenSp).SingleOrDefault();
                     if (sp_indb != null)
                     {
                         ModelState.AddModelError(string.Empty, "Tên sản phẩm đã tồn tại");
-                        return View(spm);
+                        return View(sp);
                     }
                     else
                     {
                         //insert db
-                        ctx.SanPhams.Add(sp);
+                        stream.Close();
+                        ctx.SanPhams.Add(spm);
                         ctx.SaveChanges();
                         return RedirectToAction("GetAllProducts");
                     }
                 }
                 else
                 {
-                    return View(spm);
+                    return View(sp);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                /*         ModelState.AddModelError(string.Empty, "Something Error");*/
+                ModelState.AddModelError(string.Empty, ex.ToString());
             }
-            return View(spm);
+            return View(sp);
         }
 
         public IActionResult DeleteProduct(int id)
@@ -180,6 +202,7 @@ namespace AdminApplication.Controllers
             pTypes.Add(new SelectOption() { Value = "3", Text = "3" });
             pTypes.Add(new SelectOption() { Value = "10", Text = "10" });
             pTypes.Add(new SelectOption() { Value = "12", Text = "12" });
+            pTypes.Add(new SelectOption() { Value = "30", Text = "30" });
             ViewBag.PartialTypes_2 = pTypes;
             var dTypes = new List<SelectOption>();
             dTypes.Add(new SelectOption() { Value = "Bổ sung gel", Text = "Bổ sung gel" });
@@ -201,67 +224,108 @@ namespace AdminApplication.Controllers
         [HttpPost]
         public IActionResult EditProduct(SanPham sp)
         {
-            if (ModelState.IsValid)
-            {
-
-                //check tenDM
-                SanPham s = ctx.SanPhams.Where(x => x.TenSp == sp.TenSp).FirstOrDefault();
-                if (s != null)
+            var sTypes = new List<SelectOption>();
+            sTypes.Add(new SelectOption() { Value = "Tồn tại", Text = "Tồn tại" });
+            sTypes.Add(new SelectOption() { Value = "Hết hàng", Text = "Hết hàng" });
+            sTypes.Add(new SelectOption() { Value = "Ngưng bán", Text = "Ngưng bán" });
+            ViewBag.PartialTypes_1 = sTypes;
+            var pTypes = new List<SelectOption>();
+            pTypes.Add(new SelectOption() { Value = "0", Text = "0" });
+            pTypes.Add(new SelectOption() { Value = "3", Text = "3" });
+            pTypes.Add(new SelectOption() { Value = "10", Text = "10" });
+            pTypes.Add(new SelectOption() { Value = "12", Text = "12" });
+            pTypes.Add(new SelectOption() { Value = "30", Text = "30" });
+            ViewBag.PartialTypes_2 = pTypes;
+            var dTypes = new List<SelectOption>();
+            dTypes.Add(new SelectOption() { Value = "Bổ sung gel", Text = "Bổ sung gel" });
+            dTypes.Add(new SelectOption() { Value = "Có gân và gai", Text = "Có gân và gai" });
+            dTypes.Add(new SelectOption() { Value = "Có mùi vị", Text = "Có mùi vị" });
+            dTypes.Add(new SelectOption() { Value = "Cơ bản", Text = "Cơ bản" });
+            dTypes.Add(new SelectOption() { Value = "Gel có mùi", Text = "Gel có mùi" });
+            dTypes.Add(new SelectOption() { Value = "Gel gốc nước", Text = "Gel gốc nước" });
+            dTypes.Add(new SelectOption() { Value = "Kéo dài thời gian", Text = "Kéo dài thời gian" });
+            dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
+            ViewBag.PartialTypes_3 = dTypes;
+            //tim doi tuong co id
+            List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+            ViewBag.DanhMucs = DanhMucs;
+            try
+            {      
+                if(Request.Form.Files[0] != null)
                 {
-                    ModelState.AddModelError(string.Empty, "Tên sản phẩm đã tồn tại");
-                    return View(sp);
+                    //images url
+                    var formFile = Request.Form.Files[0];
+                    string rootPath = @"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\";
+                    var fileName = formFile.FileName;
+                    var path = rootPath + fileName;
+                    /*  string[] fileEntries = Directory.GetFiles(@"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\");*/
+                    var stream = System.IO.File.Create(path);
+                    formFile.CopyTo(stream);
+                    if (ModelState.IsValid)
+                    {
+
+                        //tim doi tuong co trong db tuong ung ma cateid
+                        SanPham sp_indb = ctx.SanPhams.Where(x => x.MaSp == sp.MaSp).SingleOrDefault();
+                        if (sp_indb != null)
+                        {
+                            sp_indb.MaDm = sp.MaDm;
+                            sp_indb.TenSp = sp.TenSp;
+                            sp_indb.Gia = sp.Gia;
+                            sp_indb.SoLuong = sp.SoLuong;
+                            sp_indb.MoTa = sp.MoTa;
+                            sp_indb.NgayNhap = sp.NgayNhap;
+                            sp_indb.TrangThai = sp.TrangThai;
+                            sp_indb.HinhAnh = fileName;
+                            sp_indb.Goi = sp.Goi;
+                            sp_indb.DacDiem = sp.DacDiem;
+                        }
+                        //cap nhat thong tin
+                        stream.Close();
+                        ctx.SaveChanges();
+                        return RedirectToAction("GetAllProducts");
+                    }else
+                    {
+                        return View();
+                    }
                 }
                 else
                 {
-                    //tim doi tuong co trong db tuong ung ma cateid
-                    SanPham sp_indb = ctx.SanPhams.Where(x => x.MaSp == sp.MaSp).SingleOrDefault();
-                    if (sp_indb != null)
+                    if (ModelState.IsValid)
                     {
-                        sp_indb.MaDm = sp.MaDm;
-                        sp_indb.TenSp = sp.TenSp;
-                        sp_indb.Gia = sp.Gia;
-                        sp_indb.SoLuong = sp.SoLuong;
-                        sp_indb.MoTa = sp.MoTa;
-                        sp_indb.NgayNhap = sp.NgayNhap;
-                        sp_indb.TrangThai = sp.TrangThai;
-                        sp_indb.HinhAnh = sp.HinhAnh;
-                        sp_indb.Goi = sp.Goi;
-                        sp_indb.DacDiem = sp.DacDiem;
-                    }
-                    //cap nhat thong tin
-                    ctx.SaveChanges();
-                    return RedirectToAction("GetAllProducts");
-                }
 
+                        //tim doi tuong co trong db tuong ung ma cateid
+                        SanPham sp_indb = ctx.SanPhams.Where(x => x.MaSp == sp.MaSp).SingleOrDefault();
+                        if (sp_indb != null)
+                        {
+                            sp_indb.MaDm = sp.MaDm;
+                            sp_indb.TenSp = sp.TenSp;
+                            sp_indb.Gia = sp.Gia;
+                            sp_indb.SoLuong = sp.SoLuong;
+                            sp_indb.MoTa = sp.MoTa;
+                            sp_indb.NgayNhap = sp.NgayNhap;
+                            sp_indb.TrangThai = sp.TrangThai;
+                            sp_indb.HinhAnh = sp.HinhAnh;
+                            sp_indb.Goi = sp.Goi;
+                            sp_indb.DacDiem = sp.DacDiem;
+                        }
+                        //cap nhat thong tin
+                        ctx.SaveChanges();
+                        return RedirectToAction("GetAllProducts");
+                    }
+                    else
+                    {
+                        return View(sp);
+                    }
+                }
+             
             }
-            else
+            catch(Exception ex)
             {
-                var sTypes = new List<SelectOption>();
-                sTypes.Add(new SelectOption() { Value = "Tồn tại", Text = "Tồn tại" });
-                sTypes.Add(new SelectOption() { Value = "Hết hàng", Text = "Hết hàng" });
-                sTypes.Add(new SelectOption() { Value = "Ngưng bán", Text = "Ngưng bán" });
-                ViewBag.PartialTypes_1 = sTypes;
-                var pTypes = new List<SelectOption>();
-                pTypes.Add(new SelectOption() { Value = "0", Text = "0" });
-                pTypes.Add(new SelectOption() { Value = "3", Text = "3" });
-                pTypes.Add(new SelectOption() { Value = "10", Text = "10" });
-                pTypes.Add(new SelectOption() { Value = "12", Text = "12" });
-                ViewBag.PartialTypes_2 = pTypes;
-                var dTypes = new List<SelectOption>();
-                dTypes.Add(new SelectOption() { Value = "Bổ sung gel", Text = "Bổ sung gel" });
-                dTypes.Add(new SelectOption() { Value = "Có gân và gai", Text = "Có gân và gai" });
-                dTypes.Add(new SelectOption() { Value = "Có mùi vị", Text = "Có mùi vị" });
-                dTypes.Add(new SelectOption() { Value = "Cơ bản", Text = "Cơ bản" });
-                dTypes.Add(new SelectOption() { Value = "Gel có mùi", Text = "Gel có mùi" });
-                dTypes.Add(new SelectOption() { Value = "Gel gốc nước", Text = "Gel gốc nước" });
-                dTypes.Add(new SelectOption() { Value = "Kéo dài thời gian", Text = "Kéo dài thời gian" });
-                dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
-                ViewBag.PartialTypes_3 = dTypes;
-                //tim doi tuong co id
-                List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
-                ViewBag.DanhMucs = DanhMucs;
+                ModelState.AddModelError(string.Empty, ex.ToString());
             }
             return View(sp);
+
+
         }
 
 
