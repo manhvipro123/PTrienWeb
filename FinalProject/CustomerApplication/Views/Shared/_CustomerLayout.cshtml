@@ -25,7 +25,7 @@
             <div id="logo-bar">
             <a href="~/home/index"><img  src="~/assets/images/logo1.png"/></a>
             <ul>
-                <li ><a class="font-link" href="~/product">Sản Phẩm</a></li>
+                <li>@Html.ActionLink("Sản phẩm", "Index","Product","",new{@class = "font-link"})</li>
                 <li ><a class="font-link" href="https://www.durexvietnam.vn/collections/find-your-best-fit">Chọn Bao Vừa Vặn</a></li>
             </ul>
             <ul>
@@ -48,12 +48,14 @@
             </ul>
             </div>
             <div id="search-bar" style="float:left;">
-                <input
-                    style="font-size:larger;color:grey;background-color: white;border:none;border-radius:8px;height:30px;width:350px;"
-                    placeholder="TÌM KIẾM" id="searchInput">
+                <input style="font-size:larger;color:grey;background-color: white;border:none;border-radius:8px;height:30px;width:350px;" placeholder="TÌM KIẾM" id="searchInput">
                  <button id="cart" class="but but1" style="width:150px;height:40px;">
-                    <i class="fa fa-shopping-basket" href="" aria-hidden="true"></i> Giỏ Hàng
-                    </button>
+                    <a class="fa fa-shopping-basket" href="~/shopping/index" aria-hidden="true"> Giỏ Hàng</a> 
+                 </button>
+
+                 
+
+
                 @*<div id="myModal" class="modal">
                 <div class="modal-content">
                     <div class="modal-header">

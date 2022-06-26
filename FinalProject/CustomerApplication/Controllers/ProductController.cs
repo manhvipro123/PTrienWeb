@@ -9,10 +9,16 @@ namespace CustomerApplication.Controllers
     {
         ICategoryRepository categoryRepository = new CategoryRepository();
         StoreContext ctx = new StoreContext();
+       
         public IActionResult Index()
         {
             List<SanPham> lst = categoryRepository.getAllSanPhams();
             return View(lst);
+        }
+        public IActionResult Filter(int id)
+        {
+            List<SanPham> sp = ctx.SanPhams.Where(x => x.Goi == id).ToList();
+            return View(sp);
         }
 
         public IActionResult Details (int masp)

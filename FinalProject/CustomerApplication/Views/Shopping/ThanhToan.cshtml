@@ -68,7 +68,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                        <label for="email">Email <span class="text-muted"></span></label>
                         <input name="s_email" type="email" class="form-control" id="email" placeholder="you@gmail.com">
                         <div class="invalid-feedback">
                             Please enter a valid email address for shipping updates.
@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="password">Password<span class="text-muted">(Optional)</span></label>
+                        <label for="password">Password<span class="text-muted"></span></label>
                         <input name="s_pass" type="password" class="form-control" id="password" placeholder="Password">
                         <div class="invalid-feedback">
                             Please enter a valid email address for shipping updates.
@@ -93,7 +93,7 @@
 
                     <div class="mb-3">
                         <label for="address">Địa chỉ</label>
-                        <input name="s_dc" type="text" class="form-control" id="address" placeholder="2A, đường Phạm Văn Chiêu, Phường 9, Gò Vấp" required>
+                        <input name="s_dc" type="text" class="form-control" id="address" placeholder="Số nhà, đường, ..." required>
                         <div class="invalid-feedback">
                             Please enter your shipping address.
                         </div>
@@ -121,23 +121,23 @@
                         @Html.DropDownListFor(x => x.PhuongThucTt,
                     new SelectList(ViewBag.PartialTypes, "Value", "Text"),
                     new { @class = "custom-control custom-radio"})
-                    </div>
+                    <br>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="cc-name">Ngân hàng nhận</label>
-                        </div>
-                        <input name="s_nh" type="text" class="form-control" id="cc-name" placeholder="" required>
-                        <div class="invalid-feedback">
+                            <input name="s_nh" type="text" class="form-control" id="cc-name" placeholder="" required>
+                       @* <div class="invalid-feedback">
                             Name on card is required
+                        </div>*@
                         </div>
-
                         <div class="col-md-6 mb-3">
                             <label for="cc-number">Số thẻ</label>
                             <input name="s_st" type="text" class="form-control" id="cc-number" placeholder="" required>
-                            <div class="invalid-feedback">
+                            @*<div class="invalid-feedback">
                                 Credit card number is required
-                            </div>
+                            </div>*@
                         </div>
+                    </div>
                     </div>
 
                     <hr class="mb-4">

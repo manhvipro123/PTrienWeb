@@ -50,6 +50,7 @@ namespace CustomerApplication.Controllers
         /*[Route("api/cart/add")*/
         public IActionResult AddToCart()
         {
+            DateTime now = DateTime.Now;
             int masp = int.Parse(Request.Form["MaSp"].ToString());
             int soluong = int.Parse(Request.Form["Sl"].ToString());
 
@@ -67,19 +68,9 @@ namespace CustomerApplication.Controllers
                 items = new List<ItemCart>();
             }
 
-            /*try
-            {
-                if (items != null)
-                {
-                    if (items.soluong > 0)
-                    {
-                        items.soluong = soluong.Value;
-                    }
-                }
-            }*/
             //tim san pham co trong db
             SanPham sanpham = ctx.SanPhams.Where(x => x.MaSp == masp).SingleOrDefault();
-            //teo item trong gio hang
+            //tao item trong gio hang
             ItemCart item = new ItemCart()
             {
                 MaSp = masp,
@@ -87,6 +78,7 @@ namespace CustomerApplication.Controllers
                 Image = sanpham.HinhAnh,
                 Gia = (decimal)sanpham.Gia,
                 TenSp = sanpham.TenSp,
+                thoiGianBoGio = now.ToString("MMddyyyyHHmmsstt"),
             };
             //luu session
             items.Add(item);
@@ -102,7 +94,36 @@ namespace CustomerApplication.Controllers
             return RedirectToAction("Index");
         }
 
-    
+        public ActionResult RemoveItem(int id, string time)
+        {
+         
+            //doc sesion
+            var giohang = HttpContext.Session.GetString("giohang");
+            //chuyen tu chuoi json thanh object
+
+            List<ItemCart>  items = (List<ItemCart>)JsonSerializer.Deserialize(giohang, typeof(List<ItemCart>));
+            items.RemoveAll(item => item.MaSp == id && item.thoiGianBoGio == time);
+            
+            /*HttpContext.Session.Clear();*/
+            HttpContext.Session.SetString("giohang", JsonSerializer.Serialize(items, typeof(List<ItemCart>)));
+            return RedirectToAction("Index", "Shopping");
+        }
+
+
+
+        /*void ClearCart()
+        {
+            var session = HttpContext.Session;
+            session.Remove(CARTKEY);
+        }*/
+        void SaveCartSession()
+        {
+            List<ItemCart> items = null;
+            var giohang = HttpContext.Session.GetString("giohang");
+            items = (List<ItemCart>)JsonSerializer.Deserialize(giohang, typeof(List<ItemCart>));
+            ctx.SaveChanges();
+        }
+
         public IActionResult ThanhToan()
         {
             var types = new List<SelectOption>();
@@ -211,7 +232,7 @@ namespace CustomerApplication.Controllers
             ctx.KhachHangs.Add(kh);
             ctx.DonHangs.Add(dh);
             ctx.SaveChanges();
-
+            HttpContext.Session.Clear();
             return RedirectToAction("Index","Product");
         }
         

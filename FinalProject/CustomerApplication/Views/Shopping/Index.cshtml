@@ -31,8 +31,25 @@
                                             </td>
                                             <td class="product-price"><span class="amount">@item.Gia</span></td>
                                             <td class="product-quantity"><input type="number" value="@item.SoLuong"></td>
+                                            @*<td class="product-quantity"> 
+                                             @using (Html.BeginForm("AddToCart", "Shopping"))
+                                                {
+                                                <input type="hidden" value="@item.MaSp" name="ID_SP" />
+                                                <input type="number" value="@item.Sl" name="quantity" />
+                                                <input type="submit" value="Update" class="btn btn-danger" />
+                                                }
+                                            
+                                            </td>*@
                                             <td class="product-subtotal">@(item.Gia * item.SoLuong)</td>
-                                            <td class="product-remove"><a href="#"><i class="fas fa-trash"></i></a></td>
+                                           @* <td class="product-remove"><a class="fas fa-trash"></a></td>*@
+                                            @*<td> class="product-remove">
+                                                @Html.ActionLink("Delete","Remove",new{id = item.MaSp})
+                                                <a class="fas fa-trash"></a>
+                                            </td>*@
+
+                                            <td class="product-remove">
+                                                @Html.ActionLink("Delete", "RemoveItem", "Shopping", new{id = item.MaSp, time = item.thoiGianBoGio})
+                                            </td>
                                         </tr>
                                        
                                     }
