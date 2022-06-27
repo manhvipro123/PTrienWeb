@@ -19,30 +19,37 @@
                     <h6 class="m-0 font-weight-bold text-primary"></h6>
                 </div>
                 <div class="card-body">
-                    @using (Html.BeginForm("SaveBill", "Admin", FormMethod.Post))
+                    @using (Html.BeginForm("EditBill", "Admin", FormMethod.Post))
                     {
+                        @Html.ValidationSummary(false,"",new { @class = "text-danger" })
                         <div class="mb-3">
                             <label for="MaSp" class="form-label">Mã Đơn Hàng:</label>
                             @Html.TextBoxFor(m => m.MaDh, new { @class = "form-control" , @readonly = "readonly" } )
                         </div>
-                        <div class="mb-3">
-                            <label for="MaSp" class="form-label">Ngày Giao:</label>
-                            @Html.TextBoxFor(m => m.NgayGiao, new { @class = "form-control", @type="datetime-local"} )
-                          
-                        </div>
-                        <div class="mb-3">
-                            <label for="MaSp" class="form-label">Ngày Nhận</label>
-                            @Html.TextBoxFor(m => m.NgayNhan, new { @class = "form-control"  , @type="datetime-local"} )
-                                
-                        </div>
-                        <div class="mb-3">
-                            <label for="MaDm" class="form-label">Trạng Thái Đơn Hàng</label>
+                        @if (@Model.NgayGiao == null)
+                        {
+                            <div class="mb-3">
+                                <label for="MaSp" class="form-label">Ngày Giao:</label>
+                                @Html.TextBoxFor(m => m.NgayGiao, new { @class = "form-control", @type="datetime-local"} )
+                            </div>
+                           
+                        }
 
-                            @Html.DropDownListFor(m => m.TrangThaiDh,
-                            new SelectList(ViewBag.PartialTypes, "Value", "Text"),
-                            new { @class = "form-control" })    
-                        </div>
+                        if (@Model.NgayNhan == null)
+                        {
+                            <div class="mb-3">
+                                <label for="MaSp" class="form-label">Ngày Nhận</label>
+                                @Html.TextBoxFor(m => m.NgayNhan, new { @class = "form-control"  , @type="datetime-local"} )
+                            </div>
+                       
+                        }
+                         <div class="mb-3">
+                                <label for="MaDm" class="form-label">Trạng Thái Đơn Hàng</label>
 
+                                @Html.DropDownListFor(m => m.TrangThaiDh,
+                        new SelectList(ViewBag.PartialTypes, "Value", "Text"),
+                        new { @class = "form-control" })
+                            </div>
 
                         <a href="~/admin/getallbills" class="btn btn-outline-danger" role="button" aria-pressed="true">Quay lại</a>
                         <button class="btn btn-primary" type="reset">Reset</button>

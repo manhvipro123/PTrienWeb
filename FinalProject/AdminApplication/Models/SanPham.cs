@@ -17,7 +17,7 @@ namespace AdminApplication.Models
         
         public int? MaDm { get; set; }
         [Required(ErrorMessage = "Vui lòng điền giá")]
-        public decimal? Gia { get; set; }
+        public double? Gia { get; set; }
         [Required(ErrorMessage = "Vui lòng điền số lượng sản phẩm")]
         public int? SoLuong { get; set; }
         [Required(ErrorMessage = "Vui lòng điền ngày nhập sản phẩm")]

@@ -15,7 +15,7 @@ namespace CustomerApplication.Models
         public int MaSp { get; set; }
         public string? TenSp { get; set; }
         public int? MaDm { get; set; }
-        public decimal? Gia { get; set; }
+        public double? Gia { get; set; }
         public int? SoLuong { get; set; }
         public DateTime? NgayNhap { get; set; }
         public string? DacDiem { get; set; }

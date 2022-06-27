@@ -25,10 +25,8 @@
                                         @foreach (var item in ViewBag.Cart)
                                         {
                                         <tr>
-                                            <td class="product-thumbnail"><a href="#"><img src="~/assets/images/@item.Image" alt="product img"></a></td>
-                                            <td class="product-name"><a href="~/views/product/details.cshtml">@item.TenSp</a>
- 
-                                            </td>
+                                            <td class="product-thumbnail"><img src="~/assets/images/@item.Image" alt="product img"></td>
+                                            <td class="product-name">@item.TenSp</td>
                                             <td class="product-price"><span class="amount">@item.Gia</span></td>
                                             <td class="product-quantity"><input type="number" value="@item.SoLuong"></td>
                                             @*<td class="product-quantity"> 

@@ -34,8 +34,18 @@ namespace AdminApplication.Controllers
         {
 
             //select * from SanPham
-            List<SanPham> sp = ctx.SanPhams.Include(x => x.MaDmNavigation).ToList();
-            return View(sp);
+            List<SanPham> available_SpLst = new List<SanPham>();
+            List<SanPham> sp_lst = ctx.SanPhams.Include(x => x.MaDmNavigation).ToList();
+            foreach(SanPham sp in sp_lst)
+            {
+                if(sp.MaDmNavigation.TenDm != "Uncategory")
+                {
+                    available_SpLst.Add(sp);
+                }
+            }
+            return View(available_SpLst);
+
+
         }
         public IActionResult AddProduct()
         {
@@ -62,7 +72,7 @@ namespace AdminApplication.Controllers
             dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
             ViewBag.PartialTypes_3 = dTypes;
 
-            List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+            List<DanhMuc> DanhMucs = ctx.DanhMucs.Where(x => x.TenDm != "Uncategory").ToList();
             ViewBag.DanhMucs = DanhMucs;
             return View();
         }
@@ -93,7 +103,7 @@ namespace AdminApplication.Controllers
             dTypes.Add(new SelectOption() { Value = "Kéo dài thời gian", Text = "Kéo dài thời gian" });
             dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
             ViewBag.PartialTypes_3 = dTypes;
-            List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+            List<DanhMuc> DanhMucs = ctx.DanhMucs.Where(x => x.TenDm != "Uncategory").ToList();
             ViewBag.DanhMucs = DanhMucs;
 
             try
@@ -102,10 +112,13 @@ namespace AdminApplication.Controllers
                 //images url
                 var formFile = Request.Form.Files[0];
 
-                string rootPath = @"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\";
+                string rootPath1 = @"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\";
+                string rootPath2 = @"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication\wwwroot\images\";
+
                 var fileName = formFile.FileName;
-                string path = rootPath + fileName;
-                string[] fileEntries = Directory.GetFiles(@"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\");
+                string path1 = rootPath1 + fileName;
+                string path2 = rootPath2 + fileName;
+                /*string[] fileEntries = Directory.GetFiles(@"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\");*/
                 /*  if (System.IO.File.Exists(path))
                   {
                       ModelState.AddModelError(string.Empty, "File name hình ảnh đã tồn tại");
@@ -120,8 +133,10 @@ namespace AdminApplication.Controllers
                       }
                   }*/
 
-                var stream = System.IO.File.Create(path);
-                formFile.CopyTo(stream);
+                var stream1 = System.IO.File.Create(path1);
+                var stream2 = System.IO.File.Create(path2);
+                formFile.CopyTo(stream1);
+                formFile.CopyTo(stream2);
 
 
                 if (ModelState.IsValid)
@@ -152,7 +167,8 @@ namespace AdminApplication.Controllers
                     else
                     {
                         //insert db
-                        stream.Close();
+                        stream1.Close();
+                        stream2.Close();
                         ctx.SanPhams.Add(spm);
                         ctx.SaveChanges();
                         return RedirectToAction("GetAllProducts");
@@ -165,7 +181,8 @@ namespace AdminApplication.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, ex.ToString());
+                /*ModelState.AddModelError(string.Empty, ex.ToString());*/
+                ModelState.AddModelError(string.Empty, "Hình ảnh có vấn đề, vui lòng check lại bằng exception!");
             }
             return View(sp);
         }
@@ -215,7 +232,7 @@ namespace AdminApplication.Controllers
             dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
             ViewBag.PartialTypes_3 = dTypes;
             //tim doi tuong co id
-            List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+            List<DanhMuc> DanhMucs = ctx.DanhMucs.Where(x => x.TenDm != "Uncategory").ToList();
             ViewBag.DanhMucs = DanhMucs;
             SanPham sp = ctx.SanPhams.Where(x => x.MaSp == id).SingleOrDefault();
             return View(sp);
@@ -247,7 +264,7 @@ namespace AdminApplication.Controllers
             dTypes.Add(new SelectOption() { Value = "Mỏng", Text = "Mỏng" });
             ViewBag.PartialTypes_3 = dTypes;
             //tim doi tuong co id
-            List<DanhMuc> DanhMucs = ctx.DanhMucs.ToList();
+            List<DanhMuc> DanhMucs = ctx.DanhMucs.Where(x => x.TenDm != "Uncategory").ToList();
             ViewBag.DanhMucs = DanhMucs;
             try
             {
@@ -255,13 +272,18 @@ namespace AdminApplication.Controllers
                 {
                     //images url
                     var formFile = Request.Form.Files[0];
-                    string rootPath = @"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\";
+                    string rootPath1 = @"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\";
+                    string rootPath2 = @"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\AdminApplication\wwwroot\images\";
                     var fileName = formFile.FileName;
-                    var path = rootPath + fileName;
+                    var path1 = rootPath1 + fileName;
+                    var path2 = rootPath2 + fileName;
                     /*  string[] fileEntries = Directory.GetFiles(@"C:\Users\Admin\source\repos\manhvipro123\PTrienWeb\FinalProject\CustomerApplication\wwwroot\assets\images\");*/
-                    var stream = System.IO.File.Create(path);
-                    formFile.CopyTo(stream);
-                    stream.Close();
+                    var stream1 = System.IO.File.Create(path1);
+                    var stream2 = System.IO.File.Create(path2);
+                    formFile.CopyTo(stream1);
+                    formFile.CopyTo(stream2);
+                    stream1.Close();
+                    stream2.Close();
                     if (ModelState.IsValid)
                     {
 
@@ -323,7 +345,8 @@ namespace AdminApplication.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, ex.ToString());
+                /*ModelState.AddModelError(string.Empty, ex.ToString());*/
+                ModelState.AddModelError(string.Empty, "Upload hình ảnh có vấn đề, coi lại exception");
             }
             return View(sp);
 
@@ -335,7 +358,7 @@ namespace AdminApplication.Controllers
         public IActionResult GetAllCategories()
         {
             //select * from DanhMuc
-            List<DanhMuc> dm = ctx.DanhMucs.ToList();
+            List<DanhMuc> dm = ctx.DanhMucs.Where(x => x.TenDm != "Uncategory").ToList();
             return View(dm);
         }
 
@@ -377,12 +400,12 @@ namespace AdminApplication.Controllers
             //select * from DanhMuc where MaDm = id 
             DanhMuc dm = ctx.DanhMucs.Where(x => x.MaDm == id).SingleOrDefault();
             List<SanPham> prodLST = ctx.SanPhams.Where(x => x.MaDm == id).ToList();
+            
             //xoa du lieu
-         
-            foreach (SanPham pham in prodLST)
+           /* foreach (SanPham pham in prodLST)
             {
                 List<DanhGia> temp = ctx.DanhGias.Where(x => x.MaSp == pham.MaSp).ToList();
-                if(temp.Count > 0)
+                if (temp.Count > 0)
                 {
                     foreach (DanhGia gia in temp)
                     {
@@ -390,14 +413,20 @@ namespace AdminApplication.Controllers
                     }
                     temp.Clear();
                 }
-                
+
             }
             foreach (SanPham sp in prodLST)
             {
                 ctx.SanPhams.Remove(sp);
+            }*/
+
+            //thay the danh muc san pham co danh muc bi xoa = uncategory va ẩn no duoi database
+            foreach(SanPham sp in prodLST)
+            { 
+                sp.MaDm = 9; //9 là maDm của Uncategory             
             }
 
-            //xoa du lieu
+            //xoa danh muc
             if (dm != null)
             {
                 ctx.DanhMucs.Remove(dm);
@@ -635,25 +664,52 @@ namespace AdminApplication.Controllers
         [HttpGet]
         public IActionResult EditBill(int id)
         {
-            var types = new List<SelectOption>();
-            types.Add(new SelectOption() { Value = "Đang giao", Text = "Đang giao" });
-            types.Add(new SelectOption() { Value = "Đã giao", Text = "Đã giao" });
-            ViewBag.PartialTypes = types;
             //tim doi tuong co id
             DonHang dh = ctx.DonHangs.Where(x => x.MaDh == id).SingleOrDefault();
+            var types = new List<SelectOption>();
+            if (dh.NgayGiao == null)
+            {
+                types.Add(new SelectOption() { Value = "Đang giao", Text = "Đang giao" });
+            }
+            else
+            {
+                if(dh.NgayNhan == null)
+                {
+                    types.Add(new SelectOption() { Value = "Đã giao", Text = "Đã giao" });
+                }
+                else
+                {
+                    types.Add(new SelectOption() { Value = "Đã giao", Text = "Đã giao" });
+                }
+            }
+          
+            ViewBag.PartialTypes = types;
+      
             return View(dh);
         }
 
         [HttpPost]
-        public IActionResult SaveBill(DonHang dh)
+        public IActionResult EditBill(DonHang dh)
         {
             //tim doi tuong co trong db tuong ung ma id
             DonHang dh_indb = ctx.DonHangs.Where(x => x.MaDh == dh.MaDh).SingleOrDefault();
             if (dh_indb != null)
             {
-                dh_indb.TrangThaiDh = dh.TrangThaiDh;
-                dh_indb.NgayGiao = dh.NgayGiao;
-                dh_indb.NgayNhan = dh.NgayNhan;
+                if (dh.NgayNhan == null && dh.NgayGiao == null)
+                {
+                    dh_indb.TrangThaiDh = dh.TrangThaiDh;
+                }
+                else if (dh.NgayGiao == null)
+                {
+                    dh_indb.TrangThaiDh = dh.TrangThaiDh;
+                    dh_indb.NgayNhan = dh.NgayNhan;
+                }
+                else if(dh.NgayNhan == null)
+                {
+                    dh_indb.TrangThaiDh = dh.TrangThaiDh;
+                    dh_indb.NgayGiao = dh.NgayGiao;
+                }
+                
             }
             //cap nhat thong tin
             ctx.SaveChanges();

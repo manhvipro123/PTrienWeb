@@ -130,7 +130,20 @@ namespace CustomerApplication.Controllers
             types.Add(new SelectOption() { Value = "COD", Text = "COD" });
             types.Add(new SelectOption() { Value = "Thẻ tín dụng", Text = "Thẻ tín dụng" });
             ViewBag.PartialTypes = types;
-            
+            var bTypes = new List<SelectOption>();
+            bTypes.Add(new SelectOption() { Value = "", Text = "Không" });
+            bTypes.Add(new SelectOption() { Value = "Sacombank", Text = "Sacombank" });
+            bTypes.Add(new SelectOption() { Value = "Vietcombank", Text = "Vietcombank" });
+            bTypes.Add(new SelectOption() { Value = "Vietinbank", Text = "Vietinbank" });
+            bTypes.Add(new SelectOption() { Value = "BIDV", Text = "BIDV" });
+            bTypes.Add(new SelectOption() { Value = "TPbank", Text = "TPbank" });
+            bTypes.Add(new SelectOption() { Value = "ACB", Text = "ACB" });
+            bTypes.Add(new SelectOption() { Value = "Shinhanbank", Text = "Shinhanbank" });
+            bTypes.Add(new SelectOption() { Value = "MBbank ", Text = "MBbank" });
+            bTypes.Add(new SelectOption() { Value = "Agribank", Text = "Agribank" });
+            bTypes.Add(new SelectOption() { Value = "Techcombank", Text = "Techcombank" });
+            ViewBag.bTypes = bTypes;
+
             List<ItemCart> items = null;
             var giohang = HttpContext.Session.GetString("giohang");
             //chuyen tu chuoi json thanh object
@@ -152,12 +165,25 @@ namespace CustomerApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult ThanhToan(string s_name, string s_email, string s_phone, string s_pass, string s_dc, string s_dcg, string PhuongThucTt, string s_nh, string s_st)
+        public IActionResult ThanhToan(string s_name, string s_email, string s_phone, string s_dc, string s_dcg, string PhuongThucTt,string NganHangNhan, string s_st)
         {
             var types = new List<SelectOption>();
             types.Add(new SelectOption() { Value = "COD", Text = "COD" });
             types.Add(new SelectOption() { Value = "Thẻ tín dụng", Text = "Thẻ tín dụng" });
             ViewBag.PartialTypes = types;
+              var bTypes = new List<SelectOption>();
+            bTypes.Add(new SelectOption() { Value = "", Text = "Không" });
+            bTypes.Add(new SelectOption() { Value = "Sacombank", Text = "Sacombank" });
+            bTypes.Add(new SelectOption() { Value = "Vietcombank", Text = "Vietcombank" });
+            bTypes.Add(new SelectOption() { Value = "Vietinbank", Text = "Vietinbank" });
+            bTypes.Add(new SelectOption() { Value = "BIDV", Text = "BIDV" });
+            bTypes.Add(new SelectOption() { Value = "TPbank", Text = "TPbank" });
+            bTypes.Add(new SelectOption() { Value = "ACB", Text = "ACB" });
+            bTypes.Add(new SelectOption() { Value = "Shinhanbank", Text = "Shinhanbank" });
+            bTypes.Add(new SelectOption() { Value = "MBbank ", Text = "MBbank" });
+            bTypes.Add(new SelectOption() { Value = "Agribank", Text = "Agribank" });
+            bTypes.Add(new SelectOption() { Value = "Techcombank", Text = "Techcombank" });
+            ViewBag.bTypes = bTypes;
             
             DateTime now = DateTime.Now;
             
@@ -180,7 +206,7 @@ namespace CustomerApplication.Controllers
             User u = new User()
             {
                 Email = s_email,
-                Password = s_pass,
+                Password = "a123",
                 Name = s_name,
                 Id = "U" + now.ToString("MMddyyyyHHmmsstt"),
             };
@@ -197,15 +223,22 @@ namespace CustomerApplication.Controllers
             dh.MaKh = "KH" + now.ToString("MMddyyyyHHmmsstt");
             if (PhuongThucTt == "Thẻ tín dụng")
             {
-                
-                dh.DiaChiGiao = s_dcg;
-                dh.SoThe = s_st;
-                dh.NganHangNhan = s_nh;
-                dh.TongTien = tongTien;
-                dh.PhuongThucTt = PhuongThucTt;
-                dh.NgayLap = now;
-               
-                dh.TrangThaiDh = "Đang chuẩn bị hàng";            
+                if (NganHangNhan == null || s_st == null)
+                {
+                    ModelState.AddModelError(string.Empty, "Tên ngân hàng hoặc số tài khoản bị trống!");
+                    return View();
+                }
+                else
+                {
+                    dh.DiaChiGiao = s_dcg;
+                    dh.SoThe = s_st;
+                    dh.NganHangNhan = NganHangNhan;
+                    dh.TongTien = tongTien;
+                    dh.PhuongThucTt = PhuongThucTt;
+                    dh.NgayLap = now;
+                    dh.TrangThaiDh = "Đang chuẩn bị hàng";
+                }
+                         
             }
             else if(PhuongThucTt == "COD")
             {
@@ -219,13 +252,17 @@ namespace CustomerApplication.Controllers
            
                 dh.TrangThaiDh = "Đang chuẩn bị hàng";
             }
+
            
-            ChiTietDonHang ctdh = new ChiTietDonHang();
+            
             foreach (ItemCart item in items)
             {
-                ctdh.SoLuong = item.SoLuong;
-                ctdh.MaSp = item.MaSp;
-                ctdh.MaDh = "DH" + now.ToString("MMddyyyyHHmmsstt");
+                ChiTietDonHang ctdh = new ChiTietDonHang()
+                {
+                    SoLuong = item.SoLuong,
+                    MaSp = item.MaSp,
+                    MaDh = "DH" + now.ToString("MMddyyyyHHmmsstt"),
+                };   
                 ctx.ChiTietDonHangs.Add(ctdh);
             }
             ctx.Users.Add(u);
